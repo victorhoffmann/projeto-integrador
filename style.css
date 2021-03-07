@@ -1,0 +1,128 @@
+:root {
+  --color-secondary: #39FF14;
+  --color-dark: #343a40;
+}
+
+header {
+  background-color: var(--color-dark);
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2vh;
+}
+
+#logo {
+  width: 40%;
+}
+
+#logo a {
+  font-size: 4vh;
+  color: var(--color-secondary)!important;
+}
+
+#links {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 60%;
+  margin-right: 2vh;
+}
+
+.nav-link {
+  font-size: 3vh;
+}
+
+header form {
+  margin: 0vh 20%;
+  padding-bottom: 2vh;
+}
+
+.nav-link {
+  display: initial!important;
+}
+
+.navbar-brand {
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+.nav-item.dropdown {
+  margin-left: 475px;
+}
+
+#carousselExampleCaptions {
+  margin-top: 2vh;
+}
+
+.carousel-inner {
+  height: 60vh;
+}
+
+.carousel-inner h5 {
+  color: var(--color-secondary);
+}
+
+.carousel-item {
+  position: initial!important;
+}
+
+.btnCarousel {
+  border-radius: 10px;
+  border: 1px solid #000;
+}
+
+main {
+  margin-top: 2vh;
+}
+
+#produtosLinks {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  border: 2px solid #C4C4C4;
+  margin: 0 auto;
+}
+
+#produtosLinks a {
+  font-size: 2.5vh;
+  padding-right: 3vh;
+  text-decoration: none;
+  color: #000;
+}
+
+#produtosLinks a:last-child {
+  padding-right: 0;
+}
+
+footer {
+  margin-top: 5vh;
+  display: flex;
+  background-color: var(--color-dark);
+  font-size: 2vh;
+  padding-top: 2vh;
+}
+
+#footerLinks {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  margin-left: 5vh;
+  color: #fff
+}
+
+#footerLinks a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.25rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+#textInfos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+}
