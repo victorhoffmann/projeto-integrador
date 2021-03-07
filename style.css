@@ -11,10 +11,8 @@ nav {
   display: flex;
   align-items: center;
   margin-bottom: 2vh;
-}
-
-#logo {
-  width: 40%;
+  flex-flow: column nowrap;
+  justify-content: center;
 }
 
 #logo a {
@@ -22,12 +20,13 @@ nav {
   color: var(--color-secondary)!important;
 }
 
+#logo .navbar-brand{
+  margin: 0;
+}
+
 #links {
   display: flex;
-  justify-content: flex-end;
   align-items: center;
-  width: 60%;
-  margin-right: 2vh;
 }
 
 .nav-link {
@@ -43,13 +42,28 @@ header form {
   display: initial!important;
 }
 
-.navbar-brand {
-  padding-top: 10px;
-  padding-left: 10px;
-}
-
 .nav-item.dropdown {
   margin-left: 475px;
+}
+
+@media only screen and (min-width: 498px) {
+  nav {
+    flex-direction: row;
+  }
+
+  #logo {
+    width: 40%;
+  }
+
+  .navbar-brand{
+    padding-left: 10px;
+  }
+
+  #links {
+    width: 60%;
+    justify-content: flex-end;
+  }
+
 }
 
 #carousselExampleCaptions {
@@ -100,7 +114,6 @@ footer {
   margin-top: 5vh;
   display: flex;
   background-color: var(--color-dark);
-  font-size: 2vh;
   padding-top: 2vh;
 }
 
@@ -108,21 +121,27 @@ footer {
   width: 50%;
   display: flex;
   flex-direction: column;
-  margin-left: 5vh;
-  color: #fff
+  margin-left: 2vh;
+  color: #fff;
+  font-size: 1rem!important;
 }
 
 #footerLinks a {
   color: #fff;
   text-decoration: none;
-  font-size: 1.25rem;
-  font-weight: 500;
-  line-height: 1.2;
+  font-size: 1rem!important;
 }
 
 #textInfos {
   display: flex;
+  width: 50%;
   flex-direction: column;
   align-items: center;
   color: #fff;
+  margin-right: 2vh;
+}
+
+#textInfos h5{
+  font-size: 1rem!important;
+  font-weight: initial!important;
 }
