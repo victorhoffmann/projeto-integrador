@@ -10,6 +10,7 @@ main {
   flex-wrap: wrap;
   min-height: 100vh;
   background-color: #f8f9fa;
+  margin-top: 0px;
 }
 
 h1 {
