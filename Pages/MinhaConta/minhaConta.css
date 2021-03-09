@@ -47,6 +47,11 @@
      text-decoration: underline ;
      padding: 0px 20px 10px 0px;
  }
+
+ .esqueci a{
+     color: initial;
+ }
+
  .btn-entrar{
      display: block;
      margin: 10px 0px;
