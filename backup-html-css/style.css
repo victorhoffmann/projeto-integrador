@@ -80,6 +80,7 @@ header form {
 
 .carousel-item {
   position: initial!important;
+  height: 30vh;
 }
 
 .btnCarousel {
@@ -93,10 +94,12 @@ main {
 
 #produtosLinks {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   overflow: hidden;
   border: 2px solid #C4C4C4;
   margin: 0 auto;
+  width: 100vw;
+  overflow-x: scroll;
 }
 
 #produtosLinks a {
