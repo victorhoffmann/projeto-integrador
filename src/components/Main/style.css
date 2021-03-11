@@ -1,0 +1,24 @@
+main {
+    margin-top: 2vh;
+}
+
+#produtosLinks {
+    display: flex;
+    justify-content: flex-start;
+    overflow: hidden;
+    border: 2px solid #C4C4C4;
+    margin: 0 auto;
+    width: 100vw;
+    overflow-x: scroll;
+}
+
+#produtosLinks a {
+    font-size: 2.5vh;
+    padding-right: 3vh;
+    text-decoration: none;
+    color: #000;
+}
+
+#produtosLinks a:last-child {
+    padding-right: 0;
+}

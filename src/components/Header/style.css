@@ -1,0 +1,58 @@
+header {
+    background-color: var(--color-dark);
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2vh;
+    flex-flow: column nowrap;
+    justify-content: center;
+}
+
+#logo a {
+    font-size: 4vh;
+    color: var(--color-secondary)!important;
+}
+
+#logo .navbar-brand {
+    margin: 0;
+}
+
+#links {
+    display: flex;
+    align-items: center;
+}
+
+.nav-link {
+    font-size: 3vh;
+}
+
+header form {
+    margin: 0vh 20%;
+    padding-bottom: 2vh;
+}
+
+.nav-link {
+    display: initial!important;
+}
+
+.nav-item.dropdown {
+    margin-left: 475px;
+}
+
+@media only screen and (min-width: 498px) {
+    nav {
+        flex-direction: row;
+    }
+    #logo {
+        width: 40%;
+    }
+    .navbar-brand {
+        padding-left: 10px;
+    }
+    #links {
+        width: 60%;
+        justify-content: flex-end;
+    }
+}
