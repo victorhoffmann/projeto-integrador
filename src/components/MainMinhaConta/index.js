@@ -1,14 +1,8 @@
-import './minhaConta.css'
-import Header from '../../components/Header'
-import Footer from '../../components/Footer'
-
-
-const minhaConta = () => {
-    return (
-        <>
-            <Header />
-
-            <h1>Minha Conta</h1>
+import './style.css'
+const MainMinhaConta = () => {
+return (
+    <>
+    <h1>Minha Conta</h1>
             <h4>Você precisa ser cadastrado ou já ter um cadastro para continuar.</h4>
             <section className="formularios">
                 <div className="signIn">
@@ -88,8 +82,7 @@ const minhaConta = () => {
                 </div>
 
             </section>
-
-            <Footer />
-        </>
-    )
+            </>
+)
 }
+ export default MainMinhaConta
