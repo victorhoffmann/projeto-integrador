@@ -7,7 +7,7 @@ const MinhaConta = () => {
     return (
         <>
             <Header />
-            <Main MinhaConta />
+            <MainMinhaConta />
             <Footer />
         </>
     )
