@@ -1,10 +1,6 @@
 import MainSobre from "../../components/MainSobre";
 
 const Sobre = () => {
-  return (
-    <>
-      <MainSobre />
-    </>
-  );
+  return <MainSobre />;
 };
 export default Sobre;
