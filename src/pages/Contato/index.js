@@ -1,15 +1,10 @@
-import Header from '../../components/Header'
-import MainContato from '../../components/MainContato'
-import Footer from '../../components/Footer'
+import MainContato from "../../components/MainContato";
+
 const Contato = () => {
-    return (
-        <>
-        <Header />
-        <MainContato />
-        <Footer />
-        </>
-
-    )
-
-}
-export default Contato
+  return (
+    <>
+      <MainContato />
+    </>
+  );
+};
+export default Contato;

@@ -1,15 +1,10 @@
-import Header from '../../components/Header'
-import MainMinhaConta from '../../components/MainMinhaConta'
-import Footer from '../../components/Footer'
-
+import MainMinhaConta from "../../components/MainMinhaConta";
 
 const MinhaConta = () => {
-    return (
-        <>
-            <Header />
-            <MainMinhaConta />
-            <Footer />
-        </>
-    )
-}
-export default MinhaConta
+  return (
+    <>
+      <MainMinhaConta />
+    </>
+  );
+};
+export default MinhaConta;

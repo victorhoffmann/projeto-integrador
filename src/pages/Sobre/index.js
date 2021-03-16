@@ -1,16 +1,10 @@
-import Header from '../../components/Header'
-import MainSobre from '../../components/MainSobre'
-import Footer from '../../components/Footer'
+import MainSobre from "../../components/MainSobre";
+
 const Sobre = () => {
-    return (
-        <>
-        <Header />
-        <MainSobre />
-        <Footer />
-        </>
-
-    )
-
-}
-export default Sobre
-
+  return (
+    <>
+      <MainSobre />
+    </>
+  );
+};
+export default Sobre;
