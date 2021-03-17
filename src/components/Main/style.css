@@ -11,6 +11,7 @@
     width: 100vw;
     overflow: auto;
     padding: 0vh 2vh 2vh;
+    text-align: center;
 }
 
 #produtosLinks::-webkit-scrollbar {
