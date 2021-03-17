@@ -3,12 +3,11 @@
   --color-dark: #343a40;
 }
 
-main {
+.sectionMain {
   display: block;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  min-height: 100vh;
   background-color: #f8f9fa;
   margin-top: 0px;
 }

@@ -2,7 +2,7 @@ import "./style.css";
 const MainSobre = () => {
   return (
     <>
-      <section>
+      <section className='sectionMain'>
         <div className="container">
           <div className="content">
             <div className="contentTitle">

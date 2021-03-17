@@ -2,7 +2,7 @@ import './style.css'
 
 const Main = () => {
     return (
-        <main>
+        <main className='mainHome'>
             <div id='produtosLinks'>
                 <a href="#headsets">Headsets</a>
                 <a href="#monitores">Monitores</a>

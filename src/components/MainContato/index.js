@@ -4,7 +4,6 @@ const MainContato = () => {
   return (
     <>
       <div className="container">
-        <div className="text">Contato</div>
         <form action="#">
           <div className="form-row names">
             <div className="input-data">

@@ -3,16 +3,6 @@
   --color-dark: #343a40;
 }
 
-main {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 100vh;
-  padding: 40px;
-  background-color: #f8f9fa;
-  margin-top: 0px;
-}
-
 .container {
   position: relative;
   max-width: 800px;

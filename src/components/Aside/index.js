@@ -1,8 +1,6 @@
 import React from 'react'
 import './style.css'
 import headset1 from '../../assets/headset1.jpg'
-import headset2 from '../../assets/headset2.jpg'
-import headset3 from '../../assets/headset3.jpg'
 
 const Aside = () => {
     return (
@@ -35,7 +33,7 @@ const Aside = () => {
                     </div>
                     <div className="carousel-item">
                         <img
-                            src={headset2}
+                            src={headset1}
                             className="d-block w-100"
                             alt="..."
                         />
@@ -46,7 +44,7 @@ const Aside = () => {
                     </div>
                     <div className="carousel-item">
                         <img
-                            src={headset3}
+                            src={headset1}
                             className="d-block w-100"
                             alt="..."
                         />
