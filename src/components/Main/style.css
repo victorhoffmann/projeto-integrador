@@ -3,13 +3,28 @@ main {
 }
 
 #produtosLinks {
-    display: flex;
     justify-content: flex-start;
-    overflow: hidden;
     border: 2px solid #C4C4C4;
     margin: 0 auto;
     width: 100vw;
-    overflow-x: scroll;
+    overflow: auto;
+    padding: 0vh 2vh 2vh;
+}
+
+#produtosLinks::-webkit-scrollbar {
+    width: 10px;
+}
+  
+#produtosLinks::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+   
+#produtosLinks::-webkit-scrollbar-thumb {
+    background: #888; 
+}
+  
+#produtosLinks::-webkit-scrollbar-thumb:hover {
+    background: #555; 
 }
 
 #produtosLinks a {
