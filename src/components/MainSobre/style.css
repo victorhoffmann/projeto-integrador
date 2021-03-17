@@ -37,15 +37,15 @@ h1 {
 
 .container {
   position: relative;
-  width: 800px;
   height: 600px;
+  width: 100%!important;
   background: rgba(55, 255, 20, 0.151);
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
   backdrop-filter: blur(10px);
   margin: 0 auto;
   border-radius: 10px;
   padding-bottom: 50px;
-  z-index: 1000;
+  overflow: auto;
 }
 
 .container .content {
@@ -62,4 +62,20 @@ h1 {
   margin: 20px 0 10px;
   line-height: 1.1em;
   padding-top: 25px;
+}
+
+.container::-webkit-scrollbar {
+  width: 10px;
+}
+
+.container::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+.container::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+.container::-webkit-scrollbar-thumb:hover {
+  background: #555; 
 }

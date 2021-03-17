@@ -2,7 +2,6 @@ import "./style.css";
 const MainSobre = () => {
   return (
     <>
-      <h1>Sobre</h1>
       <section>
         <div className="container">
           <div className="content">
