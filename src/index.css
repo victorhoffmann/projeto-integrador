@@ -1,4 +1,23 @@
 :root {
-    --color-secondary: #39FF14;
-    --color-dark: #343a40;
-  }
+  --color-secondary: #39FF14;
+  --color-dark: #343a40;
+}
+
+.boxForm {
+  height: 65vh;
+}
+
+.form-row {
+  flex-direction: column;
+}
+
+.col-md-9, .col-md-6 {
+  max-width: 100%;
+}
+
+.titleForm {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 2vh;
+}

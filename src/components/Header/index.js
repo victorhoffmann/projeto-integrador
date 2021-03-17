@@ -5,7 +5,7 @@ const Header = () => {
     <header>
       <nav>
         <div id="logo">
-          <a className="navbar-brand text-success logoname" href="/index.html">
+          <a className="navbar-brand text-success logoname" href="./">
             Periféricos.Net
           </a>
         </div>
@@ -45,7 +45,7 @@ const Header = () => {
               </a>
             </div>
           </div>
-          <a className="nav-link" href="./minhaConta">
+          <a className="nav-link" href="./login">
             <i className="fa fa-user" aria-hidden="true"></i>
           </a>
           <a className="nav-link" href="#">
