@@ -10,7 +10,7 @@ const Footer = () => {
         <a href="./contato" rel="noopener noreferrer">
           Contato
         </a>
-        <a href="#" rel="noopener noreferrer">
+        <a href="./faq" rel="noopener noreferrer">
           F.A.Q
         </a>
         <p>Formas de pagamento</p>

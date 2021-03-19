@@ -6,11 +6,13 @@ import Contato from "../pages/Contato";
 import Login from "../pages/Login";
 import Cadastro from '../pages/Cadastro'
 import Senha from '../pages/Login/ReenvioSenha'
+import Faq from '../pages/Faq'
 
 const Routes = () => {
   return (
     <Router>
       <Switch>
+        <Route path="/faq" component={Faq} />
         <Route path="/contato" component={Contato} />
         <Route path="/sobre" component={Sobre} />
         <Route path="/login" component={Login} />
