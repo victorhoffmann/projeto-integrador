@@ -37,11 +37,11 @@ const MainContato = () => {
               <label for="message">Escreva sua mensagem!</label>
               <br />
             </div>
-            <div className="form-row submit-btn">
-              <div className="input-data">
-                <div className="inner"></div>
-                <input type="submit" value="submit"></input>
-              </div>
+          </div>
+          <div className="form-row submit-btn">
+            <div className="input-data">
+              <div className="inner"></div>
+              <input type="submit" value="submit"></input>
             </div>
           </div>
         </form>

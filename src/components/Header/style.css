@@ -21,11 +21,14 @@ nav {
 
 #links {
     display: flex;
-    align-items: center;
+    align-items:center!important;
+    margin-left: 475px;
 }
 
-.nav-link {
+.nav-links {
     font-size: 3vh;
+    margin-right: 20px;
+    align-items: center;
 }
 
 header form {
@@ -33,13 +36,12 @@ header form {
     padding-bottom: 2vh;
 }
 
-.nav-link {
+.nav-links {
     display: initial!important;
+    
 }
 
-.nav-item.dropdown {
-    margin-left: 475px;
-}
+
 
 @media only screen and (min-width: 498px) {
     nav {
@@ -53,6 +55,15 @@ header form {
     }
     #links {
         width: 60%;
-        justify-content: flex-end;
+        justify-content: center;
+    
     }
+    
+}
+
+@media only screen and (max-width: 498px) {
+    #links {
+        margin-left: 0px;
+    }
+
 }
