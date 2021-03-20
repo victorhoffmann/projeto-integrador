@@ -28,6 +28,7 @@
   display: flex;
   margin: 32px 0;
   flex-wrap: nowrap;
+  flex-direction: row;
 }
 
 form .form-row .input-data {
