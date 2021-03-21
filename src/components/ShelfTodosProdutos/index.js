@@ -1,17 +1,22 @@
 import CardTodosProdutos from "../CardTodosProdutos";
 import "./style.css";
 
-const ShelfTodosProdutos = () => {
-  return (
-    <section className="shelf">
-      <h1 className="shelf__title">Todos os produtos!</h1>
-      <CardTodosProdutos />
-      <CardTodosProdutos />
-      <CardTodosProdutos />
-      <CardTodosProdutos />
-      <CardTodosProdutos />
-    </section>
-  );
+const ShelfTodosProdutos = ({ ...props }) => {
+  const { posts } = props;
+  const renderPosts = () => {
+    return posts.map((post, index) => {
+      const { title, description, price } = post;
+      return (
+        <CardTodosProdutos
+          title={title}
+          description={description}
+          price={price}
+          key={index}
+        />
+      );
+    });
+  };
+  return <section className="shelf">{renderPosts()}</section>;
 };
 
 export default ShelfTodosProdutos;
