@@ -8,6 +8,11 @@ import Cadastro from "../pages/Cadastro";
 import Senha from "../pages/Login/ReenvioSenha";
 import Faq from "../pages/Faq";
 import TodosProdutos from "../pages/TodosProdutos";
+import Headsets from "../pages/Headsets";
+import Monitores from "../pages/Monitores";
+import Mouses from "../pages/Mouses";
+import MousePads from "../pages/MousePads";
+import Teclados from "../pages/Teclados";
 import Carrinho from "../pages/Carrinho"
 
 const Routes = () => {
@@ -16,7 +21,13 @@ const Routes = () => {
       <Switch>
         <Route path="/faq" component={Faq} />
         <Route path="/todosprodutos" component={TodosProdutos} />
+        <Route path="/headsets" component={Headsets} />
+        <Route path="/monitores" component={Monitores} />
+        <Route path="/mouses" component={Mouses} />
+        <Route path="/mousepads" component={MousePads} />
+        <Route path="/teclados" component={Teclados} />
         <Route path="/contato" component={Contato} />
+        <Route path="/carrinho" component={Carrinho} />
         <Route path="/carrinho" component={Carrinho} />
         <Route path="/sobre" component={Sobre} />
         <Route path="/login" component={Login} />

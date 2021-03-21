@@ -1,0 +1,7 @@
+.shelf {
+  display: flex;
+  flex-flow: row wrap;
+  margin: 16px auto;
+  padding: 16px;
+  width: 100%;
+}

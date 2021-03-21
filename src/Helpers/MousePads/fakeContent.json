@@ -1,0 +1,81 @@
+{
+  "categories": [
+    {
+      "id": 1,
+      "title": "Categoria 01"
+    },
+    {
+      "id": 2,
+      "title": "Categoria 02"
+    },
+    {
+      "id": 3,
+      "title": "Categoria 03"
+    }
+  ],
+  "posts": [
+    {
+      "id": 1,
+      "cat_id": 1,
+      "title": "MousePad 01",
+      "description": "Conteúdo de exemplo do MousePad 01, apenas de marcação... Não perca seu tempo tentando ler esse texto pois é totalmente irrelevante. Poderia ser um lorem ipsum, mas, para diferenciar cada MousePad, tem um textinho \"customizado\"...",
+      "price": "R$99,99"
+    },
+    {
+      "id": 2,
+      "cat_id": 1,
+      "title": "MousePad 02",
+      "description": "Conteúdo de exemplo do MousePad 02, apenas de marcação... Não perca seu tempo tentando ler esse texto pois é totalmente irrelevante. Poderia ser um lorem ipsum, mas, para diferenciar cada MousePad, tem um textinho \"customizado\"...",
+      "price": "R$199,99"
+    },
+    {
+      "id": 3,
+      "cat_id": 1,
+      "title": "MousePad 03",
+      "description": "Conteúdo de exemplo do MousePad 03, apenas de marcação... Não perca seu tempo tentando ler esse texto pois é totalmente irrelevante. Poderia ser um lorem ipsum, mas, para diferenciar cada MousePad, tem um textinho \"customizado\"...",
+      "price": "R$299,99"
+    },
+    {
+      "id": 4,
+      "cat_id": 2,
+      "title": "MousePad 04",
+      "description": "Conteúdo de exemplo do MousePad 04, apenas de marcação... Não perca seu tempo tentando ler esse texto pois é totalmente irrelevante. Poderia ser um lorem ipsum, mas, para diferenciar cada MousePad, tem um textinho \"customizado\"...",
+      "price": "R$399,99"
+    },
+    {
+      "id": 5,
+      "cat_id": 2,
+      "title": "MousePad 05",
+      "description": "Conteúdo de exemplo do MousePad 05, apenas de marcação... Não perca seu tempo tentando ler esse texto pois é totalmente irrelevante. Poderia ser um lorem ipsum, mas, para diferenciar cada MousePad, tem um textinho \"customizado\"...",
+      "price": "R$499,99"
+    },
+    {
+      "id": 6,
+      "cat_id": 2,
+      "title": "MousePad 06",
+      "description": "Conteúdo de exemplo do MousePad 06, apenas de marcação... Não perca seu tempo tentando ler esse texto pois é totalmente irrelevante. Poderia ser um lorem ipsum, mas, para diferenciar cada MousePad, tem um textinho \"customizado\"...",
+      "price": "R$599,99"
+    },
+    {
+      "id": 7,
+      "cat_id": 3,
+      "title": "MousePad 7",
+      "description": "Conteúdo de exemplo do MousePad 7, apenas de marcação... Não perca seu tempo tentando ler esse texto pois é totalmente irrelevante. Poderia ser um lorem ipsum, mas, para diferenciar cada MousePad, tem um textinho \"customizado\"...",
+      "price": "R$699,99"
+    },
+    {
+      "id": 8,
+      "cat_id": 3,
+      "title": "MousePad 8",
+      "description": "Conteúdo de exemplo do MousePad 8, apenas de marcação... Não perca seu tempo tentando ler esse texto pois é totalmente irrelevante. Poderia ser um lorem ipsum, mas, para diferenciar cada MousePad, tem um textinho \"customizado\"...",
+      "price": "R$799,99"
+    },
+    {
+      "id": 9,
+      "cat_id": 3,
+      "title": "MousePad 9",
+      "description": "Conteúdo de exemplo do MousePad 9, apenas de marcação... Não perca seu tempo tentando ler esse texto pois é totalmente irrelevante. Poderia ser um lorem ipsum, mas, para diferenciar cada MousePad, tem um textinho \"customizado\"...",
+      "price": "R$899,99"
+    }
+  ]
+}
