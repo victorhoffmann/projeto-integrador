@@ -28,7 +28,7 @@ const Header = () => {
               <i className="fa fa-user" aria-hidden="true"></i>
             </a>
 
-            <a className="nav-links nav-item" href="#">
+            <a className="nav-links nav-item" href="./carrinho">
               <i className="fa fa-shopping-cart" aria-hidden="true"></i>
             </a>
 

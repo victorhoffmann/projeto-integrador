@@ -13,6 +13,7 @@ import Monitores from "../pages/Monitores";
 import Mouses from "../pages/Mouses";
 import MousePads from "../pages/MousePads";
 import Teclados from "../pages/Teclados";
+import Carrinho from "../pages/Carrinho"
 
 const Routes = () => {
   return (
@@ -26,6 +27,8 @@ const Routes = () => {
         <Route path="/mousepads" component={MousePads} />
         <Route path="/teclados" component={Teclados} />
         <Route path="/contato" component={Contato} />
+        <Route path="/carrinho" component={Carrinho} />
+        <Route path="/carrinho" component={Carrinho} />
         <Route path="/sobre" component={Sobre} />
         <Route path="/login" component={Login} />
         <Route path="/esqueci-senha" component={Senha} />
