@@ -48,21 +48,22 @@ const Header = () => {
                 className="dropdown-menu"
                 aria-labelledby="dropdownMendivink"
               >
-                <a className="dropdown-item" href="#">
+                <a className="dropdown-item" href="/headsets">
                   Headsets
                 </a>
-                <a className="dropdown-item" href="#">
+                <a className="dropdown-item" href="/monitores">
                   Monitores
                 </a>
-                <a className="dropdown-item" href="#">
+                <a className="dropdown-item" href="/mouses">
                   Mouses
                 </a>
-                <a className="dropdown-item" href="#">
-                  Teclados
-                </a>
-                <a className="dropdown-item" href="#">
+                <a className="dropdown-item" href="/mousepads">
                   Mouse Pads
                 </a>
+                <a className="dropdown-item" href="/teclados">
+                  Teclados
+                </a>
+
                 <div className="dropdown-divider"></div>
                 <a className="dropdown-item" href="/todosprodutos">
                   Todos os produtos
