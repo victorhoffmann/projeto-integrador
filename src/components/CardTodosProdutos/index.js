@@ -1,3 +1,6 @@
+import Monitor1 from "../../assets/monitor1.jpg";
+import Monitor2 from "../../assets/monitor2.jfif";
+import Monitor3 from "../../assets/monitor3.jfif";
 import "./style.css";
 
 const CardTodosProdutos = () => {
@@ -5,11 +8,7 @@ const CardTodosProdutos = () => {
     <>
       <article className="card">
         <h3 className="card__title">Produto 1</h3>
-        <img
-          className="card__img"
-          src="src\assets\monitor1.jpg"
-          alt="Produto 1"
-        />
+        <img className="card__img" src={Monitor1} alt="Produto 1" />
         <span className="card__price">R$899,99</span>
         <p className="card__description">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit suscipit
@@ -23,11 +22,7 @@ const CardTodosProdutos = () => {
       </article>
       <article className="card">
         <h3 className="card__title">Produto 2</h3>
-        <img
-          className="card__img"
-          src="src\assets\monitor1.jpg"
-          alt="Produto 2"
-        />
+        <img className="card__img" src={Monitor2} alt="Produto 2" />
         <span className="card__price">R$899,99</span>
         <p className="card__description">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit suscipit
@@ -41,11 +36,7 @@ const CardTodosProdutos = () => {
       </article>
       <article className="card">
         <h3 className="card__title">Produto 3</h3>
-        <img
-          className="card__img"
-          src="src\assets\monitor1.jpg"
-          alt="Produto 3"
-        />
+        <img className="card__img" src={Monitor3} alt="Produto 3" />
         <span className="card__price">R$899,99</span>
         <p className="card__description">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit suscipit

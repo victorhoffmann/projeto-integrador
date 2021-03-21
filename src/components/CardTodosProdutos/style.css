@@ -1,9 +1,10 @@
 .card {
-  background-color: #eee;
+  background-color: #fff;
   border-radius: 8px;
   flex: 1 1 30%;
   margin: 8px;
   padding: 16px;
+  border: 1px solid rgba(57, 255, 20, 1);
 }
 
 .card__title {
@@ -22,7 +23,7 @@
   width: 150px;
   height: 150px;
   object-fit: cover;
-  margin-left: 175px;
+  margin-left: 145px;
 }
 
 .card__price {
