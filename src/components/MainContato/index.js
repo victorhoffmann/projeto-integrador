@@ -41,7 +41,7 @@ const MainContato = () => {
           <div className="form-row submit-btn">
             <div className="input-data">
               <div className="inner"></div>
-              <input type="submit" value="submit"></input>
+              <input type="submit" value="enviar"></input>
             </div>
           </div>
         </form>
