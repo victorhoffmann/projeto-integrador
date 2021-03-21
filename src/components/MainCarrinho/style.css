@@ -1,0 +1,146 @@
+.title{
+    display: flex;
+    justify-content:space-around;
+    margin: 2vh 20vh 5vh 20vh;
+    padding: 10px;
+    background-color: #c4c4c4;
+    border: solid 1px black;
+}
+
+.produtoRow{
+    display: flex;
+    flex-direction: row;
+    margin: 2vh 20vh 0vh 21vh;
+}
+
+/*-----------------------------Container do Produto-------------------------------------------------*/
+.produtoRow__containerProduto{
+    background-color: #c4c4c4;
+    border: solid 1px black;
+    margin: 0vh 10vh 5vh 0vh;
+    display: flex;
+    flex-direction: row;
+    padding: 15px;
+
+}
+.produtoRow__containerProduto__texto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 15px ;
+}
+
+.produtoRow__containerProduto__texto > .btn-outline-danger{
+    margin-top: 40px ;
+}
+
+
+.produtoRow__containerProduto__imagemProduto{
+    width: 250px;
+    height: 200px;
+    background-color: #c4c4c4;
+    padding: 15px;
+    margin-right: 15px ;
+}
+
+.infosDaCompra{
+    display: flex;
+    flex-direction: row;
+}
+/*-----------------------------Container da Quantidade-------------------------------------------------*/
+.produtoRow__containerQuantidade{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 5vh ;
+}
+
+.produtoRow__containerQuantidade__qntTitle{
+    background-color: #c4c4c4;
+    border: solid 1px black;
+    padding: 10px;
+    margin-top: 2vh;
+    margin-bottom: 20px; 
+}
+
+.produtoRow__containerQuantidade__qntContainer{
+    background-color: #c4c4c4;
+    border: solid 1px black;
+    padding: 10px;
+}
+
+.produtoRow__containerQuantidade__qntContainer > .btn {
+    margin: 0vh 1vh;
+    
+}
+
+.produtoRow__containerQuantidade__qntContainer > p {
+    text-align: center;
+    margin-bottom: 0px;
+    padding: 3px;
+    
+}
+/*-----------------------------Container do Total-------------------------------------------------*/
+.produtoRow__containerTotal__totalTitle{
+    background-color: #c4c4c4;
+    border: solid 1px black;
+    padding: 10px;
+    margin-top: 2vh;
+    margin-bottom: 20px; 
+    text-align:center;
+}
+
+.produtoRow__containerTotal__totalContainer{
+    background-color: #c4c4c4;
+    border: solid 1px black;
+    padding: 22px;
+}
+
+/*-----------------------------Container do Valor final-------------------------------------------------*/
+.valorDaCompraFinal{
+    background-color: #c4c4c4;
+    border: solid 1px black;
+    margin: 2vh 20vh 5vh 20vh;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+}
+.valorDaCompraFinal > h4{
+    text-decoration: underline;
+}
+
+.valorDaCompraFinal > p{
+    padding: 10px;
+}
+
+.valorDaCompraFinal__finalRow{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 498px) {
+   
+   .title{
+       margin: 5px;
+   }
+   .title > h2{
+       font-size: 20px;
+   }
+   
+    .produtoRow{
+    flex-direction: column;
+    margin: 5px;
+    align-items: center;
+   }
+   .produtoRow__containerProduto{
+    flex-direction: column;
+    align-items: center;
+    margin: 5px;
+   }
+   
+   .valorDaCompraFinal{
+       margin:10px 5px
+   }
+}

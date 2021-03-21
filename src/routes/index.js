@@ -8,6 +8,7 @@ import Cadastro from "../pages/Cadastro";
 import Senha from "../pages/Login/ReenvioSenha";
 import Faq from "../pages/Faq";
 import TodosProdutos from "../pages/TodosProdutos";
+import Carrinho from "../pages/Carrinho"
 
 const Routes = () => {
   return (
@@ -16,6 +17,7 @@ const Routes = () => {
         <Route path="/faq" component={Faq} />
         <Route path="/todosprodutos" component={TodosProdutos} />
         <Route path="/contato" component={Contato} />
+        <Route path="/carrinho" component={Carrinho} />
         <Route path="/sobre" component={Sobre} />
         <Route path="/login" component={Login} />
         <Route path="/esqueci-senha" component={Senha} />
