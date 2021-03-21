@@ -1,5 +1,5 @@
 import ShelfMouses from "../../components/ShelfMouses";
-import { content } from "../../Helpers/TodosProdutos";
+import { content } from "../../Helpers/Mouses";
 import "./style.css";
 
 const Mouses = () => {

@@ -1,5 +1,5 @@
 import ShelfMousePads from "../../components/ShelfMousePads";
-import { content } from "../../Helpers/TodosProdutos";
+import { content } from "../../Helpers/MousePads";
 import "./style.css";
 
 const MousePads = () => {

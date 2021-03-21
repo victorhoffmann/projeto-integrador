@@ -1,5 +1,5 @@
 import ShelfHeadsets from "../../components/ShelfHeadsets";
-import { content } from "../../Helpers/TodosProdutos";
+import { content } from "../../Helpers/Headsets";
 import "./style.css";
 
 const Headsets = () => {

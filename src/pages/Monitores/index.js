@@ -1,5 +1,5 @@
 import ShelfMonitores from "../../components/ShelfMonitores";
-import { content } from "../../Helpers/TodosProdutos";
+import { content } from "../../Helpers/Monitores";
 import "./style.css";
 
 const Monitores = () => {
