@@ -1,7 +1,6 @@
 import Mouse1 from "../../assets/mouse1.jfif";
 import Mouse2 from "../../assets/mouse2.jfif";
 import Mouse3 from "../../assets/mouse3.jfif";
-import "./style.css";
 
 const CardMouses = (props) => {
   const { title, description, price } = props;

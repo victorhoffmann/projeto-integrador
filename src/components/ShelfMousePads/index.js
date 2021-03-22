@@ -1,5 +1,4 @@
 import CardMousePads from "../CardMousePads";
-import "./style.css";
 
 const ShelfMousePads = ({ ...props }) => {
   const { posts } = props;

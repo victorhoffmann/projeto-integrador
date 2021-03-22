@@ -1,5 +1,4 @@
 import CardMouses from "../CardMouses";
-import "./style.css";
 
 const ShelfMouses = ({ ...props }) => {
   const { posts } = props;

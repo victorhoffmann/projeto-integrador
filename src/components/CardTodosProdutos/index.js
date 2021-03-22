@@ -1,7 +1,6 @@
 import Monitor1 from "../../assets/monitor1.jpg";
 import Monitor2 from "../../assets/monitor2.jfif";
 import Monitor3 from "../../assets/monitor3.jfif";
-import "./style.css";
 
 const CardTodosProdutos = (props) => {
   const { title, description, price } = props;

@@ -1,5 +1,4 @@
 import CardMonitores from "../CardMonitores";
-import "./style.css";
 
 const ShelfMonitores = ({ ...props }) => {
   const { posts } = props;

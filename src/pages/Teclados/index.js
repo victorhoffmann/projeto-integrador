@@ -1,6 +1,5 @@
 import ShelfTeclados from "../../components/ShelfTeclados";
-import { content } from "../../Helpers/Teclados";
-import "./style.css";
+import { content } from "../../helpers/Teclados";
 
 const Teclados = () => {
   const { categories, posts } = content;

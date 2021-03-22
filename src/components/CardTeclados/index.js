@@ -1,7 +1,6 @@
 import Teclado1 from "../../assets/teclado1.jfif";
 import Teclado2 from "../../assets/teclado2.jfif";
 import Teclado3 from "../../assets/teclado3.jfif";
-import "./style.css";
 
 const CardTeclados = (props) => {
   const { title, description, price } = props;

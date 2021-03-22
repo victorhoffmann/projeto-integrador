@@ -1,7 +1,6 @@
 import Headset1 from "../../assets/headset1.jpg";
 import Headset2 from "../../assets/headset2.jpg";
 import Headset3 from "../../assets/headset3.jpg";
-import "./style.css";
 
 const CardHeadsets = (props) => {
   const { title, description, price } = props;

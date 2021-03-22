@@ -1,5 +1,4 @@
 import CardHeadsets from "../CardHeadsets";
-import "./style.css";
 
 const ShelfHeadsets = ({ ...props }) => {
   const { posts } = props;

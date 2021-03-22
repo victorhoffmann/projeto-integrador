@@ -1,7 +1,6 @@
 import MousePad1 from "../../assets/mousepad1.jfif";
 import MousePad2 from "../../assets/mousepad2.jfif";
 import MousePad3 from "../../assets/mousepad3.jfif";
-import "./style.css";
 
 const CardMousePads = (props) => {
   const { title, description, price } = props;

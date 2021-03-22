@@ -1,5 +1,4 @@
 import CardTeclados from "../CardTeclados";
-import "./style.css";
 
 const ShelfTeclados = ({ ...props }) => {
   const { posts } = props;

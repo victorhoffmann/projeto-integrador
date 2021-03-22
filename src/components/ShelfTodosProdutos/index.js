@@ -1,5 +1,4 @@
 import CardTodosProdutos from "../CardTodosProdutos";
-import "./style.css";
 
 const ShelfTodosProdutos = ({ ...props }) => {
   const { posts } = props;
