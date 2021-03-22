@@ -14,12 +14,14 @@ import Mouses from "../pages/Mouses";
 import MousePads from "../pages/MousePads";
 import Teclados from "../pages/Teclados";
 import Carrinho from "../pages/Carrinho"
+import Produto from '../pages/Produto'
 
 const Routes = () => {
   return (
     <Router>
       <Switch>
         <Route path="/faq" component={Faq} />
+        <Route path="/produto" component={Produto} />
         <Route path="/todosprodutos" component={TodosProdutos} />
         <Route path="/headsets" component={Headsets} />
         <Route path="/monitores" component={Monitores} />
