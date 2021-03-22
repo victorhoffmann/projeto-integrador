@@ -18,12 +18,11 @@ const Footer = () => {
 
       <div id="textInfos">
         <h5>Atendimento</h5>
-        <p>
-          Horario de atendimento: 08:00 às 20:00 de segunda à sábado Endereço:
-          Rua Carlos Gomes, 1321 - 9º Andar Centro - Limeira (SP) - CEP:
-          13480-010 Central SAC: (19) 2114 - 4444 E - mail:
-          faleconosco@kabum.com.br
-        </p>
+        <p>Horario de atendimento:</p>
+        <p>08:00 às 20:00</p>
+        <p>Segunda à sábado</p>
+        <p>E-mail:</p>
+        <p>faleconosco@teste.com.br</p>
       </div>
     </footer>
   );

@@ -33,3 +33,7 @@ footer {
     font-size: 1rem!important;
     font-weight: initial!important;
   }
+
+  #textInfos p {
+    line-height: 0.7;
+  }
