@@ -3,6 +3,10 @@
   --color-dark: #343a40;
 }
 
+* {
+  scroll-behavior: smooth;
+}
+
 .boxForm {
   height: 65vh;
 }

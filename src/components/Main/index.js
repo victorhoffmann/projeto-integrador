@@ -31,7 +31,7 @@ const Main = () => {
             <div id='mouses' className='cardsHome'>
                 <ShelfMouses />
             </div>
-            <h2 className='titlePage'>MousePads</h2>
+            <h2 className='titlePage'>MousePads </h2>
             <div id='mousepads' className='cardsHome'>
                 <ShelfMousePads />
             </div>
