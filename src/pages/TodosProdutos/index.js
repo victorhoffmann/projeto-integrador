@@ -1,5 +1,5 @@
 import ShelfTodosProdutos from "../../components/ShelfTodosProdutos";
-import { content } from "../../helpers/TodosProdutos";
+import { content } from "../../Helpers/TodosProdutos";
 
 const TodosProdutos = () => {
   const { categories, posts } = content;
