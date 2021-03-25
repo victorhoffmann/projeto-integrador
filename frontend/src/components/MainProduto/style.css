@@ -16,7 +16,7 @@
 .infosProduto{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     margin: 4vh;
     align-items: center;
 }
@@ -93,18 +93,14 @@
     margin: 4vh;
 }
 
-@media only screen and (min-width: 1032px) {
+@media only screen and (min-width: 778px) {
     .infosProduto {
         flex-direction: row;
     }
-
-    #carouselExampleControls{
-        width: 70vh;
-    }
 }
 
-@media only screen and (min-width: 1221px) {
-    .infosProduto__carrossel {
-        margin-right: 20vh;
+@media only screen and (min-width: 1032px) {
+    #carouselExampleControls{
+        width: 70vh;
     }
 }
