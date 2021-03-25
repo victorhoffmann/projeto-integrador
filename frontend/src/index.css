@@ -1,0 +1,86 @@
+:root {
+  --color-secondary: #39FF14;
+  --color-dark: #343a40;
+}
+
+* {
+  scroll-behavior: smooth;
+}
+
+.boxForm {
+  height: 65vh;
+}
+
+.form-row {
+  flex-direction: column;
+}
+
+.col-md-9, .col-md-6 {
+  max-width: 100%;
+}
+
+.titlePage {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 2vh;
+}
+
+/* SHELF */
+
+.shelf {
+  display: flex;
+  flex-flow: row wrap;
+  margin: 16px auto;
+  padding: 16px;
+  width: 100%;
+}
+
+.shelf__title {
+  color: #3e3e3e;
+  flex: 1 0 100%;
+  font-size: 36px;
+  font-weight: bolder;
+  margin: 16px auto;
+  text-align: center;
+  margin-top: 16px;
+}
+
+/* CARDS */
+
+.card {
+  background-color: #fff;
+  border-radius: 8px;
+  flex: 1 1 30%;
+  margin: 8px;
+  padding: 16px;
+  border: 1px solid rgba(57, 255, 20, 1);
+  align-items: center;
+}
+
+.card__title {
+  color: #39ff14;
+  font-weight: bold;
+  margin: 0 auto 8px;
+}
+
+.card__description {
+  color: #000;
+  margin: 8px auto 0;
+}
+
+.card__img {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+}
+
+.card__price {
+  font-weight: bold;
+  text-align: center;
+}
+
+.card__button {
+  margin-top: 8px;
+}

@@ -1,34 +1,10 @@
-import Headset1 from "../../assets/headset1.jpg";
-import Headset2 from "../../assets/headset2.jpg";
-import Headset3 from "../../assets/headset3.jpg";
-
-const CardHeadsets = (props) => {
-  const { title, description, price } = props;
+const CardHeadsets = ({ ...props }) => {
+  const { title, description, price, img } = props;
   return (
     <>
-       <article className="card">
-        <h3 className="card__title">{title}</h3>
-        <a href="./produto"><img className="card__img" src={Headset1} alt="Produto 1" /></a>
-        <span className="card__price">{price}</span>
-        <p className="card__description">{description}</p>
-        <button type="button" className="card__button btn btn-outline-success">
-          Adicionar ao carrinho{" "}
-          <i className="fa fa-shopping-cart" aria-hidden="true"></i>
-        </button>
-      </article>
       <article className="card">
         <h3 className="card__title">{title}</h3>
-        <img className="card__img" src={Headset2} alt="Produto 2" />
-        <span className="card__price">{price}</span>
-        <p className="card__description">{description}</p>
-        <button type="button" className="card__button btn btn-outline-success">
-          Adicionar ao carrinho{" "}
-          <i className="fa fa-shopping-cart" aria-hidden="true"></i>
-        </button>
-      </article>
-      <article className="card">
-        <h3 className="card__title">{title}</h3>
-        <img className="card__img" src={Headset3} alt="Produto 3" />
+        <img className="card__img" src={img} alt="Headsets" />
         <span className="card__price">{price}</span>
         <p className="card__description">{description}</p>
         <button type="button" className="card__button btn btn-outline-success">
