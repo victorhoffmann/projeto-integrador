@@ -1,0 +1,51 @@
+
+/* ----------------------------------------------------BODY----------------------------------- */
+.formularios {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+   }
+ 
+ /* ------------------------------------Formulário de entrada----------------------------------- */
+ 
+ .signIn{
+     width: 100vw;
+     margin: 5vh 5vw;
+     display: inline-block;
+ }
+ .bodyForm{
+     background-color: #EEEEEE;
+     border-bottom-left-radius: 20px ;
+     border-bottom-right-radius: 20px ;
+     padding: 10px;
+ }
+ 
+ .form-control{
+     background-color: #c4c4c4;
+ }
+ 
+ .headerForm{
+     background-color: black;
+     color: white;
+     border-top-left-radius: 20px ;
+     border-top-right-radius: 20px ;
+     padding: 10px;
+ }
+  .esqueci{
+      display: inline-block;
+      text-decoration: underline ;
+      padding: 0px 20px 10px 0px;
+  }
+ 
+  .esqueci a{
+      color: initial;
+  }
+ 
+  .btn-entrar{
+      display: block;
+      margin: 10px 0px;
+  }
+  .btn-entrarCom{
+     display: inline-block;
+     margin:20px 10px;
+ }

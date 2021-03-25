@@ -1,0 +1,90 @@
+{
+  "categories": [
+    {
+      "id": 1,
+      "title": "Categoria 01"
+    },
+    {
+      "id": 2,
+      "title": "Categoria 02"
+    },
+    {
+      "id": 3,
+      "title": "Categoria 03"
+    }
+  ],
+  "posts": [
+    {
+      "id": 1,
+      "cat_id": 1,
+      "title": "Monitor 01",
+      "description": "Conteúdo de exemplo do Monitor 01, apenas de marcação... Não perca seu tempo tentando ler esse texto pois é totalmente irrelevante. Poderia ser um lorem ipsum, mas, para diferenciar cada Monitor, tem um textinho \"customizado\"...",
+      "price": "R$99,99",
+      "img": "../../assets/monitor1.jpg"
+    },
+    {
+      "id": 2,
+      "cat_id": 1,
+      "title": "Monitor 02",
+      "description": "Conteúdo de exemplo do Monitor 02, apenas de marcação... Não perca seu tempo tentando ler esse texto pois é totalmente irrelevante. Poderia ser um lorem ipsum, mas, para diferenciar cada Monitor, tem um textinho \"customizado\"...",
+      "price": "R$199,99",
+      "img": "../../assets/monitor1.jpg"
+    },
+    {
+      "id": 3,
+      "cat_id": 1,
+      "title": "Monitor 03",
+      "description": "Conteúdo de exemplo do Monitor 03, apenas de marcação... Não perca seu tempo tentando ler esse texto pois é totalmente irrelevante. Poderia ser um lorem ipsum, mas, para diferenciar cada Monitor, tem um textinho \"customizado\"...",
+      "price": "R$299,99",
+      "img": "../../assets/monitor1.jpg"
+    },
+    {
+      "id": 4,
+      "cat_id": 2,
+      "title": "Monitor 04",
+      "description": "Conteúdo de exemplo do Monitor 04, apenas de marcação... Não perca seu tempo tentando ler esse texto pois é totalmente irrelevante. Poderia ser um lorem ipsum, mas, para diferenciar cada Monitor, tem um textinho \"customizado\"...",
+      "price": "R$399,99",
+      "img": "../../assets/monitor1.jpg"
+    },
+    {
+      "id": 5,
+      "cat_id": 2,
+      "title": "Monitor 05",
+      "description": "Conteúdo de exemplo do Monitor 05, apenas de marcação... Não perca seu tempo tentando ler esse texto pois é totalmente irrelevante. Poderia ser um lorem ipsum, mas, para diferenciar cada Monitor, tem um textinho \"customizado\"...",
+      "price": "R$499,99",
+      "img": "../../assets/monitor1.jpg"
+    },
+    {
+      "id": 6,
+      "cat_id": 2,
+      "title": "Monitor 06",
+      "description": "Conteúdo de exemplo do Monitor 06, apenas de marcação... Não perca seu tempo tentando ler esse texto pois é totalmente irrelevante. Poderia ser um lorem ipsum, mas, para diferenciar cada Monitor, tem um textinho \"customizado\"...",
+      "price": "R$599,99",
+      "img": "../../assets/monitor1.jpg"
+    },
+    {
+      "id": 7,
+      "cat_id": 3,
+      "title": "Monitor 7",
+      "description": "Conteúdo de exemplo do Monitor 7, apenas de marcação... Não perca seu tempo tentando ler esse texto pois é totalmente irrelevante. Poderia ser um lorem ipsum, mas, para diferenciar cada Monitor, tem um textinho \"customizado\"...",
+      "price": "R$699,99",
+      "img": "../../assets/monitor1.jpg"
+    },
+    {
+      "id": 8,
+      "cat_id": 3,
+      "title": "Monitor 8",
+      "description": "Conteúdo de exemplo do Monitor 8, apenas de marcação... Não perca seu tempo tentando ler esse texto pois é totalmente irrelevante. Poderia ser um lorem ipsum, mas, para diferenciar cada Monitor, tem um textinho \"customizado\"...",
+      "price": "R$799,99",
+      "img": "../../assets/monitor1.jpg"
+    },
+    {
+      "id": 9,
+      "cat_id": 3,
+      "title": "Monitor 9",
+      "description": "Conteúdo de exemplo do Monitor 9, apenas de marcação... Não perca seu tempo tentando ler esse texto pois é totalmente irrelevante. Poderia ser um lorem ipsum, mas, para diferenciar cada Monitor, tem um textinho \"customizado\"...",
+      "price": "R$899,99",
+      "img": "../../assets/monitor1.jpg"
+    }
+  ]
+}

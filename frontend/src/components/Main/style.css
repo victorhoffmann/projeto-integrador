@@ -1,0 +1,51 @@
+.mainHome {
+    margin-top: 2vh;
+    display: flex;
+    padding: 2vh;
+    flex-direction: column;
+}
+
+.cardsHome {
+    display: flex;
+    flex-flow: row wrap;
+    margin: 16px auto;
+    padding: 16px;
+    width: 100%;
+}
+
+#produtosLinks {
+    justify-content: flex-start;
+    border: 2px solid #C4C4C4;
+    margin: 0 auto;
+    width: 95vw;
+    overflow: auto;
+    padding: 0vh 2vh 2vh;
+    text-align: center;
+}
+
+#produtosLinks::-webkit-scrollbar {
+    width: 10px;
+}
+  
+#produtosLinks::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+   
+#produtosLinks::-webkit-scrollbar-thumb {
+    background: #888; 
+}
+  
+#produtosLinks::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
+
+#produtosLinks a {
+    font-size: 2.5vh;
+    padding-right: 3vh;
+    text-decoration: none;
+    color: #000;
+}
+
+#produtosLinks a:last-child {
+    padding-right: 0;
+}

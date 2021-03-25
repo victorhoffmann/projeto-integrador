@@ -1,0 +1,90 @@
+{
+  "categories": [
+    {
+      "id": 1,
+      "title": "Categoria 01"
+    },
+    {
+      "id": 2,
+      "title": "Categoria 02"
+    },
+    {
+      "id": 3,
+      "title": "Categoria 03"
+    }
+  ],
+  "posts": [
+    {
+      "id": 1,
+      "cat_id": 1,
+      "title": "Teclado 01",
+      "description": "Conteúdo de exemplo do Teclado 01, apenas de marcação... Não perca seu tempo tentando ler esse texto pois é totalmente irrelevante. Poderia ser um lorem ipsum, mas, para diferenciar cada Teclado, tem um textinho \"customizado\"...",
+      "price": "R$99,99",
+      "img": "../../assets/teclado1.jfif"
+    },
+    {
+      "id": 2,
+      "cat_id": 1,
+      "title": "Teclado 02",
+      "description": "Conteúdo de exemplo do Teclado 02, apenas de marcação... Não perca seu tempo tentando ler esse texto pois é totalmente irrelevante. Poderia ser um lorem ipsum, mas, para diferenciar cada Teclado, tem um textinho \"customizado\"...",
+      "price": "R$199,99",
+      "img": "../../assets/teclado1.jfif"
+    },
+    {
+      "id": 3,
+      "cat_id": 1,
+      "title": "Teclado 03",
+      "description": "Conteúdo de exemplo do Teclado 03, apenas de marcação... Não perca seu tempo tentando ler esse texto pois é totalmente irrelevante. Poderia ser um lorem ipsum, mas, para diferenciar cada Teclado, tem um textinho \"customizado\"...",
+      "price": "R$299,99",
+      "img": "../../assets/teclado1.jfif"
+    },
+    {
+      "id": 4,
+      "cat_id": 2,
+      "title": "Teclado 04",
+      "description": "Conteúdo de exemplo do Teclado 04, apenas de marcação... Não perca seu tempo tentando ler esse texto pois é totalmente irrelevante. Poderia ser um lorem ipsum, mas, para diferenciar cada Teclado, tem um textinho \"customizado\"...",
+      "price": "R$399,99",
+      "img": "../../assets/teclado1.jfif"
+    },
+    {
+      "id": 5,
+      "cat_id": 2,
+      "title": "Teclado 05",
+      "description": "Conteúdo de exemplo do Teclado 05, apenas de marcação... Não perca seu tempo tentando ler esse texto pois é totalmente irrelevante. Poderia ser um lorem ipsum, mas, para diferenciar cada Teclado, tem um textinho \"customizado\"...",
+      "price": "R$499,99",
+      "img": "../../assets/teclado1.jfif"
+    },
+    {
+      "id": 6,
+      "cat_id": 2,
+      "title": "Teclado 06",
+      "description": "Conteúdo de exemplo do Teclado 06, apenas de marcação... Não perca seu tempo tentando ler esse texto pois é totalmente irrelevante. Poderia ser um lorem ipsum, mas, para diferenciar cada Teclado, tem um textinho \"customizado\"...",
+      "price": "R$599,99",
+      "img": "../../assets/teclado1.jfif"
+    },
+    {
+      "id": 7,
+      "cat_id": 3,
+      "title": "Teclado 7",
+      "description": "Conteúdo de exemplo do Teclado 7, apenas de marcação... Não perca seu tempo tentando ler esse texto pois é totalmente irrelevante. Poderia ser um lorem ipsum, mas, para diferenciar cada Teclado, tem um textinho \"customizado\"...",
+      "price": "R$699,99",
+      "img": "../../assets/teclado1.jfif"
+    },
+    {
+      "id": 8,
+      "cat_id": 3,
+      "title": "Teclado 8",
+      "description": "Conteúdo de exemplo do Teclado 8, apenas de marcação... Não perca seu tempo tentando ler esse texto pois é totalmente irrelevante. Poderia ser um lorem ipsum, mas, para diferenciar cada Teclado, tem um textinho \"customizado\"...",
+      "price": "R$799,99",
+      "img": "../../assets/teclado1.jfif"
+    },
+    {
+      "id": 9,
+      "cat_id": 3,
+      "title": "Teclado 9",
+      "description": "Conteúdo de exemplo do Teclado 9, apenas de marcação... Não perca seu tempo tentando ler esse texto pois é totalmente irrelevante. Poderia ser um lorem ipsum, mas, para diferenciar cada Teclado, tem um textinho \"customizado\"...",
+      "price": "R$899,99",
+      "img": "../../assets/teclado1.jfif"
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "categories": [
+    {
+      "id": 1,
+      "title": "Categoria 01"
+    },
+    {
+      "id": 2,
+      "title": "Categoria 02"
+    },
+    {
+      "id": 3,
+      "title": "Categoria 03"
+    }
+  ],
+  "posts": [
+    {
+      "id": 1,
+      "cat_id": 1,
+      "title": "Mouse 01",
+      "description": "Conteúdo de exemplo do Mouse 01, apenas de marcação... Não perca seu tempo tentando ler esse texto pois é totalmente irrelevante. Poderia ser um lorem ipsum, mas, para diferenciar cada Mouse, tem um textinho \"customizado\"...",
+      "price": "R$99,99",
+      "img": "../../assets/mouse1.jfif"
+    },
+    {
+      "id": 2,
+      "cat_id": 1,
+      "title": "Mouse 02",
+      "description": "Conteúdo de exemplo do Mouse 02, apenas de marcação... Não perca seu tempo tentando ler esse texto pois é totalmente irrelevante. Poderia ser um lorem ipsum, mas, para diferenciar cada Mouse, tem um textinho \"customizado\"...",
+      "price": "R$199,99",
+      "img": "../../assets/mouse1.jfif"
+    },
+    {
+      "id": 3,
+      "cat_id": 1,
+      "title": "Mouse 03",
+      "description": "Conteúdo de exemplo do Mouse 03, apenas de marcação... Não perca seu tempo tentando ler esse texto pois é totalmente irrelevante. Poderia ser um lorem ipsum, mas, para diferenciar cada Mouse, tem um textinho \"customizado\"...",
+      "price": "R$299,99",
+      "img": "../../assets/mouse1.jfif"
+    },
+    {
+      "id": 4,
+      "cat_id": 2,
+      "title": "Mouse 04",
+      "description": "Conteúdo de exemplo do Mouse 04, apenas de marcação... Não perca seu tempo tentando ler esse texto pois é totalmente irrelevante. Poderia ser um lorem ipsum, mas, para diferenciar cada Mouse, tem um textinho \"customizado\"...",
+      "price": "R$399,99",
+      "img": "../../assets/mouse1.jfif"
+    },
+    {
+      "id": 5,
+      "cat_id": 2,
+      "title": "Mouse 05",
+      "description": "Conteúdo de exemplo do Mouse 05, apenas de marcação... Não perca seu tempo tentando ler esse texto pois é totalmente irrelevante. Poderia ser um lorem ipsum, mas, para diferenciar cada Mouse, tem um textinho \"customizado\"...",
+      "price": "R$499,99",
+      "img": "../../assets/mouse1.jfif"
+    },
+    {
+      "id": 6,
+      "cat_id": 2,
+      "title": "Mouse 06",
+      "description": "Conteúdo de exemplo do Mouse 06, apenas de marcação... Não perca seu tempo tentando ler esse texto pois é totalmente irrelevante. Poderia ser um lorem ipsum, mas, para diferenciar cada Mouse, tem um textinho \"customizado\"...",
+      "price": "R$599,99",
+      "img": "../../assets/mouse1.jfif"
+    },
+    {
+      "id": 7,
+      "cat_id": 3,
+      "title": "Mouse 7",
+      "description": "Conteúdo de exemplo do Mouse 7, apenas de marcação... Não perca seu tempo tentando ler esse texto pois é totalmente irrelevante. Poderia ser um lorem ipsum, mas, para diferenciar cada Mouse, tem um textinho \"customizado\"...",
+      "price": "R$699,99",
+      "img": "../../assets/mouse1.jfif"
+    },
+    {
+      "id": 8,
+      "cat_id": 3,
+      "title": "Mouse 8",
+      "description": "Conteúdo de exemplo do Mouse 8, apenas de marcação... Não perca seu tempo tentando ler esse texto pois é totalmente irrelevante. Poderia ser um lorem ipsum, mas, para diferenciar cada Mouse, tem um textinho \"customizado\"...",
+      "price": "R$799,99",
+      "img": "../../assets/mouse1.jfif"
+    },
+    {
+      "id": 9,
+      "cat_id": 3,
+      "title": "Mouse 9",
+      "description": "Conteúdo de exemplo do Mouse 9, apenas de marcação... Não perca seu tempo tentando ler esse texto pois é totalmente irrelevante. Poderia ser um lorem ipsum, mas, para diferenciar cada Mouse, tem um textinho \"customizado\"...",
+      "price": "R$899,99",
+      "img": "../../assets/mouse1.jfif"
+    }
+  ]
+}
