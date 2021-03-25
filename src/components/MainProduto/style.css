@@ -1,0 +1,112 @@
+
+
+.carousel-control-prev,
+.carousel-control-next{
+    height: 26%;
+    top: 33%;
+    width: 2vh;
+    background: black;
+    
+    }
+
+#carouselExampleControls{
+    width: 70vh;
+}
+
+.infosProduto{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 4vh;
+}
+
+.infosProduto__carrossel{
+    margin-right: 20vh;
+}
+
+.infosProduto__infos{
+    display:flex;
+    flex-direction:column;
+    margin:10px;
+}
+
+.infosProduto__infos__preco{
+    display:flex;
+    flex-direction:column;
+    margin:15px;
+}
+
+.infosProduto__infos__qnt{
+    margin:10px;
+}
+#display{
+    width: 30px;
+}
+
+.infosProduto__infos__qnt > button{
+    margin: 10px;
+}
+
+.btn_addCart{
+    margin-bottom: 15px;
+}
+
+.infosProduto__infos__cep__display{
+    display:inline;
+    
+}
+.btn_calcFrete{
+    margin-left: 10px;
+    margin-bottom: 5px;
+}
+
+.infosProduto__infos__cep__resultado{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align:center;
+    background-color: #c4c4c4;
+    border-radius: 20px;
+    margin: 10px 5px;
+    padding: 5px 0px 20px;
+    
+
+}
+
+
+.infosProduto__infos__cep__resultado__infos{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    padding:5px ;
+}
+
+.infosProduto__infos__cep__resultado__infos__tipo,
+.infosProduto__infos__cep__resultado__infos__prazo,
+.infosProduto__infos__cep__resultado__infos__valor{
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+    
+}
+
+.descricaoProduto{
+margin: 4vh
+}
+
+@media only screen and (max-width: 498px) {
+    .infosProduto{
+        flex-direction: column;
+    }
+    #carouselExampleControls{
+        width: 40vh;
+    }
+    .infosProduto__infos__cep{
+        display: flex;
+        flex-direction: column
+    }
+    .infosProduto__infos__cep__display{
+       margin: 10px;
+       
+    }
+    } 
