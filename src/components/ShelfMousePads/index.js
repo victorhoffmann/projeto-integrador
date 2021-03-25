@@ -4,10 +4,11 @@ const ShelfMousePads = ({ ...props }) => {
   const { posts } = props;
   const renderPosts = () => {
     return posts.map((post, index) => {
-      const { title, description, price } = post;
+      const { title, description, price, img } = post;
       return (
         <CardMousePads
           title={title}
+          img={img}
           description={description}
           price={price}
           key={index}
