@@ -1,7 +1,11 @@
-const Produto = () => {
-    return (
-        <h1>FALTA FINALIZAR</h1>
-    )
-}
+import MainProduto from "../../components/MainProduto"
+import { content } from "../../Helpers/TodosProdutos";
 
-export default Produto
+const Produto = () => {
+   return(
+          <MainProduto
+          />
+          )
+        };
+      
+export default Produto;

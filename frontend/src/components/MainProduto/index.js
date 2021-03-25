@@ -41,7 +41,7 @@ const MainProduto = () => {
                             <input id="display" type="text" name="display" placeholder="0" readonly></input>
                             <button type="button" className="btn btn-secondary"> + </button>
                         </div>
-                        <button type="button" className="btn btn-secondary btn_addCart">  <i className="fa fa-shopping-cart" aria-hidden="true"></i> ADICONARA AO CARRINHO</button>
+                        <button type="button" className="btn btn-secondary btn_addCart">  <i className="fa fa-shopping-cart" aria-hidden="true"></i> ADICIONAR AO CARRINHO</button>
                         <div className="infosProduto__infos__cep">
 
                             <div className="infosProduto__infos__cep__display">

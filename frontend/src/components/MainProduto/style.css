@@ -10,18 +10,15 @@
     }
 
 #carouselExampleControls{
-    width: 70vh;
+    width: 40vh;
 }
 
 .infosProduto{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     margin: 4vh;
-}
-
-.infosProduto__carrossel{
-    margin-right: 20vh;
+    align-items: center;
 }
 
 .infosProduto__infos{
@@ -39,8 +36,10 @@
 .infosProduto__infos__qnt{
     margin:10px;
 }
+
 #display{
     width: 30px;
+    text-align: center;
 }
 
 .infosProduto__infos__qnt > button{
@@ -91,22 +90,21 @@
 }
 
 .descricaoProduto{
-margin: 4vh
+    margin: 4vh;
 }
 
-@media only screen and (max-width: 498px) {
-    .infosProduto{
-        flex-direction: column;
+@media only screen and (min-width: 1032px) {
+    .infosProduto {
+        flex-direction: row;
     }
+
     #carouselExampleControls{
-        width: 40vh;
+        width: 70vh;
     }
-    .infosProduto__infos__cep{
-        display: flex;
-        flex-direction: column
+}
+
+@media only screen and (min-width: 1221px) {
+    .infosProduto__carrossel {
+        margin-right: 20vh;
     }
-    .infosProduto__infos__cep__display{
-       margin: 10px;
-       
-    }
-    } 
+}

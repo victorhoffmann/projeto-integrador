@@ -28,7 +28,7 @@ const Aside = () => {
                         />
                         <div className="carousel-caption d-none d-md-block">
                             <h5>Razer Kraken Ultimate</h5>
-                            <button className='btn btn-success'>Comprar</button>
+                            <a href="./produto"><button className='btn btn-success'>Comprar</button></a>
                         </div>
                     </div>
                     <div className="carousel-item">
@@ -39,7 +39,7 @@ const Aside = () => {
                         />
                         <div className="carousel-caption d-none d-md-block">
                             <h5>Hyper X</h5>
-                            <button className='btn btn-success'>Comprar</button>
+                            <a href="./produto"><button className='btn btn-success'>Comprar</button></a>
                         </div>
                     </div>
                     <div className="carousel-item">
@@ -50,7 +50,7 @@ const Aside = () => {
                         />
                         <div className="carousel-caption d-none d-md-block">
                             <h5>Hypex X 2</h5>
-                            <button className='btn btn-success'>Comprar</button>
+                            <a href="./produto"><button className='btn btn-success'>Comprar</button></a>
                         </div>
                     </div>
                 </div>
