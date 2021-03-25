@@ -1,5 +1,5 @@
 import ShelfHeadsets from "../../components/ShelfHeadsets";
-import { content } from "../../helpers/Headsets";
+import { content } from "../../Helpers/Headsets";
 
 const Headsets = () => {
   const { categories, posts } = content;

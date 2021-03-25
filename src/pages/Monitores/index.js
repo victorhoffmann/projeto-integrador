@@ -1,5 +1,5 @@
 import ShelfMonitores from "../../components/ShelfMonitores";
-import { content } from "../../helpers/Monitores";
+import { content } from "../../Helpers/Monitores";
 
 const Monitores = () => {
   const { categories, posts } = content;

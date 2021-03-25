@@ -6,9 +6,9 @@ const CardHeadsets = (props) => {
   const { title, description, price } = props;
   return (
     <>
-      <article className="card">
+       <article className="card">
         <h3 className="card__title">{title}</h3>
-        <img className="card__img" src={Headset1} alt="Produto 1" />
+        <a href="./produto"><img className="card__img" src={Headset1} alt="Produto 1" /></a>
         <span className="card__price">{price}</span>
         <p className="card__description">{description}</p>
         <button type="button" className="card__button btn btn-outline-success">
