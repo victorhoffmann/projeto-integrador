@@ -70,3 +70,19 @@ header form {
     }
 
 }
+
+.fa-user:before {
+    color: var(--color-secondary);
+  }
+  
+  .fa-shopping-cart:before {
+    color: var(--color-secondary);
+  }
+  
+  .dropdown-toggle {
+    color: var(--color-secondary);
+  }
+  
+  .dropdown-toggle:hover {
+    color: var(--color-secondary);
+  }

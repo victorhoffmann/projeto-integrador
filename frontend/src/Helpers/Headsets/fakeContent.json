@@ -19,72 +19,63 @@
       "cat_id": 1,
       "title": "Headset 01",
       "description": "Conteúdo de exemplo do Headset 01, apenas de marcação... Não perca seu tempo tentando ler esse texto pois é totalmente irrelevante. Poderia ser um lorem ipsum, mas, para diferenciar cada Headset, tem um textinho \"customizado\"...",
-      "price": "R$99,99",
-      "img": "../../assets/headset1.jpg"
+      "price": "R$99,99"
     },
     {
       "id": 2,
       "cat_id": 1,
       "title": "Headset 02",
       "description": "Conteúdo de exemplo do Headset 02, apenas de marcação... Não perca seu tempo tentando ler esse texto pois é totalmente irrelevante. Poderia ser um lorem ipsum, mas, para diferenciar cada Headset, tem um textinho \"customizado\"...",
-      "price": "R$199,99",
-      "img": "../../assets/headset2.jpg"
+      "price": "R$199,99"
     },
     {
       "id": 3,
       "cat_id": 1,
       "title": "Headset 03",
       "description": "Conteúdo de exemplo do Headset 03, apenas de marcação... Não perca seu tempo tentando ler esse texto pois é totalmente irrelevante. Poderia ser um lorem ipsum, mas, para diferenciar cada Headset, tem um textinho \"customizado\"...",
-      "price": "R$299,99",
-      "img": "../../assets/headset3.jpg"
+      "price": "R$299,99"
     },
     {
       "id": 4,
       "cat_id": 2,
       "title": "Headset 04",
       "description": "Conteúdo de exemplo do Headset 04, apenas de marcação... Não perca seu tempo tentando ler esse texto pois é totalmente irrelevante. Poderia ser um lorem ipsum, mas, para diferenciar cada Headset, tem um textinho \"customizado\"...",
-      "price": "R$399,99",
-      "img": "../../assets/headset3.jpg"
+      "price": "R$399,99"
     },
     {
       "id": 5,
       "cat_id": 2,
       "title": "Headset 05",
       "description": "Conteúdo de exemplo do Headset 05, apenas de marcação... Não perca seu tempo tentando ler esse texto pois é totalmente irrelevante. Poderia ser um lorem ipsum, mas, para diferenciar cada Headset, tem um textinho \"customizado\"...",
-      "price": "R$499,99",
-      "img": "../../assets/headset1.jpg"
+      "price": "R$499,99"
     },
     {
       "id": 6,
       "cat_id": 2,
       "title": "Headset 06",
       "description": "Conteúdo de exemplo do Headset 06, apenas de marcação... Não perca seu tempo tentando ler esse texto pois é totalmente irrelevante. Poderia ser um lorem ipsum, mas, para diferenciar cada Headset, tem um textinho \"customizado\"...",
-      "price": "R$599,99",
-      "img": "../../assets/headset2.jpg"
+      "price": "R$599,99"
     },
     {
       "id": 7,
       "cat_id": 3,
       "title": "Headset 7",
       "description": "Conteúdo de exemplo do Headset 7, apenas de marcação... Não perca seu tempo tentando ler esse texto pois é totalmente irrelevante. Poderia ser um lorem ipsum, mas, para diferenciar cada Headset, tem um textinho \"customizado\"...",
-      "price": "R$699,99",
-      "img": "../../assets/headset2.jpg"
+      "price": "R$699,99"
     },
     {
       "id": 8,
       "cat_id": 3,
       "title": "Headset 8",
       "description": "Conteúdo de exemplo do Headset 8, apenas de marcação... Não perca seu tempo tentando ler esse texto pois é totalmente irrelevante. Poderia ser um lorem ipsum, mas, para diferenciar cada Headset, tem um textinho \"customizado\"...",
-      "price": "R$799,99",
-      "img": "../../assets/headset3.jpg"
+      "price": "R$799,99"
     },
     {
       "id": 9,
       "cat_id": 3,
       "title": "Headset 9",
       "description": "Conteúdo de exemplo do Headset 9, apenas de marcação... Não perca seu tempo tentando ler esse texto pois é totalmente irrelevante. Poderia ser um lorem ipsum, mas, para diferenciar cada Headset, tem um textinho \"customizado\"...",
-      "price": "R$899,99",
-      "img": "../../assets/headset1.jpg"
+      "price": "R$899,99"
     }
   ]
 }

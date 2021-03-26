@@ -4,11 +4,11 @@ const ShelfTodosProdutos = ({ ...props }) => {
   const { posts } = props;
   const renderPosts = () => {
     return posts.map((post, index) => {
-      const { title, description, price, img } = post;
+      const { title, description, price} = post;
       return (
         <CardTodosProdutos
           title={title}
-          img={img}
+
           description={description}
           price={price}
           key={index}

@@ -13,6 +13,11 @@
     width: 100%;
 }
 
+.linkSearchAll {
+    margin-right: auto;
+    margin-left: auto;
+}
+
 #produtosLinks {
     justify-content: flex-start;
     border: 2px solid #C4C4C4;

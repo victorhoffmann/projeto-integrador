@@ -4,11 +4,10 @@ const ShelfMonitores = ({ ...props }) => {
   const { posts } = props;
   const renderPosts = () => {
     return posts.map((post, index) => {
-      const { title, description, price, img } = post;
+      const { title, description, price } = post;
       return (
         <CardMonitores
           title={title}
-          img={img}
           description={description}
           price={price}
           key={index}

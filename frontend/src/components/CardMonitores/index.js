@@ -1,10 +1,12 @@
-const CardMonitores = (props) => {
-  const { title, description, price, img } = props;
+import monitor1 from '../../assets/monitor1.jpg'
+
+const CardMonitores = ({...props}) => {
+  const { title, description, price } = props;
   return (
     <>
       <article className="card">
         <h3 className="card__title">{title}</h3>
-        <img className="card__img" src={img} alt="Monitor" />
+        <img className="card__img" src={monitor1} alt="Monitor" />
         <span className="card__price">{price}</span>
         <p className="card__description">{description}</p>
         <button type="button" className="card__button btn btn-outline-success">
