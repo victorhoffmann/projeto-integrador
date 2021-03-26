@@ -5,7 +5,7 @@ import Sobre from "../pages/Sobre";
 import Contato from "../pages/Contato";
 import Login from "../pages/Login";
 import Cadastro from "../pages/Cadastro";
-import Senha from "../pages/Login/ReenvioSenha";
+import Senha from "../pages/ReenvioSenha";
 import Faq from "../pages/Faq";
 import TodosProdutos from "../pages/TodosProdutos";
 import Headsets from "../pages/Headsets";

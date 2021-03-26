@@ -3,9 +3,8 @@ import { content } from "../../Helpers/TodosProdutos";
 
 const Produto = () => {
    return(
-          <MainProduto
-          />
-          )
-        };
+        <MainProduto/>
+   )
+}
       
 export default Produto;

@@ -11,7 +11,7 @@ const Header = () => {
         </div>
 
         <button
-          className=" navbar-dark navbar-toggler"
+          className="navbar-dark navbar-toggler"
           type="button"
           data-toggle="collapse"
           data-target="#navbarSupportedContent"

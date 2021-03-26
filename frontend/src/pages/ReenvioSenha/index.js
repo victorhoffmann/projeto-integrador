@@ -1,4 +1,4 @@
-import Senha from '../../../components/Senha'
+import Senha from '../../components/Senha'
 
 const ReenvioSenha = () => {
     return (
