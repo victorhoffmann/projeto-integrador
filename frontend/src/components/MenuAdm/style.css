@@ -1,0 +1,31 @@
+.menuAdm {
+    border-right: 1px solid #fff;
+    background-color: rgba(112, 203, 135, 0.5);
+}
+
+.menuAdm h3 {
+    padding: 0 20px;
+}
+
+.listMenuAdm {
+    display: inline-block;
+    margin-top: 2vh;
+    margin-bottom: 0;
+    padding-left: 0;
+    width: 100%;
+}
+
+.listMenuAdm li {
+    color: #000;
+    list-style-type: none;
+    padding: 10px 60px;
+    border-top: 1px solid #000;
+}
+
+.listMenuAdm li:hover {
+    background-color: rgba(112, 203, 135, 1);
+}
+
+.listMenuAdm a {
+    text-decoration: none;
+}
