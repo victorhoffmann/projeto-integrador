@@ -3,10 +3,10 @@ import BtnModificar from '../../components/BtnModificar'
 import BtnVisualizar from '../../components/BtnVisualizar'
 
 const CardProdutoTable = ({ ...props }) => {
-    const { title, description, price } = props;
+    const { id, title, description, price } = props;
     return (
         <tr>
-            <td>x</td>
+            <td>{id}</td>
             <td>{title}</td>
             <td>
                 <BtnExcluir />&nbsp;

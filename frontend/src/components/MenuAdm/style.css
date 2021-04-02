@@ -26,6 +26,10 @@
     background-color: rgba(112, 203, 135, 1);
 }
 
+.listMenuAdm:last-child {
+    border-bottom: 1px solid #000;
+}
+
 .listMenuAdm a {
     text-decoration: none;
 }

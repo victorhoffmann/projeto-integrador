@@ -1,11 +1,20 @@
-import BtnExcluir from '../../components/BtnExcluir'
-import BtnModificar from '../../components/BtnModificar'
-import BtnVisualizar from '../../components/BtnVisualizar'
 import BtnAdd from '../../components/BtnAdd'
 import CardProdutoTable from '../../components/CardProdutoTable'
+import { content } from '../../Helpers/TodosProdutosTable'
 import './style.css'
 
 const TabelaProdutos = () => {
+    const { posts } = content
+
+    const renderPosts = () => {
+        return posts.map((post, index) => {
+          const { id, title, price, description } = post
+          return (
+            <CardProdutoTable id={id} title={title} price={price} description={description} key={index}/>
+          )
+        })
+      }
+
     return (
         <div className="painelProdutos">
             <div className="pesquisaProdutos">
@@ -19,33 +28,7 @@ const TabelaProdutos = () => {
                         <th>Produto</th>
                         <th>Ações</th>
                     </tr>
-                    <tr>
-                        <td>01</td>
-                        <td>Razer Kraken Ultimate</td>
-                        <td>
-                            <BtnExcluir />&nbsp; 
-                            <BtnModificar />&nbsp; 
-                            <BtnVisualizar />&nbsp; 
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>02</td>
-                        <td>Hyper X</td>
-                        <td>
-                            <BtnExcluir />&nbsp; 
-                            <BtnModificar />&nbsp; 
-                            <BtnVisualizar />&nbsp; 
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>03</td>
-                        <td>Turtle Beach</td>
-                        <td>
-                            <BtnExcluir />&nbsp; 
-                            <BtnModificar />&nbsp; 
-                            <BtnVisualizar />&nbsp; 
-                        </td>
-                    </tr>
+                    {renderPosts()}
                 </table>
             </div>
         </div>

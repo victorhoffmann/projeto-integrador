@@ -6,10 +6,19 @@ import "./App.css";
 
 function App() {
   return (
-    <>
-      <Header />
+   <>
+    {console.log(window.location)}
+      {
+        window.location.pathname !== "/admin" ?
+          <Header /> : null
+      }
+
       <Routes />
-      <Footer />
+      {
+        window.location.pathname !== "/admin" ?
+          <Footer /> : null
+      }
+
     </>
   );
 }
