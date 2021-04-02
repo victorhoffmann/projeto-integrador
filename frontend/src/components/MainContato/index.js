@@ -9,24 +9,24 @@ const MainContato = () => {
             <div className="input-data">
               <input type="text" required></input>
               <div className="underline"></div>
-              <label for="name">Primeiro nome.</label>
+              <label for="name">Primeiro nome:</label>
             </div>
             <div className="input-data">
               <input type="text" required></input>
               <div className="underline"></div>
-              <label for="">Ultimo nome.</label>
+              <label for="">Ultimo nome:</label>
             </div>
           </div>
           <div className="form-row">
             <div className="input-data">
               <input type="text" required></input>
               <div className="underline"></div>
-              <label for="email">Endereço de E-mail.</label>
+              <label for="email">Endereço de E-mail:</label>
             </div>
             <div className="input-data">
               <input type="text" required></input>
               <div className="underline"></div>
-              <label for="tel">Número de telefone. </label>
+              <label for="tel">Número de telefone: </label>
             </div>
           </div>
           <div className="form-row">

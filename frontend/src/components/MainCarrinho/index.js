@@ -21,10 +21,10 @@ const MainCarrinho = () => {
             </div>
                 <div class="infosDaCompra">  
             <div className="produtoRow__containerQuantidade">
-                <div className="produtoRow__containerQuantidade__qntTitle">
-                    <h4>Quantidade</h4>
-                </div>
                 <div className="produtoRow__containerQuantidade__qntContainer">
+                
+                    <h4>Quantidade:</h4>
+                
                 <button type="button" className="btn btn-secondary"> - </button>
                 ?
                 <button type="button" className="btn btn-secondary"> + </button>
@@ -32,23 +32,22 @@ const MainCarrinho = () => {
                 </div>
             </div>
             <div className="produtoRow__containerTotal">
-                <div className="produtoRow__containerTotal__totalTitle">
-                    <h4>Total</h4>
-                </div>
                 <div className="produtoRow__containerTotal__totalContainer">
-                    <h5>R$ ??,??</h5>
-                </div>
+                    <h4>Total:</h4>
+                    <h6>R$ ??,??</h6>
+                </div>                
             </div>
             </div> 
             </div>
 
             <div className="valorDaCompraFinal">
-            <h4>Valor</h4>
+            <h4>Valor:</h4>
+            <div className="underline"></div>
             <p>Total de produtos: R$ ??,??</p>
             <p>Frete: R$ ??,??</p>
             <div className="valorDaCompraFinal__finalRow">
             <p><b>Valor Total: R$ ??,??</b></p>
-            <button type="button" class="btn btn-outline-danger">Finalizar compra</button>
+            <input type="submit" value="Finalizar compra"></input>
             </div>
 
             </div>

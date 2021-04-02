@@ -1,4 +1,7 @@
-
+:root {
+    --color-secondary: #39ff14;
+    --color-dark: #343a40;
+  }
 /* ----------------------------------------------------BODY----------------------------------- */
 .formularios {
     display: flex;
@@ -9,23 +12,31 @@
  /* ------------------------------------Formulário de entrada----------------------------------- */
  
  .signIn{
-     width: 100vw;
+     width: 50vw;
      margin: 5vh 5vw;
      display: inline-block;
+     border-radius: 20px;
+     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
  }
  .bodyForm{
-     background-color: #EEEEEE;
+     background-color: #fff;
      border-bottom-left-radius: 20px ;
      border-bottom-right-radius: 20px ;
      padding: 10px;
  }
  
  .form-control{
-     background-color: #c4c4c4;
+     background-color: #fff;
+     border: none;
+     border-bottom: 2px solid rgba(0, 0, 0, 0.12);
  }
+
  
+
+
+
  .headerForm{
-     background-color: black;
+     background-color:var(--color-dark);
      color: white;
      border-top-left-radius: 20px ;
      border-top-right-radius: 20px ;
@@ -44,8 +55,24 @@
   .btn-entrar{
       display: block;
       margin: 10px 0px;
+      background: -webkit-linear-gradient(
+        right,
+        var(--color-dark),
+        var(--color-secondary),
+        var(--color-dark),
+        var(--color-secondary)
+      );
+      transition: all 0.4s;
   }
   .btn-entrarCom{
      display: inline-block;
      margin:20px 10px;
+ }
+
+ @media only screen and (max-width: 498px) {
+    .signIn{
+        width: 100vw;
+        margin: 5vh 5vw;
+        display: inline-block;
+    }
  }
