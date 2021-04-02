@@ -19,6 +19,11 @@ const Senha = () => {
                     <button type="submit" className="btn btn-cadastrar btn-success">
                     ENVIAR
                     </button>
+                    <div className="buttonsForms">
+                    <a href="./login" className='btn-small'><button type="button" className="btn btn-cadastrar btn-success">
+                    VOLTAR
+                    </button></a>
+                    </div>
                 </div>
                 </form>
             </div>

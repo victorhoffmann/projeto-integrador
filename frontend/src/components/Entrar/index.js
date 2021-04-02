@@ -43,9 +43,14 @@ const Login = () => {
                       CADASTRE-SE AQUI
                     </a>
                   </div>
-                  <button type="submit" className="btn btn-entrar btn-success">
-                    ENTRAR
-                  </button>                 
+                  <div className="buttonsForms">
+                    <button type="submit" className="btn btn-entrar btn-success">
+                      ENTRAR
+                    </button>    
+                    <a href="./" className='btn-small'><button type="button" className="btn btn-cadastrar btn-success">
+                      VOLTAR
+                    </button></a> 
+                  </div>      
                 </form>
               </div>
             </div>

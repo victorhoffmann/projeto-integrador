@@ -4,7 +4,7 @@
 }
 
 .menuAdm h3 {
-    padding: 0 20px;
+    padding: 10px 20px;
 }
 
 .listMenuAdm {
@@ -20,6 +20,9 @@
     list-style-type: none;
     padding: 10px 60px;
     border-top: 1px solid #000;
+    text-align: center;
+    border-radius: 4%;
+    font-size: 20px;
 }
 
 .listMenuAdm li:hover {

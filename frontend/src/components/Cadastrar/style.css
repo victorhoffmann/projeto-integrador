@@ -5,7 +5,6 @@
 
 /* ------------------------------------Formulário de cadastro----------------------------------- */
 .signUp{
-    width: 100vw;
     margin: 5vh 5vw;
     display: inline-block;
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);

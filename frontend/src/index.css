@@ -84,3 +84,24 @@
 .card__button {
   margin-top: 8px;
 }
+
+/* FORMS */
+
+.signUp {
+  width: calc(1000px - 30%);
+}
+
+.btn-small {
+  margin-right: auto!important;
+  margin-left: auto!important;
+}
+
+.buttonsForms {
+  display: flex;
+  flex-direction: row;
+}
+
+.buttonsForms a {
+  text-decoration: none;
+}
+  

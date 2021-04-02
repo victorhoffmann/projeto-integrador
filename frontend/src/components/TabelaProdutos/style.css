@@ -15,6 +15,7 @@ table {
 table, th, td {
   border: 1px solid black;
   border-collapse: collapse;
+  margin-bottom: 5vh
 }
 
 th, td {
