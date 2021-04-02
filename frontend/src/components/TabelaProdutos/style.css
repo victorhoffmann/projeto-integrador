@@ -4,8 +4,8 @@
   flex-direction: row;
 }
 
-.pesquisaProdutos a {
-  margin-left: 10vw;
+.pesquisaProdutos input {
+  margin-right: 10vw;
 }
 
 table {
