@@ -1,12 +1,12 @@
 const BtnVisualizar = ({...props}) => {
-    const { title, description, price } = props;
+    const { id, title, description, price } = props;
     return (
         <>
-            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalVisualizar" data-whatever="@getbootstrap">
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target={`#modalVisualizar${id}`} data-whatever="@getbootstrap">
                 Visualizar
             </button>
 
-            <div class="modal fade" id="modalVisualizar" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal fade" id={`modalVisualizar${id}`} tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-header">

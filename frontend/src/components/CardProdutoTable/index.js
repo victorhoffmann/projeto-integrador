@@ -9,9 +9,9 @@ const CardProdutoTable = ({ ...props }) => {
             <td>{id}</td>
             <td>{title}</td>
             <td>
-                <BtnExcluir />&nbsp;
-                <BtnModificar title={title} description={description} price={price}/>&nbsp;
-                <BtnVisualizar title={title} description={description} price={price} />&nbsp;
+                <BtnExcluir id={id} title={title}/>&nbsp;
+                <BtnModificar id={id} title={title} description={description} price={price}/>&nbsp;
+                <BtnVisualizar id={id} title={title} description={description} price={price} />&nbsp;
             </td>
         </tr>
     )

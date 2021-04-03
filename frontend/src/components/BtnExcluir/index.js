@@ -1,10 +1,11 @@
-const BtnExcluir = () => {
+const BtnExcluir = ({...props}) => {
+    const { id, title } = props;
     return (
         <>
-            <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#modalExcluir">
+            <button type="button" class="btn btn-danger" data-toggle="modal" data-target={`#modalExcluir${id}`}>
                 Excluir
             </button>
-            <div class="modal fade" id="modalExcluir" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal fade" id={`modalExcluir${id}`} tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-header">
@@ -14,7 +15,7 @@ const BtnExcluir = () => {
                             </button>
                         </div>
                         <div class="modal-body">
-                            <p>Tem certeza que deseja excluir o produto?</p>
+                            <p>Tem certeza que deseja excluir {title} ?</p>
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
