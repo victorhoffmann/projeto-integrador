@@ -16,13 +16,15 @@ import Teclados from "../pages/Teclados";
 import Carrinho from "../pages/Carrinho"
 import Produto from '../pages/Produto'
 import PainelADM from '../pages/PainelADM'
+import Admin from '../pages/Admin'
 
 const Routes = () => {
   return (
     <Router>
       <Switch>
         <Route path="/faq" component={Faq} />
-        <Route path="/admin" component={PainelADM} />
+        <Route path="/painelAdm" component={PainelADM} />
+        <Route path="/admin" component={Admin} />
         <Route path="/produto" component={Produto} />
         <Route path="/todosprodutos" component={TodosProdutos} />
         <Route path="/headsets" component={Headsets} />
