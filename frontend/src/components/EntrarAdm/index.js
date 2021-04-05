@@ -5,7 +5,7 @@ import './style.css'
 
 const EntrarAdm = () => {
   const [isAuth, setIsAuth ] = useState(true);
-
+  
   if (!isAuth) {
     return <Redirect to="/painel-adm" />
   }
@@ -47,7 +47,7 @@ const EntrarAdm = () => {
                     </div>
                     <div className="input-data btn-entrar">
                       {/* <div className="inner"></div> */}
-                      <button onClick={() => setIsAuth(false)}>Entrar</button>
+                      <button className='btn-adm-entrar' onClick={() => setIsAuth(false)}>Entrar</button>
                     </div>
                   </div>
                 </form>

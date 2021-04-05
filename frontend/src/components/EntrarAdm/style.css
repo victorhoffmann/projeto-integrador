@@ -7,3 +7,17 @@
 .form-btns {
     flex-direction: row;
 }
+
+.btn-adm-entrar {
+    background: -webkit-linear-gradient( right, var(--color-dark), var(--color-secondary), var(--color-dark), var(--color-secondary) );
+    border: none;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+    height: 100%;
+}
