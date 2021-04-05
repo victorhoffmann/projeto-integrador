@@ -47,14 +47,19 @@ const Cadastrar = () => {
                         id="inputCpfOuCnpj"
                     ></input>
                     </div>
-                    <button type="submit" className="btn btn-cadastrar btn-success">
-                    CADASTRAR
-                    </button>
-                    <div className="buttonsForms">
-                    <a href="./login" className='btn-small'><button type="button" className="btn btn-cadastrar btn-success">
-                    VOLTAR
-                    </button></a>
+                    
+                    <div className="form-row submit-btn__entrar form-btns">
+                    <div className="input-data btn-voltar">
+                      <div className="inner"></div>
+                      <a href="./login">
+                      <input type="button" value="voltar"></input></a>
                     </div>
+                    <div className="input-data btn-entrar">
+                      <div className="inner"></div>
+                      <input type="submit" value="entrar"></input>
+                    </div>
+                    </div>
+
                 </div>
                 </form>
             </div>

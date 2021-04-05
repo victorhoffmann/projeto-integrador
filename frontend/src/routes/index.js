@@ -23,7 +23,7 @@ const Routes = () => {
     <Router>
       <Switch>
         <Route path="/faq" component={Faq} />
-        <Route path="/painelAdm" component={PainelADM} />
+        <Route path="/painel-adm" component={PainelADM} />
         <Route path="/admin" component={Admin} />
         <Route path="/produto" component={Produto} />
         <Route path="/todosprodutos" component={TodosProdutos} />

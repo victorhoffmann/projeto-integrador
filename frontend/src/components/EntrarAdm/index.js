@@ -1,6 +1,15 @@
+import React, { useState} from 'react'
+import { Redirect } from 'react-router-dom'
+
 import './style.css'
 
 const EntrarAdm = () => {
+  const [isAuth, setIsAuth ] = useState(true);
+
+  if (!isAuth) {
+    return <Redirect to="/painel-adm" />
+  }
+
     return (
         <>
           <section className="formularios">
@@ -30,14 +39,17 @@ const EntrarAdm = () => {
                       ></input>
                     </div>
                   </div>
-                  <div className="buttonsForms">
-                    <button type="submit" className="btn btn-entrar btn-success">
-                      ENTRAR
-                    </button>    
-                    <a href="./" className='btn-small'><button type="button" className="btn btn-cadastrar btn-success">
-                      VOLTAR
-                    </button></a> 
-                  </div>      
+                  <div className="form-row submit-btn__entrar form-btns">
+                    <div className="input-data btn-voltar">
+                      <div className="inner"></div>
+                      <a href="./">
+                      <input type="button" value="voltar"></input></a>
+                    </div>
+                    <div className="input-data btn-entrar">
+                      {/* <div className="inner"></div> */}
+                      <button onClick={() => setIsAuth(false)}>Entrar</button>
+                    </div>
+                  </div>
                 </form>
               </div>
             </div>

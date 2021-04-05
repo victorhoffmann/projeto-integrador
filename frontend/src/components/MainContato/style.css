@@ -141,7 +141,7 @@ form .form-row .textarea {
     display: block;
   }
   form .form-row .input-data {
-    margin: 35px 0 !important;
+    margin: 35px auto !important;
   }
   .submit-btn__contato .input-data {
     width: 40% !important;

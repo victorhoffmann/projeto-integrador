@@ -7,8 +7,13 @@
   scroll-behavior: smooth;
 }
 
+.formularios {
+  display: flex;
+  justify-content: center;
+}
+
 .boxForm {
-  height: 65vh;
+  /* height: 65vh; */
 }
 
 .form-row {

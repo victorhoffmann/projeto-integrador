@@ -36,7 +36,8 @@ const Login = () => {
           <div className="form-row submit-btn__entrar">
             <div className="input-data btn-voltar">
               <div className="inner"></div>
-              <input href="./" type="submit" value="voltar"></input>
+              <a href="./">
+              <input type="button" value="voltar"></input></a>
             </div>
             <div className="input-data btn-entrar">
               <div className="inner"></div>

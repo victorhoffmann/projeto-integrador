@@ -184,6 +184,10 @@ form .form-row__entrar .textarea {
   z-index: 2;
 }
 
+.btn-voltar a {
+  text-decoration: none;
+}
+
 /* ------------------------------------mediaQ----------------------------------- */
 
 @media only screen and (max-width: 498px) {
@@ -197,7 +201,7 @@ form .form-row__entrar .textarea {
     display: block;
   }
   form .form-row .input-data {
-    margin: 35px 0 !important;
+    margin: 35px auto !important;
   }
   .submit-btn__voltar .input-data {
     width: 40% !important;
