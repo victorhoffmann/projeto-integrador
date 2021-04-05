@@ -94,12 +94,14 @@ form .form-row .textarea {
 .textarea textarea:valid ~ .underline:before {
   transform: scale(1);
 }
-.submit-btn .input-data {
+.submit-btn__contato .input-data {
   overflow: hidden;
   height: 45px !important;
   width: 25% !important;
+  top: 50px;
+  left: 0%;
 }
-.submit-btn .input-data .inner {
+.submit-btn__contato .input-data .inner {
   height: 100%;
   width: 300%;
   position: absolute;
@@ -113,10 +115,10 @@ form .form-row .textarea {
   );
   transition: all 0.4s;
 }
-.submit-btn .input-data:hover .inner {
+.submit-btn__contato .input-data:hover .inner {
   left: 0;
 }
-.submit-btn .input-data input {
+.submit-btn__contato .input-data input {
   background: none;
   border: none;
   color: #fff;
@@ -141,7 +143,7 @@ form .form-row .textarea {
   form .form-row .input-data {
     margin: 35px 0 !important;
   }
-  .submit-btn .input-data {
+  .submit-btn__contato .input-data {
     width: 40% !important;
   }
 }

@@ -1,78 +1,208 @@
 :root {
-    --color-secondary: #39ff14;
-    --color-dark: #343a40;
+  --color-secondary: #39ff14;
+  --color-dark: #343a40;
+}
+
+/* ------------------------------------Formulário de entrada----------------------------------- */
+
+.bodyForm {
+  background-color: #fff;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  padding: 10px;
+  padding-left: 20px;
+}
+
+.headerForm {
+  color: black;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  padding: 10px 20px;
+  font-size: 26px;
+}
+
+.container {
+  margin-top: 10px;
+}
+.container form {
+  padding: 0px;
+}
+form .form-row__entrar .input-data__entrar {
+  width: 100%;
+  height: 40px;
+  margin: 0 20px;
+  position: relative;
+}
+form .form-row__entrar .textarea {
+  height: 70px;
+}
+.input-data__entrar input,
+.textarea textarea {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: none;
+  font-size: 17px;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.12);
+}
+.input-data__entrar input:focus ~ label,
+.textarea textarea:focus ~ label,
+.input-data__entrar input:valid ~ label,
+.textarea textarea:valid ~ label {
+  transform: translateY(-20px);
+  font-size: 14px;
+  color: var(--color-dark);
+}
+.textarea textarea {
+  resize: none;
+  padding-top: 10px;
+}
+.input-data__entrar label {
+  position: absolute;
+  pointer-events: none;
+  bottom: 10px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+.textarea__entrar label {
+  width: 100%;
+  bottom: 40px;
+  background: #fff;
+}
+.input-data__entrar .underline__entrar {
+  bottom: 0;
+  height: 2px;
+  width: 100%;
+}
+.input-data__entrar .underline__entrar:before {
+  position: absolute;
+  content: "";
+  height: 2px;
+  width: 100%;
+  background: var(--color-secondary);
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.3s ease;
+}
+.input-data__entrar input:focus ~ .underline__entrar:before,
+.input-data__entrar input:valid ~ .underline__entrar:before,
+.textarea__entrar textarea:focus ~ .underline__entrar:before,
+.textarea__entrar textarea:valid ~ .underline__entrar:before {
+  transform: scale(1);
+}
+
+/* ------------------------------------Esqueci----------------------------------- */
+.esqueci {
+  display: inline-block;
+  text-decoration: underline;
+  padding: 0px 20px 10px 20px;
+}
+
+.esqueci a {
+  color: initial;
+}
+/* ------------------------------------Btn----------------------------------- */
+.submit-btn__entrar .input-data {
+  overflow: hidden;
+  height: 45px !important;
+  width: 25% !important;
+  top: 0%;
+}
+
+.submit-btn__entrar .btn-entrar {
+  margin-left: auto !important;
+}
+
+.submit-btn__entrar .input-data .inner {
+  height: 100%;
+  width: 300%;
+  position: absolute;
+  left: -100%;
+  background: -webkit-linear-gradient(
+    right,
+    var(--color-dark),
+    var(--color-secondary),
+    var(--color-dark),
+    var(--color-secondary)
+  );
+  transition: all 0.4s;
+}
+.submit-btn__entrar .input-data:hover .inner {
+  left: 0;
+}
+.submit-btn__entrar .input-data input {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 17px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  position: relative;
+  z-index: 2;
+}
+
+.form-row.submit-btn__voltar {
+  bottom: 50%;
+}
+
+.submit-btn__voltar .input-data {
+  overflow: hidden;
+  height: 45px !important;
+  width: 25% !important;
+  left: 70%;
+  bottom: 80px;
+}
+.submit-btn__voltar .input-data .inner {
+  height: 100%;
+  width: 300%;
+  position: absolute;
+  left: -100%;
+  background: -webkit-linear-gradient(
+    right,
+    var(--color-dark),
+    var(--color-secondary),
+    var(--color-dark),
+    var(--color-secondary)
+  );
+  transition: all 0.4s;
+}
+.submit-btn__voltar .input-data:hover .inner {
+  left: 0;
+}
+.submit-btn__voltar .input-data input {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 17px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  position: relative;
+  z-index: 2;
+}
+
+/* ------------------------------------mediaQ----------------------------------- */
+
+@media only screen and (max-width: 498px) {
+  .container .text {
+    font-size: 30px;
   }
-/* ----------------------------------------------------BODY----------------------------------- */
-.formularios {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: center;
-   }
- 
- /* ------------------------------------Formulário de entrada----------------------------------- */
- 
- .signIn{
-     width: 50vw;
-     margin: 5vh 5vw;
-     display: inline-block;
-     border-radius: 20px;
-     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
- }
- .bodyForm{
-     background-color: #fff;
-     border-bottom-left-radius: 20px ;
-     border-bottom-right-radius: 20px ;
-     padding: 10px;
- }
- 
- .form-control{
-     background-color: #fff;
-     border: none;
-     border-bottom: 2px solid rgba(0, 0, 0, 0.12);
- }
-
- 
-
-
-
- .headerForm{
-     background-color:var(--color-dark);
-     color: white;
-     border-top-left-radius: 20px ;
-     border-top-right-radius: 20px ;
-     padding: 10px 20px;
- }
-  .esqueci{
-      display: inline-block;
-      text-decoration: underline ;
-      padding: 0px 20px 10px 0px;
+  .container form {
+    padding: 10px 0 0 0;
   }
- 
-  .esqueci a{
-      color: initial;
+  .container form .form-row {
+    display: block;
   }
- 
-  .btn-entrar{
-      display: block;
-      margin: 10px 0px;
-      background: -webkit-linear-gradient(
-        right,
-        var(--color-dark),
-        var(--color-secondary),
-        var(--color-dark),
-        var(--color-secondary)
-      );
-      transition: all 0.4s;
+  form .form-row .input-data {
+    margin: 35px 0 !important;
   }
-  .btn-entrarCom{
-     display: inline-block;
-     margin:20px 10px;
- }
-
- @media only screen and (max-width: 498px) {
-    .signIn{
-        width: 100vw;
-        margin: 5vh 5vw;
-        display: inline-block;
-    }
- }
+  .submit-btn__voltar .input-data {
+    width: 40% !important;
+  }
+  .submit-btn__entrar .input-data {
+    width: 40% !important;
+  }
+}
