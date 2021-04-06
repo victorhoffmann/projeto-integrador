@@ -109,4 +109,9 @@
 .buttonsForms a {
   text-decoration: none;
 }
-  
+
+@media only screen and (min-width: 1900px) {
+  .signUp {
+    width: calc(100vw - 70%);
+  }
+}
