@@ -119,3 +119,8 @@
     width: calc(100vw - 70%);
   }
 }
+@media only screen and (max-width: 498px){
+  .shelf{
+    flex-direction: column;
+  }
+}
