@@ -200,3 +200,29 @@
     right: 50%;
   } */
 }
+
+@media only screen and (min-width: 700px){
+  .produtoRow{
+    margin: 2vh 5vh 5vh 5vh;
+  }
+  .title{
+    margin: 2vh 5vh 5vh 5vh;
+  }
+  .infosDaCompra {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0px;
+  }
+
+  .produtoRow__containerProduto {
+    margin: 0vh 5vh 5vh 0vh; 
+  }
+
+  .produtoRow__containerQuantidade {
+    margin-right: 0vh;
+  }
+
+  .valorDaCompraFinal {
+  margin: 2vh 5vh 5vh 5vh;
+    }
+}
