@@ -226,3 +226,13 @@
   margin: 2vh 5vh 5vh 5vh;
     }
 }
+
+@media only screen and (min-width: 1122px){
+  .infosDaCompra {
+    flex-direction: row;
+  }
+
+  .produtoRow__containerQuantidade {
+    margin-right: 5vh;
+  }
+}
