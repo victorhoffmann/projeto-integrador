@@ -110,6 +110,10 @@
   text-decoration: none;
 }
 
+.espacoFinalForm {
+  margin-bottom: 15.9vh;
+}
+
 @media only screen and (min-width: 1900px) {
   .signUp {
     width: calc(100vw - 70%);
