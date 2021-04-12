@@ -1,15 +1,14 @@
 import React, { useState} from 'react'
-import { Redirect } from 'react-router-dom'
+import { useHistory } from 'react-router-dom'
 
 import './style.css'
 
 const EntrarAdm = () => {
-  const [isAuth, setIsAuth ] = useState(true);
-  
-  if (!isAuth) {
-    return <Redirect to="/painel-adm" />
-  }
+  const history = useHistory()
 
+  const handleSubmit = () => {
+    history.push("/painel-adm")
+  }
     return (
         <>
           <section className="formularios">
@@ -47,7 +46,7 @@ const EntrarAdm = () => {
                     </div>
                     <div className="input-data btn-entrar">
                       {/* <div className="inner"></div> */}
-                      <button className='btn-adm-entrar' onClick={() => setIsAuth(false)}>Entrar</button>
+                      <button className='btn-adm-entrar' onClick={handleSubmit}>Entrar</button>
                     </div>
                   </div>
                 </form>

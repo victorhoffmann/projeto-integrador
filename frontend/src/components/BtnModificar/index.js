@@ -1,3 +1,5 @@
+import './style.css'
+
 const BtnModificar = ({...props}) => {
     const { id, title, description, price } = props;
     return (

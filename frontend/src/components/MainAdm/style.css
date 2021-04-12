@@ -8,5 +8,13 @@
     align-items: center;
     justify-content: space-between;
     background-color: rgba(112, 203, 135, 0.5);
-    padding: 1vh 5vh;
+    padding: 1vh 0;
+}
+
+.headerAdm h4 {
+    margin-left: 1vw;
+}
+
+.headerAdm a {
+    margin-right: 1vw;
 }

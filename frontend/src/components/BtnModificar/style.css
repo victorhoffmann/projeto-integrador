@@ -1,0 +1,5 @@
+@media only screen and (max-width: 349px) {
+    td button.btn.btn-success {
+        margin-top: 1vh;
+    }
+}

@@ -1,3 +1,5 @@
+import './style.css'
+
 const BtnVisualizar = ({...props}) => {
     const { id, title, description, price } = props;
     return (

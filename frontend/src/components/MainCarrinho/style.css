@@ -122,6 +122,7 @@
   flex-direction: row;
   justify-content: space-between;
   margin-bottom: 20px;
+  padding-left: 10px;
 }
 
 .valorDaCompraFinal__finalRow > input {
@@ -139,8 +140,7 @@
 .submit-btn__carrinho .input-data {
   overflow: hidden;
   height: 45px !important;
-  width: 25% !important;
-  left: 70%;
+  width: fit-content!important;
 }
 .submit-btn__carrinho .input-data .inner {
   height: 100%;
@@ -195,8 +195,8 @@
   .valorDaCompraFinal {
     margin: 20px 7px 10px;
   }
-  .submit-btn__carrinho .input-data {
+  /* .submit-btn__carrinho .input-data {
     width: 40% !important;
     right: 50%;
-  }
+  } */
 }
