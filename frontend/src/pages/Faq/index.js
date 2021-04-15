@@ -10,7 +10,7 @@ const Faq = () => {
           <div className="card-header" id="headingOne">
             <h5 className="mb-0">
               <button className="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                Collapsible Group Item #1
+                Dúvida #1
               </button>
             </h5>
           </div>
@@ -25,7 +25,7 @@ const Faq = () => {
           <div className="card-header" id="headingTwo">
             <h5 className="mb-0">
               <button className="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                Collapsible Group Item #2
+                Dúvida #2
               </button>
             </h5>
           </div>
@@ -39,7 +39,7 @@ const Faq = () => {
           <div className="card-header" id="headingThree">
             <h5 className="mb-0">
               <button className="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                Collapsible Group Item #3
+                Dúvida #3
               </button>
             </h5>
           </div>
@@ -54,7 +54,7 @@ const Faq = () => {
           <div className="card-header" id="heading4">
             <h5 className="mb-0">
               <button className="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
-                Collapsible Group Item #4
+                Dúvida #4
               </button>
             </h5>
           </div>
@@ -69,7 +69,7 @@ const Faq = () => {
           <div className="card-header" id="heading5">
             <h5 className="mb-0">
               <button className="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
-                Collapsible Group Item #5
+                Dúvida #5
               </button>
             </h5>
           </div>
@@ -84,7 +84,7 @@ const Faq = () => {
           <div className="card-header" id="heading6">
             <h5 className="mb-0">
               <button className="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse6" aria-expanded="false" aria-controls="collapse6">
-                Collapsible Group Item #6
+                Dúvida #6
               </button>
               </h5>
             </div>
@@ -99,7 +99,7 @@ const Faq = () => {
           <div className="card-header" id="heading7">
             <h5 className="mb-0">
               <button className="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse7" aria-expanded="false" aria-controls="collapse7">
-                Collapsible Group Item #7
+                Dúvida #7
               </button>
             </h5>
           </div>
@@ -114,7 +114,7 @@ const Faq = () => {
           <div className="card-header" id="heading8">
             <h5 className="mb-0">
               <button className="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse8" aria-expanded="false" aria-controls="collapse8">
-                Collapsible Group Item #8
+                Dúvida #8
               </button>
             </h5>
           </div>
@@ -129,7 +129,7 @@ const Faq = () => {
           <div className="card-header" id="heading6">
             <h5 className="mb-0">
               <button className="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse9" aria-expanded="false" aria-controls="collapse9">
-                Collapsible Group Item #9
+                Dúvida #9
               </button>
               </h5>
             </div>

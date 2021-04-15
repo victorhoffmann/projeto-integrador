@@ -37,3 +37,16 @@ footer {
   #textInfos p {
     line-height: 0.7;
   }
+
+#footerLinks p {
+  margin-bottom: 0;
+}
+
+.iconsSocialMedia {
+  margin-top: 10px;
+}
+
+.iconsSocialMedia .fa{
+  font-size: 25px;
+  margin-right: 5px;
+}
