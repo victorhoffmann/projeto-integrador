@@ -7,33 +7,25 @@
     margin: 2vh 3vh 0vh 3vh; 
 }
 
-.faq-item {
-    background-color: #c4c4cf;
-    border-radius: 20px;
-    margin-bottom: 2vh;
-    text-align: center;
-}
-
-.faq-item p {
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
-    display: -webkit-box;
-    overflow: hidden;
-}
-
-.faq-item h5 {
-    margin-top: 1vh;
-}
-
 @media only screen and (min-width: 769px) {
-    .faq-body{
-        margin-right: 0px;
-        height: 60vh;
-    }
+}
 
-    .faq-item {
-        width: 40vw;
-        margin-right: 20px;
-        height: 120px;
-    }
+.faq-item {
+    background-color: #fff;
+    flex: 1 1 30%;
+    margin: 8px;
+    padding: 16px;
+    border: 1px solid rgba(57, 255, 20, 1);
+    align-items: center;
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: .25rem;
 }
