@@ -111,6 +111,7 @@
   width: 100%;
   border-bottom: 1px solid black;
   padding-bottom: 10px;
+  padding-left: 10px;
 }
 
 .valorDaCompraFinal > p {

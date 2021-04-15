@@ -1,9 +1,24 @@
 const BtnExcluir = ({...props}) => {
     const { id, title } = props;
+
+    const sizeScreen = () => {
+        let size = window.innerWidth
+        return size
+    }
+
+    const iconOrText = () => {
+        let tam = sizeScreen()
+        if (tam > 700) {
+            return 'Excluir'
+        } else {
+            return <i class="fa fa-trash"></i>
+        }
+    }
+
     return (
         <>
             <button type="button" class="btn btn-danger" data-toggle="modal" data-target={`#modalExcluir${id}`}>
-                Excluir
+                {iconOrText()}
             </button>
             <div class="modal fade" id={`modalExcluir${id}`} tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div class="modal-dialog">

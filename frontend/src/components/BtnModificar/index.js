@@ -2,10 +2,25 @@ import './style.css'
 
 const BtnModificar = ({...props}) => {
     const { id, title, description, price } = props;
+
+    const sizeScreen = () => {
+        let size = window.innerWidth
+        return size
+    }
+
+    const iconOrText = () => {
+        let tam = sizeScreen()
+        if (tam > 700) {
+            return 'Excluir'
+        } else {
+            return <i class="fa fa-retweet"></i>
+        }
+    }
+
     return (
         <>
             <button type="button" class="btn btn-success" data-toggle="modal" data-target={`#modalModificar${id}`} data-whatever="@getbootstrap">
-                Modificar
+                {iconOrText()}
             </button>
 
             <div class="modal fade" id={`modalModificar${id}`} tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
