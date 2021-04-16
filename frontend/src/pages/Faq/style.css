@@ -1,21 +1,16 @@
 .faq-body {
     box-sizing: border-box;
     color: #000;
-    display: flex;
+    /* display: flex; */
     flex-flow: row wrap;
     justify-content: center;
     margin: 2vh 3vh 0vh 3vh; 
 }
 
-@media only screen and (min-width: 769px) {
-}
-
 .faq-item {
-    background-color: #fff;
     flex: 1 1 30%;
     margin: 8px;
     padding: 16px;
-    border: 1px solid rgba(57, 255, 20, 1);
     align-items: center;
     position: relative;
     display: -ms-flexbox;

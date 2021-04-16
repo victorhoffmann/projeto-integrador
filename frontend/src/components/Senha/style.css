@@ -1,0 +1,17 @@
+.containerSenha {
+    position: relative;
+    max-width: 800px;
+    padding: 25px 40px 10px 40px;
+    background-color: #fff;
+    box-shadow: 0 15px 35px rgb(0 0 0 / 20%);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    margin: 0 auto;
+    border-radius: 10px;
+    z-index: 1000;
+}
+
+.btnsForms {
+    margin: 5vh 0;
+    flex-direction: row;
+}
