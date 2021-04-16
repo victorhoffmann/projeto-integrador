@@ -124,3 +124,17 @@
     flex-direction: column;
   }
 }
+
+#btnExcluirText, #btnModificarText, #btnVisualizarText {
+  display: none;
+}
+
+@media only screen and (min-width: 701px) {
+  #btnExcluirIcon, #btnModificarIcon, #btnVisualizarIcon  {
+    display: none;
+  }
+
+  #btnExcluirText, #btnModificarText, #btnVisualizarText  {
+    display: inline;
+  }
+}

@@ -2,25 +2,13 @@ import './style.css'
 
 const BtnVisualizar = ({...props}) => {
     const { id, title, description, price } = props;
-
-    const sizeScreen = () => {
-        let size = window.innerWidth
-        return size
-    }
-
-    const iconOrText = () => {
-        let tam = sizeScreen()
-        if (tam > 700) {
-            return 'Excluir'
-        } else {
-            return <i class="fa fa-eye"></i>
-        }
-    }
-
     return (
         <>
-            <button type="button" class="btn btn-primary" data-toggle="modal" data-target={`#modalVisualizar${id}`} data-whatever="@getbootstrap">
-                {iconOrText()}
+            <button id='btnVisualizarText' type="button" class="btn btn-primary" data-toggle="modal" data-target={`#modalVisualizar${id}`} data-whatever="@getbootstrap">
+                Visualizar
+            </button>
+            <button id='btnVisualizarIcon' type="button" class="btn btn-primary" data-toggle="modal" data-target={`#modalVisualizar${id}`} data-whatever="@getbootstrap">
+                <i class="fa fa-eye"></i>
             </button>
 
             <div class="modal fade" id={`modalVisualizar${id}`} tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
