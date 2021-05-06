@@ -1,4 +1,4 @@
-import MainCarrinho from '../../components/MainCarrinho'
+import MainCarrinho from '../../components/Mains/MainCarrinho'
 
 const Carrinho = () => {
   return (

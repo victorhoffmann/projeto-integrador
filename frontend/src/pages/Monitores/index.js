@@ -1,4 +1,4 @@
-import ShelfMonitores from "../../components/ShelfMonitores";
+import ShelfMonitores from "../../components/Shelfs/ShelfMonitores";
 import { content } from "../../Helpers/Monitores";
 
 const Monitores = () => {

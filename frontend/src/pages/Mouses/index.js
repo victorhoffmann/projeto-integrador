@@ -1,4 +1,4 @@
-import ShelfMouses from "../../components/ShelfMouses";
+import ShelfMouses from "../../components/Shelfs/ShelfMouses";
 import { content } from "../../Helpers/Mouses";
 
 const Mouses = () => {

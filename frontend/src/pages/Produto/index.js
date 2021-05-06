@@ -1,4 +1,4 @@
-import MainProduto from "../../components/MainProduto"
+import MainProduto from "../../components/Mains/MainProduto"
 
 const Produto = () => {
    return(

@@ -1,4 +1,4 @@
-import MainSobre from "../../components/MainSobre";
+import MainSobre from "../../components/Mains/MainSobre";
 
 const Sobre = () => {
   return (

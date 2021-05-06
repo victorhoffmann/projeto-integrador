@@ -1,4 +1,4 @@
-import ShelfTeclados from "../../components/ShelfTeclados";
+import ShelfTeclados from "../../components/Shelfs/ShelfTeclados";
 import { content } from "../../Helpers/Teclados";
 
 const Teclados = () => {

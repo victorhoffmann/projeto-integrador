@@ -1,4 +1,4 @@
-import ShelfHeadsets from "../../components/ShelfHeadsets";
+import ShelfHeadsets from "../../components/Shelfs/ShelfHeadsets";
 import { content } from "../../Helpers/Headsets";
 
 const Headsets = () => {

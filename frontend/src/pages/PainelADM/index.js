@@ -1,5 +1,5 @@
 import MenuAdm from '../../components/MenuAdm'
-import MainAdm from '../../components/MainAdm'
+import MainAdm from '../../components/Mains/MainAdm'
 
 import './style.css'
 

@@ -1,5 +1,5 @@
 import Aside from "../../components/Aside";
-import Main from "../../components/Main";
+import Main from '../../components/Mains/Main'
 
 const Home = () => {
   return (

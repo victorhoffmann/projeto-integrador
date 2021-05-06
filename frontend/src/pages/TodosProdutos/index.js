@@ -1,4 +1,4 @@
-import ShelfTodosProdutos from "../../components/ShelfTodosProdutos";
+import ShelfTodosProdutos from "../../components/Shelfs/ShelfTodosProdutos";
 import { content } from "../../Helpers/TodosProdutos";
 
 const TodosProdutos = () => {

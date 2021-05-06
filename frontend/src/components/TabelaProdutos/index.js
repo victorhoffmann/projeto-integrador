@@ -1,24 +1,20 @@
-import BtnAdd from '../../components/BtnAdd'
-import CardProdutoTable from '../../components/CardProdutoTable'
+import BtnAdd from '../Btns/BtnAdd'
+import CardProdutoTable from '../../components/Cards/CardProdutoTable'
 import { content } from '../../Helpers/TodosProdutosTable'
 import './style.css'
 
+const RenderPosts = () => {
+  const { posts } = content
+  return posts.map((post, index) => 
+      <CardProdutoTable {...post} key={index}/>
+    )
+}
+
 const TabelaProdutos = () => {
-    const { posts } = content
-
-    const renderPosts = () => {
-        return posts.map((post, index) => {
-          const { id, title, price, description } = post
-          return (
-            <CardProdutoTable id={id} title={title} price={price} description={description} key={index}/>
-          )
-        })
-      }
-
     return (
         <div className="painelProdutos">
             <div className="pesquisaProdutos">
-                <input class="form-control" type="text" placeholder="Procure o produto" readonly></input>
+                <input class="form-control" type="text" placeholder="Procure o produto" readonly />
                 <BtnAdd />
             </div>
             <div className="tabelaItens">
@@ -28,11 +24,10 @@ const TabelaProdutos = () => {
                         <th>Produto</th>
                         <th>Ações</th>
                     </tr>
-                    {renderPosts()}
+                    <RenderPosts/>
                 </table>
             </div>
         </div>
     )
 }
-
 export default TabelaProdutos

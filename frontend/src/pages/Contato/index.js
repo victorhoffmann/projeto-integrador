@@ -1,4 +1,4 @@
-import MainContato from "../../components/MainContato";
+import MainContato from "../../components/Mains/MainContato";
 
 const Contato = () => {
   return (
