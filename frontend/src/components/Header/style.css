@@ -79,3 +79,15 @@ header form {
 .dropdown-toggle:hover {
   color: var(--color-secondary);
 }
+
+#navbarSupportedContent {
+  justify-content: flex-end!important;
+}
+
+#form-header {
+  justify-content: center;
+}
+
+#form-header-input {
+  width: 30vw;
+}

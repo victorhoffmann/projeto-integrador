@@ -14,7 +14,7 @@ const Main = () => {
         <a href="#titleMonitores">Monitores</a>
         <a href="#titleTeclados">Teclados</a>
         <a href="#titleMouses">Mouses</a>
-        <a href="#titleMousepads">MousePads</a>
+        <a href="#titleMousePads">MousePads</a>
       </div>
       <BtnBackToTop />
       <h2 className="titlePage" id="titleHeadsets">

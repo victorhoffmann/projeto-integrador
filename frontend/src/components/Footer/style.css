@@ -68,10 +68,10 @@ footer a:hover {
   display: flex;
   background-color: var(--color-dark);
   padding-top: 2vh;
+  justify-content: center;
 }
 
 .subFooter p {
   color: #fff;
-  margin-left: 25%;
   margin-top: 15px;
 }

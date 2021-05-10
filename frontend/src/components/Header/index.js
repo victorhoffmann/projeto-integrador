@@ -24,14 +24,6 @@ const Header = () => {
 
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <div id="links" className="navbar-nav">
-            <a className="nav-links nav-item" href="./login">
-              <i className="fa fa-user" aria-hidden="true"></i>
-            </a>
-
-            <a className="nav-links nav-item" href="./carrinho">
-              <i className="fa fa-shopping-cart" aria-hidden="true"></i>
-            </a>
-
             <div className="nav-item dropdown">
               <a
                 className="nav-link dropdown-toggle"
@@ -70,12 +62,22 @@ const Header = () => {
                 </a>
               </div>
             </div>
+
+            <a className="nav-links nav-item" href="./login">
+              <i className="fa fa-user" aria-hidden="true"></i>
+            </a>
+
+            <a className="nav-links nav-item" href="./carrinho">
+              <i className="fa fa-shopping-cart" aria-hidden="true"></i>
+            </a>
+            
           </div>
         </div>
       </nav>
 
-      <form className="d-flex">
+      <form className="d-flex" id='form-header'>
         <input
+          id='form-header-input'
           className="form-control mr-2"
           type="search"
           placeholder="Produtos"
