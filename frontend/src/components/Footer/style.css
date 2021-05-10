@@ -1,52 +1,77 @@
 footer {
-    margin-top: 5vh;
-    display: flex;
-    background-color: var(--color-dark);
-    padding-top: 2vh;
-  }
-  
-  #footerLinks {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    margin-left: 10vw;
-    color: #fff;
-    font-size: 1rem!important;
-  }
-  
-  #footerLinks a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 1rem!important;
-  }
-  
-  #textInfos {
-    display: flex;
-    width: 50%;
-    flex-direction: column;
-    align-items: center;
-    color: #fff;
-    margin-right: 10vw;
-  }
-  
-  #textInfos h5{
-    font-size: 1rem!important;
-    font-weight: initial!important;
-  }
+  margin-top: 5vh;
+  display: flex;
+  background-color: var(--color-dark);
+  padding-top: 2vh;
+}
 
-  #textInfos p {
-    line-height: 0.7;
-  }
+#footerLinks {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  margin-left: 10vw;
+  color: #fff;
+  font-size: 1rem !important;
+}
+
+#footerLinks a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem !important;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem !important;
+}
+
+footer a:hover {
+  color: var(--color-secondary) !important;
+}
+
+#textInfos {
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+  color: #fff;
+  margin-right: 10vw;
+}
+
+#textInfos h5 {
+  font-size: 1rem !important;
+  font-weight: initial !important;
+}
+
+#textInfos p {
+  line-height: 0.7;
+}
+
+#textPayments {
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+  color: #fff;
+  margin-right: 10vw;
+}
 
 #footerLinks p {
   margin-bottom: 0;
 }
 
-.iconsSocialMedia {
-  margin-top: 10px;
-}
-
-.iconsSocialMedia .fa{
+.iconsSocialMedia .fa {
   font-size: 25px;
   margin-right: 5px;
+}
+
+.subFooter {
+  display: flex;
+  background-color: var(--color-dark);
+  padding-top: 2vh;
+}
+
+.subFooter p {
+  color: #fff;
+  margin-left: 25%;
+  margin-top: 15px;
 }
