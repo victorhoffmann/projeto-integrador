@@ -103,5 +103,5 @@ dist
 # TernJS port file
 .tern-port
 
-package-lock.json
 yarn.lock
+package-lock.json
