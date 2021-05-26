@@ -5,27 +5,33 @@ import './style.css'
 import axios from 'axios'
 
 const RenderPosts = ({ produtos }) => {
-        return produtos.map((post, index) => 
-            <CardProdutoTable {...post} key={index}/>
+        return produtos.map((produto, index) => 
+            <CardProdutoTable {...produto} key={index}/>
             )       
 }
 
 const TabelaProdutos = () => {
     const [data, setData] = useState({
-        produtos: []
-      });
-      useEffect(() => {
-        const getData = async () => {
-          try {
-            const response = await axios.get(`/admin}`);
+        produtos: []});
+
+    // useEffect( () => {
+    //   fetch("/admin/")
+    //     .then( (res) => res.json() )
+    //     .then( (res) => setData(res));
+    // }, []);
+    
+    useEffect(() => {
+      const getData = async () => {
+        try {
+          const response = await axios.get('/admin');
             setData(response.data);
           } catch (error) {
             console.log(error);
           }
-          console.log(data.produtos)
         };
         getData();
       }, []);
+
     return (
         <div className="painelProdutos">
             <div className="pesquisaProdutos">

@@ -1,7 +1,7 @@
 import './style.css'
 
 const BtnModificar = ({...props}) => {
-    const { id, title, description, price } = props;
+    const { id, nome, categoria_id, preco, descricao, qnt_disponivel } = props;
     return (
         <>
             <button id='btnModificarText' type="button" class="btn btn-success" data-toggle="modal" data-target={`#modalModificar${id}`} data-whatever="@getbootstrap">
@@ -23,16 +23,24 @@ const BtnModificar = ({...props}) => {
                         <div class="modal-body">
                             <form>
                                 <div class="form-group">
-                                    <label for="recipient-name" class="col-form-label">Nome:</label>
-                                    <input type="text" class="form-control" id="recipient-name" defaultValue={title}></input>
+                                    <label for={`recipient-name-${id}`} class="col-form-label">Nome:</label>
+                                    <input type="text" class="form-control" id={`recipient-name-${id}`} defaultValue={nome}></input>
                                 </div>
                                 <div class="form-group">
-                                    <label for="recipient-price" class="col-form-label">Preço:</label>
-                                    <input type="number" step='any' class="form-control" id="recipient-price" defaultValue={price}></input>
+                                    <label for={`recipient-categoria_id-${id}`} class="col-form-label">Categoria:</label>
+                                    <input type="text" class="form-control" id={`recipient-categoria_id-${id}`} defaultValue={categoria_id}></input>
                                 </div>
                                 <div class="form-group">
-                                    <label for="message-text" class="col-form-label">Descrição:</label>
-                                    <textarea class="form-control" id="message-text" defaultValue={description}></textarea>
+                                    <label for={`recipient-price-${id}`} class="col-form-label">Preço:</label>
+                                    <input type="number" step='any' class="form-control" id={`recipient-price-${id}`} defaultValue={preco}></input>
+                                </div>
+                                <div class="form-group">
+                                    <label for={`message-text-${id}`} class="col-form-label">Descrição:</label>
+                                    <textarea class="form-control" id={`message-text-${id}`} defaultValue={descricao}></textarea>
+                                </div>
+                                <div class="form-group">
+                                    <label for={`recipient-qnt_disponivel-${id}`} class="col-form-label">Quantidade disponivel:</label>
+                                    <input type="text" class="form-control" id={`recipient-qnt_disponivel-${id}`} defaultValue={qnt_disponivel}></input>
                                 </div>
                             </form>
                         </div>

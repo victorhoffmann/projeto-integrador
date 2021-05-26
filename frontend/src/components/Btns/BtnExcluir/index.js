@@ -1,5 +1,5 @@
 const BtnExcluir = ({...props}) => {
-    const { id, title } = props;
+    const { id, nome } = props;
 
     return (
         <>
@@ -19,11 +19,13 @@ const BtnExcluir = ({...props}) => {
                             </button>
                         </div>
                         <div class="modal-body">
-                            <p>Tem certeza que deseja excluir {title} ?</p>
+                            <p>Tem certeza que deseja excluir {nome} ?</p>
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
-                            <button type="button" class="btn btn-danger">Excluir</button>
+                            <form action={`/admin/${id}/delete`} method="POST">
+                                <button type="button" class="btn btn-danger">Excluir</button>
+                            </form>
                         </div>
                     </div>
                 </div>
