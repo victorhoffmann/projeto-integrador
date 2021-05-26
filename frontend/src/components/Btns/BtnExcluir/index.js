@@ -1,5 +1,19 @@
+import React from 'react'
+import axios from 'axios'
+
 const BtnExcluir = ({...props}) => {
     const { id, nome } = props;
+
+    const handleDelete = async (e) => {
+        e.preventDefault()
+        console.log('Entrou')
+        try {
+            const response = await axios.delete(`/admin/${id}`);
+              console.log(response.data);
+            } catch (error) {
+              console.log(error);
+            }
+    }
 
     return (
         <>
@@ -23,8 +37,8 @@ const BtnExcluir = ({...props}) => {
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
-                            <form action={`/admin/${id}/delete`} method="POST">
-                                <button type="button" class="btn btn-danger">Excluir</button>
+                            <form onSubmit={handleDelete}>
+                                <button type="submit" class="btn btn-danger">Excluir</button>
                             </form>
                         </div>
                     </div>

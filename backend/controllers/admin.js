@@ -10,15 +10,13 @@ const controller = {
           })
     },
     listDelete: async (req, res, next) => {
+      console.log("Controller Entrou")
       const { id } = req.params,
         produto = await Produto.destroy({
           where: { id },
+          force: true
         });
-      if (produto) {
-        res.send('Deu certo')
-      } else {
-        res.status(500).send("Ops... Algo de errado não deu certo!");
-      }
+      
     },
 }
 
