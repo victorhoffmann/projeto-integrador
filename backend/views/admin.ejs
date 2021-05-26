@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+</head>
+
+<body>
+    <section class="produtos">
+        <table class="produtos__table">
+        <thead>
+            <tr>
+            <th>ID</th>
+            <th>Nome</th>
+            <th>Categoria ID</th>
+            <th>Preço</th>
+            <th>Descrição</th>
+            <th>Quantidade disponivel</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% for(let produto of produtos) { %>
+            <tr id="produto<%= produto.id %>" class="produto">
+            <td class="user__id" data-title="ID"><%= produto.id%></td>
+            <td class="user__name" data-title="Nome"><%= produto.nome %></td>
+            <td class="user__categoria" data-title="Categoria"><%= produto.categoria_id %></td>
+            <td class="user__preco" data-title="Preco"><%= produto.preco %></td>
+            <td class="user__descricao" data-title="Descricao"><%= produto.descricao %></td>
+            <td class="user__qnt" data-title="qnt"><%= produto.qnt_disponivel %></td>
+            </tr>
+            <% } %>
+        </tbody>
+        </table>
+    </section>
+</body>
+</html>

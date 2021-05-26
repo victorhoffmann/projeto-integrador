@@ -1,16 +1,31 @@
+import React, { useEffect, useState} from 'react'
 import BtnAdd from '../Btns/BtnAdd'
 import CardProdutoTable from '../../components/Cards/CardProdutoTable'
-import { content } from '../../Helpers/TodosProdutosTable'
 import './style.css'
+import axios from 'axios'
 
-const RenderPosts = () => {
-  const { posts } = content
-  return posts.map((post, index) => 
-      <CardProdutoTable {...post} key={index}/>
-    )
+const RenderPosts = ({ produtos }) => {
+        return produtos.map((post, index) => 
+            <CardProdutoTable {...post} key={index}/>
+            )       
 }
 
 const TabelaProdutos = () => {
+    const [data, setData] = useState({
+        produtos: []
+      });
+      useEffect(() => {
+        const getData = async () => {
+          try {
+            const response = await axios.get(`/admin}`);
+            setData(response.data);
+          } catch (error) {
+            console.log(error);
+          }
+          console.log(data.produtos)
+        };
+        getData();
+      }, []);
     return (
         <div className="painelProdutos">
             <div className="pesquisaProdutos">
@@ -24,7 +39,7 @@ const TabelaProdutos = () => {
                         <th>Produto</th>
                         <th>Ações</th>
                     </tr>
-                    <RenderPosts/>
+                    <RenderPosts produtos={data.produtos}/>
                 </table>
             </div>
         </div>
