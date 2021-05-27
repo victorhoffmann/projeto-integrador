@@ -15,7 +15,7 @@ import MousePads from "../pages/MousePads";
 import Teclados from "../pages/Teclados";
 import Carrinho from "../pages/Carrinho"
 import Produto from '../pages/Produto'
-import PainelADM from '../pages/PainelADM'
+import PainelADM from '../pages/Admin/PainelADM'
 import Admin from '../pages/Admin'
 
 const Routes = () => {

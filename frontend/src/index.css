@@ -114,6 +114,50 @@
   margin-bottom: 15.9vh;
 }
 
+.pesquisaProdutos {
+  margin: 2vh 1vw ;
+  display: flex;
+  flex-direction: row;
+}
+
+.pesquisaProdutos input {
+  margin-right: 10vw;
+}
+
+table {
+  width: 100%;
+}
+
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  margin-bottom: 5vh
+}
+
+th, td {
+  padding: 15px;
+  text-align: left;
+}
+
+#t01 tr:nth-child(even) {
+  background-color: #eee;
+}
+
+#t01 tr:nth-child(odd) {
+  background-color: #fff;
+}
+
+#t01 th {
+  background-color: black;
+  color: white;
+}
+
+.tabelaItens {
+  margin-left: 1vw;
+  margin-right: 1vw;
+}
+
+
 @media only screen and (min-width: 1900px) {
   .signUp {
     width: calc(100vw - 70%);

@@ -1,4 +1,4 @@
-const CategoriaProduto = (categoria_id) =>{
+const CategoriaProduto = (categoria_id) => {
     const categorias = {
         1: 'Headsets',
         2: 'Monitores',
@@ -6,11 +6,6 @@ const CategoriaProduto = (categoria_id) =>{
         4: 'Mouse',
         5: 'Teclado'
     }
+    return categorias[categoria_id]}
 
-    for (var i = 0; i ++; i < categorias.length()) {
-        if (categoria_id === categorias[1]) {
-            return categorias[categoria_id]
-        }
-    }
-    
-}
+export default CategoriaProduto

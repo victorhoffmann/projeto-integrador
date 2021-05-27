@@ -1,18 +1,22 @@
 import React from 'react'
 import axios from 'axios'
+// import { useHistory } from 'react-router-dom'
 
-const BtnExcluir = ({...props}) => {
-    const { id, nome } = props;
+
+const BtnExcluir = ({ produto }) => {
+    const { id, nome } = produto
+    // const history = useHistory();
+
 
     const handleDelete = async (e) => {
         e.preventDefault()
-        console.log('Entrou')
         try {
-            const response = await axios.delete(`/admin/${id}`);
-              console.log(response.data);
-            } catch (error) {
-              console.log(error);
-            }
+            const response = await axios.delete(`/admin/${produto.id}`);
+            // history.go(0);
+        } catch (error) {
+            console.log(error);
+            // history.go(0);
+        }
     }
 
     return (

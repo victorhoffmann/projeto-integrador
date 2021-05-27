@@ -9,6 +9,7 @@ function App() {
     <>
       {console.log(window.location)}
       {window.location.pathname !== "/admin" ? <Header /> : null}
+      
 
       <Routes />
       {window.location.pathname !== "/admin" ? <Footer /> : null}
