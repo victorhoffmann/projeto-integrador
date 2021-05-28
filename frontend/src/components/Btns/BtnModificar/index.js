@@ -6,8 +6,11 @@ import { useHistory } from 'react-router-dom'
 
 
 const BtnModificar = ({ produto }) => {
-    const [dados, setDadosModificar] = useState({
-        produto: []})
+    const [nome_input, setNome] = useState('');
+    const [categoria_id_input, setCategoria_ID] = useState('');
+    const [preco_input, setPreco] = useState('');
+    const [descricao_input, setDescricao] = useState('');
+    const [qnt_input, setQnt] = useState('');
     const history = useHistory();
 
     const handleModify = async (e) => {
@@ -29,8 +32,14 @@ const BtnModificar = ({ produto }) => {
     useEffect(() => {
         const getDataModificar = async () => {
           try {
-            const response = await axios.get(`/admin/${produto}`);
-              setDadosModificar(response.data);
+            let response = await axios.get(`/admin/${produto}`);
+                response= response.data.produto
+                setNome(response.nome)
+                setCategoria_ID(response.categoria_id)
+                setPreco(response.preco)
+                setDescricao(response.descricao)
+                setQnt(response.qnt_disponivel)
+              
             } catch (error) {
               console.log(error);
             }
@@ -38,11 +47,6 @@ const BtnModificar = ({ produto }) => {
           getDataModificar();
         }, []);
 
-        const [nome_input, setNome] = useState(dados.produto.nome);
-        const [categoria_id_input, setCategoria_ID] = useState(dados.produto.categoria_id);
-        const [preco_input, setPreco] = useState(dados.produto.preco);
-        const [descricao_input, setDescricao] = useState(dados.produto.descricao);
-        const [qnt_input, setQnt] = useState(dados.produto.qnt_disponivel);
 
     return (
         <>
@@ -66,23 +70,23 @@ const BtnModificar = ({ produto }) => {
                             <form>
                                 <div class="form-group">
                                     <label for={`recipient-name-${produto}`} class="col-form-label">Nome:</label>
-                                    <input type="text" class="form-control" id={`recipient-name-${produto}`} Value={dados.produto.nome} onChange={(e) => setNome(e.target.value)}></input>
+                                    <input type="text" class="form-control" id={`recipient-name-${produto}`} value={nome_input} onChange={(e) => setNome(e.target.value)}></input>
                                 </div>
                                 <div class="form-group">
                                     <label for={`recipient-categoria_id-${produto}`} class="col-form-label">Categoria:</label>
-                                    <input type="text" class="form-control" id={`recipient-categoria_id-${produto}`} Value={CategoriaProduto(dados.produto.categoria_id)} onChange={(e) => setCategoria_ID(e.target.value)}></input>
+                                    <input type="text" class="form-control" id={`recipient-categoria_id-${produto}`} value={CategoriaProduto(categoria_id_input)} onChange={(e) => setCategoria_ID(e.target.value)}></input>
                                 </div>
                                 <div class="form-group">
                                     <label for={`recipient-price-${produto}`} class="col-form-label">Preço:</label>
-                                    <input type="number" step='any' class="form-control" id={`recipient-price-${produto}`} Value={dados.produto.preco} onChange={(e) => setPreco(e.target.value)}></input>
+                                    <input type="number" step='any' class="form-control" id={`recipient-price-${produto}`} value={preco_input} onChange={(e) => setPreco(e.target.value)}></input>
                                 </div>
                                 <div class="form-group">
                                     <label for={`message-text-${produto}`} class="col-form-label">Descrição:</label>
-                                    <textarea class="form-control" id={`message-text-${produto}`} Value={dados.produto.descricao} onChange={(e) => setDescricao(e.target.value)}></textarea>
+                                    <textarea class="form-control" id={`message-text-${produto}`} value={descricao_input} onChange={(e) => setDescricao(e.target.value)}></textarea>
                                 </div>
                                 <div class="form-group">
                                     <label for={`recipient-qnt_disponivel-${produto}`} class="col-form-label">Quantidade disponivel:</label>
-                                    <input type="number" class="form-control" id={`recipient-qnt_disponivel-${produto}`} Value={dados.produto.qnt_disponivel} onChange={(e) => setQnt(e.target.value)}></input>
+                                    <input type="number" class="form-control" id={`recipient-qnt_disponivel-${produto}`} value={qnt_input} onChange={(e) => setQnt(e.target.value)}></input>
                                 </div>
                             </form>
                         </div>

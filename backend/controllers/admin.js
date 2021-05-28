@@ -22,12 +22,11 @@ const controller = {
           qnt_disponivel,
         });
         if (produto) {
-          res.redirect("/admin");
-        } else {
-          res.status(500).send("Ops... Algo de errado não deu certo!");
-        }
-      } catch (error) {
-        res.status(400).json({ message: "Algo de errado não está certo" });
+          return res.status(200).json({message: "Produto adicionado"})
+        } 
+        throw {message: 'Erro'}
+          } catch (error) {
+          return res.status(400).json({ message: "Erro ao adicionar o produto" });
       }
     },
 
@@ -37,6 +36,7 @@ const controller = {
           where: { id },
           force: true
         });
+        return res.status(200).json({message: "Item deletado"})
     },
 
     itemUpdate: async (req, res, next) => {
@@ -47,10 +47,10 @@ const controller = {
           { where: { id } }
         );
       if (!produto) {
-        res.status(500).send("Ops... Algo de errado não deu certo!");
-      } else {
-        res.redirect('/admin')
+        return res.status(500).json({message: "Ops... Erro ao atualizar o produto!"});
       }
+      return res.status(200).json({message: 'Item atualizado com sucesso!'})
+  
     },
 
     itemIndex: async (req, res, next) => {
