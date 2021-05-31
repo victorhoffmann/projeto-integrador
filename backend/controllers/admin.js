@@ -1,5 +1,4 @@
 const { Produto } = require('../models'),
-  { Categoria } = require('../models')
   Sequelize = require('sequelize'),
   { Op } = Sequelize
 

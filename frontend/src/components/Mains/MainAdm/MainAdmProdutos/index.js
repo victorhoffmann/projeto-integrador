@@ -1,11 +1,9 @@
-import BtnAdd from '../../Btns/BtnAdd'
-import BtnExcluir from '../../Btns/BtnExcluir'
-import BtnModificar from '../../Btns/BtnModificar'
-import BtnVisualizar from '../../Btns/BtnVisualizar'
+import BtnAdd from '../../../Btns/BtnAdd'
+import BtnExcluir from '../../../Btns/BtnExcluir'
+import BtnModificar from '../../../Btns/BtnModificar'
+import BtnVisualizar from '../../../Btns/BtnVisualizar'
 
-import './style.css'
-
-const MainAdm = ( { produtos }) => {
+const MainAdmProdutos = ( { produtos }) => {
     return (
         <div className="mainAdm">
             <div className="headerAdm">
@@ -28,7 +26,7 @@ const MainAdm = ( { produtos }) => {
                 </thead>
                 <tbody>
                     { produtos.map((produto, index) => (
-                        <tr>
+                        <tr className={`item-${produto.id}`}>
                             <td>{produto.id}</td>
                             <td>{produto.nome}</td>
                             <td>
@@ -46,4 +44,4 @@ const MainAdm = ( { produtos }) => {
     )
 }
 
-export default MainAdm
+export default MainAdmProdutos

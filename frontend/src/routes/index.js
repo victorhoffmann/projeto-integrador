@@ -17,12 +17,16 @@ import Carrinho from "../pages/Carrinho"
 import Produto from '../pages/Produto'
 import PainelADM from '../pages/Admin/PainelADM'
 import Admin from '../pages/Admin'
+import ProdutosADM from '../pages/Admin/PainelADM/Produtos'
+import UsuariosADM from '../pages/Admin/PainelADM/Usuarios'
 
 const Routes = () => {
   return (
     <Router>
       <Switch>
         <Route path="/faq" component={Faq} />
+        <Route path="/painel-adm/usuarios" component={UsuariosADM} />
+        <Route path="/painel-adm/produtos" component={ProdutosADM} />
         <Route path="/painel-adm" component={PainelADM} />
         <Route path="/admin" component={Admin} />
         <Route path="/produto" component={Produto} />

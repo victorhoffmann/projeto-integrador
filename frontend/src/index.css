@@ -124,6 +124,34 @@
   margin-right: 10vw;
 }
 
+/* ADM */
+
+.pageAdm {
+  display: flex;
+  flex-direction: row;
+}
+
+.mainAdm {
+  width: 100%;
+}
+
+.headerAdm {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgba(112, 203, 135, 0.5);
+  padding: 1vh 0;
+}
+
+.headerAdm h4 {
+  margin-left: 1vw;
+}
+
+.headerAdm a {
+  margin-right: 1vw;
+}
+
 table {
   width: 100%;
 }
