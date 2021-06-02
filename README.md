@@ -37,16 +37,24 @@ Para o desenvolvimento deste projeto utilizamos as seguintes tecnologias:
 
 ---
 
-## 📚 Seções
+## 📚 Como utilizar
+Requisitos:
+- **VSCode**
+- **Xampp**
+- **MySQL Workbench**
+
 Como utilizar:
+- **Executar XAMPP e Iniciar (start) o MySQL**
 - **Git Clone no repositório**
+- **Abrir projeto-integrador.sql** no Workbench (arquivo disponivel no repositório)
+- **Ctrl + Enter na linha 3 "USE perifericos_net;"** para utilizar o Banco de Dados
 - Na pasta raiz: **npm Install** para instalar o **concurrently**
 - Após instalar o **concurrently**, ainda na pasta raiz: **npm run dev-install** para instalar as dependências do **backend e frontend**
 - Após conclusão, executar o seguinte comando: **npm run dev**
 
 ---
 
-## 🚀 Autores<br>
+## 🚀<Autores<br>
 <table>
   <tr>
     <td align="center">
