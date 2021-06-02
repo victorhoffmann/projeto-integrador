@@ -4,20 +4,11 @@
     border-bottom: 2px solid #ccc;
 }
 
-.form-btns {
-    flex-direction: row;
-}
-
-button#btn-adm-entrar {
-    background: -webkit-linear-gradient( right, var(--color-dark), var(--color-secondary), var(--color-dark), var(--color-secondary) );
-    border: none;
-    color: #fff;
-    font-size: 17px;
-    font-weight: 500;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    cursor: pointer;
-    position: relative;
-    z-index: 2;
-    height: 100%;
+#formLoginAdm {
+    display: flex;
+    flex-direction: row!important;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -5px;
+    margin-left: -5px;
 }

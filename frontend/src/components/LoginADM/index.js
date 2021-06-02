@@ -56,14 +56,14 @@ const LoginADM = () => {
                       ></input>
                     </div>
                   </div>
-                  <div className="form-row submit-btn__entrar form-btns">
+                  <div id='formLoginAdm' className="form-row submit-btn__entrar">
                     <div className="input-data btn-voltar">
                       <div className="inner"></div>
                       <a href="/">
                       <input type="button" value="voltar"></input></a>
                     </div>
                     <div className="input-data btn-entrar">
-                      <button id='btn-adm-entrar' onClick={handleSubmit}>Entrar</button>
+                      <button id='btnCadastro' onClick={handleSubmit}>Entrar</button>
                     </div>
                   </div>
                 </form>
