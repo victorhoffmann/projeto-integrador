@@ -22,7 +22,7 @@ const Aside = () => {
                 <div className="carousel-inner">
                     <div className="carousel-item active">
                         <img
-                            src={headset1}
+                            src={'http://localhost:5000/images/headset1.jpg'}
                             className="d-block w-100"
                             alt="..."
                         />
