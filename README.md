@@ -54,7 +54,7 @@ Como utilizar:
 
 ---
 
-## 🚀<Autores<br>
+## 🚀 Autores<br>
 <table>
   <tr>
     <td align="center">
