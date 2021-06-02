@@ -1,11 +1,10 @@
 const express = require('express'),
     router = express.Router(),
     controller = require('../controllers/admin')
+    authMiddleware = require('../middlewares/auth')
+    isAdminMiddleware = require('../middlewares/isAdmin')
 
-router.delete('/:id', controller.itemDelete)
-router.post('/:id', controller.itemUpdate)
-router.get('/:id', controller.itemIndex)
-router.post('/', controller.itemAdd)        
-router.get('/', controller.itemList)
+router.get('/is-admin', authMiddleware, isAdminMiddleware, controller.isAdmin)
+router.post('/', controller.login)
 
 module.exports = router

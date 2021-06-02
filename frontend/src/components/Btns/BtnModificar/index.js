@@ -16,7 +16,7 @@ const BtnModificar = ({ produto }) => {
     const handleModify = async (e) => {
         e.preventDefault()
         try {
-            const response = await axios.post(`/admin/${produto}`, {
+            const response = await axios.post(`/produtos/${produto}`, {
                 nome: nome_input,
                 categoria_id: categoria_id_input,
                 preco: preco_input,
@@ -32,7 +32,7 @@ const BtnModificar = ({ produto }) => {
     useEffect(() => {
         const getDataModificar = async () => {
           try {
-            let response = await axios.get(`/admin/${produto}`);
+            let response = await axios.get(`/produtos/${produto}`);
                 response= response.data.produto
                 setNome(response.nome)
                 setCategoria_ID(response.categoria_id)

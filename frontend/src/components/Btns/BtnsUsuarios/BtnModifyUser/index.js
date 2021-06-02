@@ -5,7 +5,6 @@ import { useHistory } from 'react-router-dom'
 const BtnModifyUser = ({ usuario }) => {
     const [nome_input, setNome] = useState('');
     const [email_input, setEmail] = useState('');
-    const [senha_input, setSenha] = useState('');
     const [cpf_cnpj_input, setCpf_Cnpj] = useState('');
     const [id_funcao_input, setFuncao] = useState('');
     const history = useHistory();
@@ -16,7 +15,6 @@ const BtnModifyUser = ({ usuario }) => {
             const response = await axios.post(`/usuarios/${usuario}`, {
             nome: nome_input,
             email: email_input,
-            senha: senha_input,
             cpf_cnpj: cpf_cnpj_input,
             id_funcao: id_funcao_input
           });
@@ -34,7 +32,6 @@ const BtnModifyUser = ({ usuario }) => {
             response= response.data.usuario
             setNome(response.nome)
             setEmail(response.email)
-            setSenha(response.senha)
             setCpf_Cnpj(response.cpf_cnpj)
             setFuncao(response.id_funcao)
         } catch (error) {
@@ -71,10 +68,6 @@ const BtnModifyUser = ({ usuario }) => {
                                 <div class="form-group">
                                     <label for={`recipient-email-user-${usuario}`} class="col-form-label">Email:</label>
                                     <input type="text" class="form-control" id={`recipient-email-user-${usuario}`} required value={email_input} onChange={(e) => setEmail(e.target.value)}></input>
-                                </div>
-                                <div class="form-group">
-                                    <label for={`recipient-senha-user-${usuario}`} class="col-form-label">Senha:</label>
-                                    <input type="text" step='any' class="form-control" id={`recipient-senha-user-${usuario}`} required value={senha_input} onChange={(e) => setSenha(e.target.value)}></input>
                                 </div>
                                 <div class="form-group">
                                     <label for={`recipient-cpf-user-${usuario}`} class="col-form-label">CPF/CNPJ:</label>

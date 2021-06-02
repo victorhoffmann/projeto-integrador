@@ -1,9 +1,9 @@
-import EntrarAdm from '../../components/EntrarAdm'
+import LoginADM from '../../components/LoginADM'
 
 const Admin = () => {
     return (
         <>
-            <EntrarAdm />
+            <LoginADM />
         </>
     )
 }

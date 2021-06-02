@@ -10,7 +10,7 @@ const BtnVisualizar = ({ produto }) => {
     useEffect(() => {
         const getDataModificar = async () => {
             try {
-                const response = await axios.get(`/admin/${produto}`);
+                const response = await axios.get(`/produtos/${produto}`);
                 setDadosModificar(response.data);
             } catch (error) {
                 console.log(error);

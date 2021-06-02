@@ -14,7 +14,7 @@ const BtnAdd = () => {
         e.preventDefault();
     
         try {
-          const response = await axios.post('/admin', {
+          const response = await axios.post('/produtos', {
             nome,
             categoria_id,
             preco,

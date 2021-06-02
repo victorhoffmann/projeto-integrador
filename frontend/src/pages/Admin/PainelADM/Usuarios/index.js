@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react'
 import MenuAdm from '../../../../components/MenuAdm'
 import MainAdmUsuarios from '../../../../components/Mains/MainAdm/MainAdmUsuarios'
-import axios from 'axios'
+import api from '../../../../services/api'
+
 
 const UsuariosADM = () => {
     const [dataUsuarios, setDataUsuarios] = useState({
@@ -10,7 +11,7 @@ const UsuariosADM = () => {
     useEffect(() => {
       const getDataUsuarios = async () => {
         try {
-          const responseUsers = await axios.get('/usuarios');
+          const responseUsers = await api.get('/usuarios');
             setDataUsuarios(responseUsers.data);
         } catch (error) {
             console.log(error);

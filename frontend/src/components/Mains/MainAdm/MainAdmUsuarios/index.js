@@ -1,13 +1,19 @@
 import BtnAddUser from "../../../Btns/BtnsUsuarios/BtnAddUser"
 import BtnDeleteUser from "../../../Btns/BtnsUsuarios/BtnDeleteUser"
 import BtnModifyUser from '../../../Btns/BtnsUsuarios/BtnModifyUser'
+import { removeToken} from '../../../../Helpers/session'
+
 
 const MainAdmUsuarios = ( { usuarios }) => {
+    const handleLogout = () => {
+        removeToken()
+      }
+
     return (
         <div className="mainAdm">
             <div className="headerAdm">
-                <h4>Produtos</h4>
-                <a href="./admin" ><button type="button" className="btn btn-outline-danger">Sair <i class="fas fa-sign-out-alt" aria-hidden="true"></i></button></a>
+                <h4>Usuarios</h4>
+                <a href="/admin" ><button onClick={handleLogout} className="btn btn-outline-danger">Sair <i class="fas fa-sign-out-alt" aria-hidden="true"></i></button></a>
             </div>
             <div className="painelProdutos">
             <div className="pesquisaProdutos">
@@ -21,7 +27,6 @@ const MainAdmUsuarios = ( { usuarios }) => {
                         <th>ID</th>
                         <th>Usuario</th>
                         <th>Email</th>
-                        <th>Senha</th>
                         <th>Função</th>
                         <th>Ações</th>
                     </tr>
@@ -32,7 +37,6 @@ const MainAdmUsuarios = ( { usuarios }) => {
                             <td>{usuario.id}</td>
                             <td>{usuario.nome}</td>
                             <td>{usuario.email}</td>
-                            <td>{usuario.senha}</td>
                             <td>{usuario.id_funcao === 1 ? 'Admin' : "Usuario Final"}</td>
                             <td>
                                 <BtnDeleteUser usuario={usuario} />&nbsp;

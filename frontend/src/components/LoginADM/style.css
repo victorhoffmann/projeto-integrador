@@ -8,7 +8,7 @@
     flex-direction: row;
 }
 
-.btn-adm-entrar {
+button#btn-adm-entrar {
     background: -webkit-linear-gradient( right, var(--color-dark), var(--color-secondary), var(--color-dark), var(--color-secondary) );
     border: none;
     color: #fff;
