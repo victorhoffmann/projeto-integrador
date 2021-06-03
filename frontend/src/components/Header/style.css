@@ -22,17 +22,11 @@ nav {
 #links {
   display: flex;
   align-items: center !important;
-  margin-left: 650px;
 }
 
 .nav-links {
   font-size: 3vh;
   align-items: center;
-}
-
-header form {
-  margin: 0vh 5%;
-  padding-bottom: 2vh;
 }
 
 .nav-links {

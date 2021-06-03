@@ -10,6 +10,18 @@ const Header = () => {
           </a>
         </div>
 
+        <form className="d-flex" id='form-header'>
+          <input
+            id='form-header-input'
+            className="form-control mr-2"
+            type="search"
+            placeholder="Produtos"
+            aria-label="Produtos"
+          />
+          <button className="btn btn-outline-success" type="submit">
+            Pesquisar
+          </button>
+        </form>
         <button
           className="navbar-dark navbar-toggler"
           type="button"
@@ -75,18 +87,6 @@ const Header = () => {
         </div>
       </nav>
 
-      <form className="d-flex" id='form-header'>
-        <input
-          id='form-header-input'
-          className="form-control mr-2"
-          type="search"
-          placeholder="Produtos"
-          aria-label="Produtos"
-        />
-        <button className="btn btn-outline-success" type="submit">
-          Pesquisar
-        </button>
-      </form>
     </header>
   );
 };
