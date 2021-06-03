@@ -4,12 +4,7 @@ const Login = () => {
   return (
     <>
       <div className="container">
-        <div className="headerForm">
-          <p>Já é cadastrado?</p>
-          Então entre com seus dados de login e senha.
-        </div>
         <div className="bodyForm">
-          E-mail e Senha são obrigatórios para login.
           <h3>Dados Pessoais</h3>
         </div>
         <form action="#">
@@ -28,15 +23,15 @@ const Login = () => {
             </div>
           </div>
           <div className="esqueci">
-            <a href="./esqueci-senha">ESQUECI MINHA SENHA</a>
+            <a href="/esqueci-senha">ESQUECI MINHA SENHA</a>
           </div>
           <div className="esqueci">
-            <a href="./cadastro">CADASTRE-SE AQUI</a>
+            <a href="/cadastro">CADASTRE-SE AQUI</a>
           </div>
           <div className="form-row submit-btn__entrar">
             <div className="input-data btn-voltar">
               <div className="inner"></div>
-              <a href="./">
+              <a href="/">
               <input type="button" value="voltar"></input></a>
             </div>
             <div className="input-data btn-entrar">

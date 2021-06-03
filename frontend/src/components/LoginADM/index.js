@@ -2,12 +2,16 @@ import React, { useState } from "react";
 import axios from 'axios'
 import { setToken } from '../../Helpers/session'
 import { useHistory } from 'react-router-dom'
+import './style.css'
  
 const LoginADM = () => {
   const [email, setEmail] = useState("");
   const [senha, setSenha] = useState("");
   const history = useHistory();
 
+  const handleVoltar = () => {
+    history.push('/')
+  }
 
   const handleSubmit = async (e) => {
     e.preventDefault()
@@ -24,11 +28,11 @@ const LoginADM = () => {
     return (
         <>
           <section className="formularios">
-            <div className="signIn">
+            <div className="signInAdmin">
               <div className="titleAdminLogin">
                 <h2>Painel do Administrador</h2>
               </div>
-              <div className="bodyForm">
+              <div className="bodyFormAdmin">
                 <form>
                   <div className="form-row">
                     <div className="form-group col-md-9">
@@ -56,15 +60,9 @@ const LoginADM = () => {
                       ></input>
                     </div>
                   </div>
-                  <div id='formLoginAdm' className="form-row submit-btn__entrar">
-                    <div className="input-data btn-voltar">
-                      <div className="inner"></div>
-                      <a href="/">
-                      <input type="button" value="voltar"></input></a>
-                    </div>
-                    <div className="input-data btn-entrar">
-                      <button id='btnCadastro' onClick={handleSubmit}>Entrar</button>
-                    </div>
+                  <div id='formLoginAdm'>
+                      <button className='btnsAdmin' onClick={handleVoltar}>Voltar</button>
+                      <button className='btnsAdmin' onClick={handleSubmit}>Entrar</button>
                   </div>
                 </form>
               </div>

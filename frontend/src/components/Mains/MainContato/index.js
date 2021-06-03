@@ -32,10 +32,8 @@ const MainContato = () => {
           <div className="form-row">
             <div className="input-data textarea">
               <textarea rows="8" cols="80" required></textarea>
-              <br />
               <div className="underline"></div>
               <label for="message">Escreva sua mensagem!</label>
-              <br />
             </div>
           </div>
           <div className="form-row submit-btn__contato">

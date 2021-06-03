@@ -4,11 +4,36 @@
     border-bottom: 2px solid #ccc;
 }
 
+.signInAdmin {
+    margin-top: 10vh;
+    border-radius: 5px;
+    padding: 20px;
+    -webkit-box-shadow: 0px 0px 50px 0px rgba(0,0,0,0.56);
+    -moz-box-shadow: 0px 0px 50px 0px rgba(0,0,0,0.56);
+    box-shadow: 0px 0px 50px 0px rgba(0,0,0,0.56);
+}
+
+.bodyFormAdmin {
+    background-color: #fff;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding: 10px;
+    padding-left: 20px;
+}
+
 #formLoginAdm {
     display: flex;
-    flex-direction: row!important;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    margin-right: -5px;
-    margin-left: -5px;
+    justify-content: space-around;
 }
+
+.btnsAdmin {
+    border: none;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    background: -webkit-linear-gradient( right, var(--color-dark), var(--color-secondary), var(--color-dark), var(--color-secondary) );
+    transition: all 0.4s;
+  }

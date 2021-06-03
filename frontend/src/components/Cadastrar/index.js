@@ -31,12 +31,8 @@ const Cadastrar = () => {
     return (
 
         <div className="container">
-            <div className="headerForm">
-                <p>Ainda não é cadastrado no site?</p>
-            Faça agora mesmo o seu cadastro, é rápido!
-            </div>
             <div className="bodyForm">
-                Todos os campos são de preenchimento obrigatório.
+            Todos os campos são de preenchimento obrigatório.
                 <h3>Dados Pessoais</h3>
             </div>
 

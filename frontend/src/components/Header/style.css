@@ -11,7 +11,7 @@ nav {
 }
 
 #logo a {
-  font-size: 4vh;
+  font-size: 3vh;
   color: var(--color-secondary) !important;
 }
 
@@ -22,6 +22,11 @@ nav {
 #links {
   display: flex;
   align-items: center !important;
+  font-size: 1.5rem;
+}
+
+.dropdown-item {
+  font-size: 1.2rem!important;
 }
 
 .nav-links {
@@ -38,7 +43,7 @@ nav {
     flex-direction: row;
   }
   #logo {
-    width: 40%;
+    width: 36%;
   }
   .navbar-brand {
     padding-left: 10px;

@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react'
 import CategoriaProduto from '../../Categoria_ID'
-import './style.css'
 import axios from 'axios'
 
 const BtnVisualizar = ({ produto }) => {
