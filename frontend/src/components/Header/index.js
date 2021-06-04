@@ -1,6 +1,18 @@
+import { getUser, removeUser, removeToken } from "../../Helpers/session";
+import { useHistory } from 'react-router-dom'
 import "./style.css";
 
 const Header = () => {
+  const userNome = getUser
+  const history = useHistory()
+
+  const handleLogout = () => {
+    removeToken()
+    removeUser()
+    history.push('/')
+    history.go(0)
+  }
+
   return (
     <header>
       <nav className="navbar  navbar-expand-lg ">
@@ -75,14 +87,18 @@ const Header = () => {
               </div>
             </div>
 
+            {userNome ? <a id='userNameHeader'>| {userNome} | &nbsp;  </a>
+            : 
             <a className="nav-links nav-item" href="./login">
               <i className="fa fa-user" aria-hidden="true"></i>
             </a>
-
+            }
+            
             <a className="nav-links nav-item" href="./carrinho">
               <i className="fa fa-shopping-cart" aria-hidden="true"></i>
             </a>
             
+            {userNome ? <button id='userLogout' onClick={handleLogout}>Sair</button> : null}
           </div>
         </div>
       </nav>

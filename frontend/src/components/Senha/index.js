@@ -25,7 +25,7 @@ const Senha = () => {
                         </div>
                         <div className="input-data btn-entrar">
                             <div className="inner"></div>
-                            <input type="submit" value="entrar"></input>
+                            <input type="submit" value="Enviar"></input>
                         </div>
                     </div>
                 </form>

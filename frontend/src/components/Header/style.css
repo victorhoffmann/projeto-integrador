@@ -25,6 +25,19 @@ nav {
   font-size: 1.5rem;
 }
 
+#userNameHeader {
+  color: var(--color-secondary);
+  font-size: 20px;
+  margin: 0px;
+}
+
+#userLogout {
+  color: var(--color-secondary);
+  background-color: transparent;
+  border: 1px solid transparent;
+  font-size: 1rem;
+}
+
 .dropdown-item {
   font-size: 1.2rem!important;
 }

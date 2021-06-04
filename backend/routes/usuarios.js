@@ -7,6 +7,7 @@ const express = require('express'),
 router.delete('/:id', controller.userDelete)
 router.post('/:id', controller.userUpdate)
 router.get('/:id', controller.userIndex)
+router.post('/login', controller.userLogin)
 router.post('/', controller.userAdd)  
 router.get('/',  authMiddleware, isAdminMiddleware, controller.userList)
 

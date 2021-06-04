@@ -1,6 +1,33 @@
+import React, { useState } from "react";
+import axios from 'axios'
+import { setToken, setUser } from '../../Helpers/session'
+import { useHistory } from 'react-router-dom'
 import "./style.css";
 
 const Login = () => {
+
+  const [email, setEmail] = useState("");
+  const [senha, setSenha] = useState("");
+  const history = useHistory();
+
+  const handleVoltar = () => {
+    history.push('/')
+  }
+
+  const handleSubmit = async (e) => {
+    e.preventDefault()
+    try {
+      const response = await axios.post('/admin', {email, senha})
+      const token = response.data.token
+      setToken(token)
+      setUser(response.data.user)
+      history.push('/')
+      history.go(0)
+    } catch (error) {
+      
+    }
+  };
+
   return (
     <>
       <div className="container">
@@ -10,14 +37,14 @@ const Login = () => {
         <form action="#">
           <div className="form-row names">
             <div className="input-data">
-              <input type="text" required></input>
+              <input type="text" required value={email} onChange={(e) => setEmail(e.target.value)}></input>
               <div className="underline"></div>
               <label for="name">E-mail:</label>
             </div>
           </div>
           <div className="form-row">
             <div className="input-data">
-              <input type="password" required></input>
+              <input type="password" required value={senha} onChange={(e) => setSenha(e.target.value)}></input>
               <div className="underline"></div>
               <label for="email">Senha:</label>
             </div>
@@ -28,16 +55,9 @@ const Login = () => {
           <div className="esqueci">
             <a href="/cadastro">CADASTRE-SE AQUI</a>
           </div>
-          <div className="form-row submit-btn__entrar">
-            <div className="input-data btn-voltar">
-              <div className="inner"></div>
-              <a href="/">
-              <input type="button" value="voltar"></input></a>
-            </div>
-            <div className="input-data btn-entrar">
-              <div className="inner"></div>
-              <input type="submit" value="entrar"></input>
-            </div>
+          <div id='formLogin'>
+            <button className='btnsLogin' onClick={handleVoltar}>Voltar</button>
+            <button className='btnsLogin' onClick={handleSubmit}>Entrar</button>
           </div>
         </form>
       </div>

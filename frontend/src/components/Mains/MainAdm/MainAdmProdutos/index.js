@@ -2,11 +2,12 @@ import BtnAdd from '../../../Btns/BtnAdd'
 import BtnExcluir from '../../../Btns/BtnExcluir'
 import BtnModificar from '../../../Btns/BtnModificar'
 import BtnVisualizar from '../../../Btns/BtnVisualizar'
-import { removeToken} from '../../../../Helpers/session'
+import { removeToken, removeUser} from '../../../../Helpers/session'
 
 const MainAdmProdutos = ( { produtos }) => {
     const handleLogout = () => {
         removeToken()
+        removeUser()
       }
 
     return (

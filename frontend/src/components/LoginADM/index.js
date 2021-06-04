@@ -19,8 +19,7 @@ const LoginADM = () => {
       const response = await axios.post('/admin', {email, senha})
       const token = response.data.token
       setToken(token)
-      history.push('/painel-adm');
-
+      response.data.user.id_funcao === 1 ? history.push('/painel-adm') : alert('Você não é ADMIN')
     } catch (error) {
       
     }

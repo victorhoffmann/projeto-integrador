@@ -1,12 +1,13 @@
 import BtnAddUser from "../../../Btns/BtnsUsuarios/BtnAddUser"
 import BtnDeleteUser from "../../../Btns/BtnsUsuarios/BtnDeleteUser"
 import BtnModifyUser from '../../../Btns/BtnsUsuarios/BtnModifyUser'
-import { removeToken} from '../../../../Helpers/session'
+import { removeToken, removeUser} from '../../../../Helpers/session'
 
 
 const MainAdmUsuarios = ( { usuarios }) => {
     const handleLogout = () => {
         removeToken()
+        removeUser()
       }
 
     return (

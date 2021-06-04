@@ -1,10 +1,11 @@
-import { removeToken} from '../../../Helpers/session'
+import { removeToken, removeUser} from '../../../Helpers/session'
 
 
 const MainADM = () => {
 
     const handleLogout = () => {
         removeToken()
+        removeUser()
     }
 
     return (

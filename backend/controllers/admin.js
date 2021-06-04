@@ -23,7 +23,7 @@ const controller = {
     },
 
     isAdmin: async (req, res, next) => {
-      res.json({message: 'É administrador'})
+      return res.status(200).json({message: 'É administrador'})
     }
 
 }
