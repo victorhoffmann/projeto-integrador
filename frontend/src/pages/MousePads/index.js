@@ -1,20 +1,32 @@
-import ShelfMousePads from "../../components/Shelfs/ShelfMousePads";
-import { content } from "../../Helpers/MousePads";
+import React, { useEffect, useState } from 'react'
+import axios from 'axios'
+import RenderProdutos from '../../components/RenderProdutos';
 
 const MousePads = () => {
-  const { categories, posts } = content;
-  const renderCategories = () => {
-    return categories.map((category) => {
-      const { id, title } = category;
-      const catPosts = posts.filter((post) => post.cat_id === id);
-      return <ShelfMousePads title={title} key={id} posts={catPosts} />;
-    });
-  };
+  const [dataProdutos, setDataProdutos] = useState({
+    produtos: []});
+
+  useEffect(() => {
+
+    const getDataProdutos = async () => {
+      try {
+        const response = await axios.get('/produtos/categorias/3');
+          setDataProdutos(response.data);
+        } catch (error) {
+          console.log(error);
+        }
+      };
+    getDataProdutos();
+  }, []);
+
   return (
     <>
-      <h1 className="shelf__title">Mouse Pads</h1>
-      {renderCategories()}
+      <h1 className="shelf__title">MousePads</h1>
+      <section className="shelf">
+        <RenderProdutos produtos={dataProdutos.produtos}/>
+      </section>
     </>
   );
 };
+
 export default MousePads;

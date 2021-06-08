@@ -1,20 +1,32 @@
-import ShelfMouses from "../../components/Shelfs/ShelfMouses";
-import { content } from "../../Helpers/Mouses";
+import React, { useEffect, useState } from 'react'
+import axios from 'axios'
+import RenderProdutos from '../../components/RenderProdutos';
 
 const Mouses = () => {
-  const { categories, posts } = content;
-  const renderCategories = () => {
-    return categories.map((category) => {
-      const { id, title } = category;
-      const catPosts = posts.filter((post) => post.cat_id === id);
-      return <ShelfMouses title={title} key={id} posts={catPosts} />;
-    });
-  };
+  const [dataProdutos, setDataProdutos] = useState({
+    produtos: []});
+
+  useEffect(() => {
+
+    const getDataProdutos = async () => {
+      try {
+        const response = await axios.get('/produtos/categorias/4');
+          setDataProdutos(response.data);
+        } catch (error) {
+          console.log(error);
+        }
+      };
+    getDataProdutos();
+  }, []);
+
   return (
     <>
       <h1 className="shelf__title">Mouses</h1>
-      {renderCategories()}
+      <section className="shelf">
+        <RenderProdutos produtos={dataProdutos.produtos}/>
+      </section>
     </>
   );
 };
+
 export default Mouses;

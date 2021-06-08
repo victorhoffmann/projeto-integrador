@@ -4,10 +4,13 @@ const express = require('express'),
     authMiddleware = require('../middlewares/auth')
     isAdminMiddleware = require('../middlewares/isAdmin')
 
+router.get('/random/', controller.randomProdutos)
+router.get('/categorias/:categoria_id', controller.filtroProduto)
+router.get('/categorias/', controller.itemList)
 router.delete('/:id', controller.itemDelete)
 router.post('/:id', controller.itemUpdate)
 router.get('/:id', controller.itemIndex)
 router.post('/', controller.itemAdd)        
-router.get('/', authMiddleware, isAdminMiddleware ,controller.itemList)
+router.get('/', authMiddleware, isAdminMiddleware, controller.itemList)
 
 module.exports = router

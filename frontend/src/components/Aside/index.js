@@ -1,8 +1,31 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
+import axios from 'axios'
 import './style.css'
-import headset1 from '../../assets/headset1.jpg'
+import RenderFotos from '../Categoria_ID/RenderFotos'
 
 const Aside = () => {
+
+    const [Aside1, setAside1] = useState('')
+    const [Aside2, setAside2] = useState('')
+    const [Aside3, setAside3] = useState('')
+
+    useEffect(() => {
+        const getDataProdutos = async () => {
+            try {
+                const response = await axios.get('/produtos/random/');
+                setAside1(response.data.produtos[0])
+                setAside2(response.data.produtos[1])
+                setAside3(response.data.produtos[2])   
+                console.log(Aside1)      
+                console.log(Aside2)
+                console.log(Aside3)       
+            } catch (error) {
+                console.log(error);
+            }
+        };
+        getDataProdutos();
+    }, []);
+
     return (
         <aside>
             <div
@@ -27,29 +50,29 @@ const Aside = () => {
                             alt="..."
                         />
                         <div className="carousel-caption d-none d-md-block">
-                            <h5>Razer Kraken Ultimate</h5>
+                            <h5>teste</h5>
                             <a href="./produto"><button className='btn btn-success'>Comprar</button></a>
                         </div>
                     </div>
                     <div className="carousel-item">
                         <img
-                            src={headset1}
+                            src={'http://localhost:5000/images/headset1.jpg'}
                             className="d-block w-100"
                             alt="..."
                         />
                         <div className="carousel-caption d-none d-md-block">
-                            <h5>Hyper X</h5>
+                            <h5>teste</h5>
                             <a href="./produto"><button className='btn btn-success'>Comprar</button></a>
                         </div>
                     </div>
                     <div className="carousel-item">
                         <img
-                            src={headset1}
+                            src={'http://localhost:5000/images/headset1.jpg'}
                             className="d-block w-100"
                             alt="..."
                         />
                         <div className="carousel-caption d-none d-md-block">
-                            <h5>Hypex X 2</h5>
+                            <h5>teste</h5>
                             <a href="./produto"><button className='btn btn-success'>Comprar</button></a>
                         </div>
                     </div>

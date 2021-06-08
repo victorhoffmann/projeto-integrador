@@ -10,6 +10,18 @@ const controller = {
           })
     },
 
+    filtroProduto: async (req, res, next) => {
+      const { categoria_id } = req.params,
+        produtos = await Produto.findAll({
+        where: {
+          categoria_id
+        }
+      });
+        res.json({
+          produtos
+        })
+  },
+
     itemAdd: async (req, res, next) => {
       try {
         const { nome, categoria_id, preco, descricao, qnt_disponivel } = req.body;
@@ -59,6 +71,17 @@ const controller = {
             produto
           })
     },
+
+    randomProdutos: async (req, res, next) => {
+      const produtos = await Produto.findAll({
+        order: [
+          Sequelize.fn( 'RAND' ),
+        ], limit: 3
+      });
+        res.json({
+          produtos
+        })
+  },
 }
 
 module.exports = controller

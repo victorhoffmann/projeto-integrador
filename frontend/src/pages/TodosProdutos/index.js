@@ -1,20 +1,32 @@
-import ShelfTodosProdutos from "../../components/Shelfs/ShelfTodosProdutos";
-import { content } from "../../Helpers/TodosProdutos";
+import React, { useEffect, useState } from 'react'
+import axios from 'axios'
+import RenderProdutos from '../../components/RenderProdutos';
 
 const TodosProdutos = () => {
-  const { categories, posts } = content;
-  const renderCategories = () => {
-    return categories.map((category) => {
-      const { id, title } = category;
-      const catPosts = posts.filter((post) => post.cat_id === id);
-      return <ShelfTodosProdutos title={title} key={id} posts={catPosts} />;
-    });
-  };
+  const [dataProdutos, setDataProdutos] = useState({
+    produtos: []});
+
+  useEffect(() => {
+
+    const getDataProdutos = async () => {
+      try {
+        const response = await axios.get('/produtos/categorias/');
+          setDataProdutos(response.data);
+        } catch (error) {
+          console.log(error);
+        }
+      };
+    getDataProdutos();
+  }, []);
+
   return (
     <>
-      <h1 className="shelf__title">Todos os produtos</h1>
-      {renderCategories()}
+      <h1 className="shelf__title">Todos produtos da loja</h1>
+      <section className="shelf">
+        <RenderProdutos produtos={dataProdutos.produtos}/>
+      </section>
     </>
   );
 };
+
 export default TodosProdutos;
