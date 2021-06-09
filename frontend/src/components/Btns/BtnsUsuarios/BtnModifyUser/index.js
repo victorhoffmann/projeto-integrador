@@ -12,7 +12,7 @@ const BtnModifyUser = ({ usuario }) => {
     const handleModify = async (e) => {
         e.preventDefault()
         try {
-            const response = await axios.post(`/usuarios/${usuario}`, {
+            await axios.post(`/usuarios/${usuario}`, {
             nome: nome_input,
             email: email_input,
             cpf_cnpj: cpf_cnpj_input,

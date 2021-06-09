@@ -11,7 +11,7 @@ const BtnDeleteUser = ({ usuario }) => {
     const handleDelete = async (e) => {
         e.preventDefault()
         try {
-            const response = await axios.delete(`/usuarios/${usuario.id}`);
+            await axios.delete(`/usuarios/${usuario.id}`);
             history.go(0);
         } catch (error) {
             console.log(error);

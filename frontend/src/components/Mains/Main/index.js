@@ -66,7 +66,7 @@ const Main = () => {
         </button>
       </a>
       <h2 className="titlePage" id="titleMousePads">
-        MousePads{" "}
+        MousePads
       </h2>
       <div id="mousepads" className="cardsHome">
         <ShelfMousePads />

@@ -14,7 +14,7 @@ const Cadastrar = () => {
         e.preventDefault();
     
         try {
-          const response = await axios.post('/usuarios', {
+          await axios.post('/usuarios', {
             nome,
             email,
             senha,

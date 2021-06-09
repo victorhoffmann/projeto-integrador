@@ -11,7 +11,7 @@ const BtnExcluir = ({ produto }) => {
     const handleDelete = async (e) => {
         e.preventDefault()
         try {
-            const response = await axios.delete(`/produtos/${produto.id}`);
+            await axios.delete(`/produtos/${produto.id}`);
             history.go(0);
         } catch (error) {
             console.log(error);

@@ -16,7 +16,7 @@ const BtnModificar = ({ produto }) => {
     const handleModify = async (e) => {
         e.preventDefault()
         try {
-            const response = await axios.post(`/produtos/${produto}`, {
+            await axios.post(`/produtos/${produto}`, {
                 nome: nome_input,
                 categoria_id: categoria_id_input,
                 preco: preco_input,
