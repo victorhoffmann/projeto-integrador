@@ -22,7 +22,7 @@ nav {
 #links {
   display: flex;
   align-items: center !important;
-  font-size: 1.5rem;
+  font-size: 2vh;
 }
 
 #userNameHeader {

@@ -38,7 +38,7 @@ const Routes = () => {
           <Route path="/painel-adm" component={PainelADM} />
           <Route path="/admin" component={Admin} />
           <Route path="/faq" component={Faq} />
-          <Route path="/produto" component={Produto} />
+          <Route path="/produto/:id" component={Produto} />
           <Route path="/todosprodutos" component={TodosProdutos} />
           <Route path="/headsets" component={Headsets} />
           <Route path="/monitores" component={Monitores} />

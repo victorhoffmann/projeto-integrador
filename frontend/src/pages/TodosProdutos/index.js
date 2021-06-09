@@ -21,7 +21,7 @@ const TodosProdutos = () => {
 
   return (
     <>
-      <h1 className="shelf__title">Todos produtos da loja</h1>
+      <h1 className="shelf__title">Nossos produtos</h1>
       <section className="shelf">
         <RenderProdutos produtos={dataProdutos.produtos}/>
       </section>

@@ -50,50 +50,50 @@ const BtnModificar = ({ produto }) => {
 
     return (
         <>
-            <button id='btnModificarText' type="button" class="btn btn-success" data-toggle="modal" data-target={`#modalModificar${produto}`} data-whatever="@getbootstrap">
+            <button id='btnModificarText' type="button" className="btn btn-success" data-toggle="modal" data-target={`#modalModificar${produto}`} data-whatever="@getbootstrap">
                 Modificar
             </button>
-            <button id='btnModificarIcon' type="button" class="btn btn-success" data-toggle="modal" data-target={`#modalModificar${produto}`} data-whatever="@getbootstrap">
-                <i class="fa fa-retweet"></i>
+            <button id='btnModificarIcon' type="button" className="btn btn-success" data-toggle="modal" data-target={`#modalModificar${produto}`} data-whatever="@getbootstrap">
+                <i className="fa fa-retweet"></i>
             </button>
 
-            <div class="modal fade" id={`modalModificar${produto}`} tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel">Edite o produto</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <div className="modal fade" id={`modalModificar${produto}`} tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div className="modal-dialog">
+                    <div className="modal-content">
+                        <div className="modal-header">
+                            <h5 className="modal-title" id="exampleModalLabel">Edite o produto</h5>
+                            <button type="button" className="close" data-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
                             </button>
                         </div>
-                        <div class="modal-body">
+                        <div className="modal-body">
                             <form>
-                                <div class="form-group">
-                                    <label for={`recipient-name-${produto}`} class="col-form-label">Nome:</label>
-                                    <input type="text" class="form-control" id={`recipient-name-${produto}`} value={nome_input} onChange={(e) => setNome(e.target.value)}></input>
+                                <div className="form-group">
+                                    <label for={`recipient-name-${produto}`} className="col-form-label">Nome:</label>
+                                    <input type="text" className="form-control" id={`recipient-name-${produto}`} value={nome_input} onChange={(e) => setNome(e.target.value)}></input>
                                 </div>
-                                <div class="form-group">
-                                    <label for={`recipient-categoria_id-${produto}`} class="col-form-label">Categoria:</label>
-                                    <input type="text" class="form-control" id={`recipient-categoria_id-${produto}`} value={CategoriaProduto(categoria_id_input)} onChange={(e) => setCategoria_ID(e.target.value)}></input>
+                                <div className="form-group">
+                                    <label for={`recipient-categoria_id-${produto}`} className="col-form-label">Categoria:</label>
+                                    <input type="text" className="form-control" id={`recipient-categoria_id-${produto}`} value={CategoriaProduto(categoria_id_input)} onChange={(e) => setCategoria_ID(e.target.value)}></input>
                                 </div>
-                                <div class="form-group">
-                                    <label for={`recipient-price-${produto}`} class="col-form-label">Preço:</label>
-                                    <input type="number" step='any' class="form-control" id={`recipient-price-${produto}`} value={preco_input} onChange={(e) => setPreco(e.target.value)}></input>
+                                <div className="form-group">
+                                    <label for={`recipient-price-${produto}`} className="col-form-label">Preço:</label>
+                                    <input type="number" step='any' className="form-control" id={`recipient-price-${produto}`} value={preco_input} onChange={(e) => setPreco(e.target.value)}></input>
                                 </div>
-                                <div class="form-group">
-                                    <label for={`message-text-${produto}`} class="col-form-label">Descrição:</label>
-                                    <textarea class="form-control" id={`message-text-${produto}`} value={descricao_input} onChange={(e) => setDescricao(e.target.value)}></textarea>
+                                <div className="form-group">
+                                    <label for={`message-text-${produto}`} className="col-form-label">Descrição:</label>
+                                    <textarea className="form-control" id={`message-text-${produto}`} value={descricao_input} onChange={(e) => setDescricao(e.target.value)}></textarea>
                                 </div>
-                                <div class="form-group">
-                                    <label for={`recipient-qnt_disponivel-${produto}`} class="col-form-label">Quantidade disponivel:</label>
-                                    <input type="number" class="form-control" id={`recipient-qnt_disponivel-${produto}`} value={qnt_input} onChange={(e) => setQnt(e.target.value)}></input>
+                                <div className="form-group">
+                                    <label for={`recipient-qnt_disponivel-${produto}`} className="col-form-label">Quantidade disponivel:</label>
+                                    <input type="number" className="form-control" id={`recipient-qnt_disponivel-${produto}`} value={qnt_input} onChange={(e) => setQnt(e.target.value)}></input>
                                 </div>
                             </form>
                         </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                        <div className="modal-footer">
+                            <button type="button" className="btn btn-secondary" data-dismiss="modal">Cancelar</button>
                             <form onSubmit={handleModify}>
-                                <button type="submit" class="btn btn-primary">Aplicar alterações</button>
+                                <button type="submit" className="btn btn-primary">Aplicar alterações</button>
                             </form>
                         </div>
                     </div>

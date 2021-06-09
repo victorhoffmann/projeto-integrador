@@ -14,11 +14,11 @@ const MainAdmUsuarios = ( { usuarios }) => {
         <div className="mainAdm">
             <div className="headerAdm">
                 <h4>Usuarios</h4>
-                <a href="/admin" ><button onClick={handleLogout} className="btn btn-outline-danger">Sair <i class="fas fa-sign-out-alt" aria-hidden="true"></i></button></a>
+                <a href="/admin" ><button onClick={handleLogout} className="btn btn-outline-danger">Sair <i className="fas fa-sign-out-alt" aria-hidden="true"></i></button></a>
             </div>
             <div className="painelProdutos">
             <div className="pesquisaProdutos">
-                <input class="form-control" type="text" placeholder="Procure o usuario" readonly />
+                <input className="form-control" type="text" placeholder="Procure o usuario" readonly />
                 <BtnAddUser />
             </div>
             <div className="tabelaItens">

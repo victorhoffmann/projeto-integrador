@@ -72,9 +72,9 @@ const MainProduto = ({ produto }) => {
                         </div> */}
                     </div>
                     </div>
-                    <div class="descricaoProduto">
+                    <div className="descricaoProduto">
                         <h2>Descrição:</h2>
-                        <div class="descricaoProduto__container">
+                        <div className="descricaoProduto__container">
                         <p>{produto.descricao}</p>
                         </div>
 

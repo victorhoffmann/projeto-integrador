@@ -31,47 +31,47 @@ const BtnAddUser = () => {
 
     return (
         <>
-            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalAddUser" data-whatever="@getbootstrap">
+            <button type="button" className="btn btn-primary" data-toggle="modal" data-target="#modalAddUser" data-whatever="@getbootstrap">
                 Adicionar
             </button>
 
-            <div class="modal fade" id="modalAddUser" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel">Adicione um usuario</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <div className="modal fade" id="modalAddUser" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div className="modal-dialog">
+                    <div className="modal-content">
+                        <div className="modal-header">
+                            <h5 className="modal-title" id="exampleModalLabel">Adicione um usuario</h5>
+                            <button type="button" className="close" data-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
                             </button>
                         </div>
-                        <div class="modal-body">
+                        <div className="modal-body">
                             <form>
-                                <div class="form-group">
-                                    <label for="recipient-name-user" class="col-form-label">Nome:</label>
-                                    <input type="text" class="form-control" id="recipient-name-user" required value={nome} onChange={(e) => setNome(e.target.value)}></input>
+                                <div className="form-group">
+                                    <label for="recipient-name-user" className="col-form-label">Nome:</label>
+                                    <input type="text" className="form-control" id="recipient-name-user" required value={nome} onChange={(e) => setNome(e.target.value)}></input>
                                 </div>
-                                <div class="form-group">
-                                    <label for="recipient-email" class="col-form-label">Email:</label>
-                                    <input type="text" class="form-control" id="recipient-email" required value={email} onChange={(e) => setEmail(e.target.value)}></input>
+                                <div className="form-group">
+                                    <label for="recipient-email" className="col-form-label">Email:</label>
+                                    <input type="text" className="form-control" id="recipient-email" required value={email} onChange={(e) => setEmail(e.target.value)}></input>
                                 </div>
-                                <div class="form-group">
-                                    <label for="recipient-senha" class="col-form-label">Senha:</label>
-                                    <input type="text" step='any' class="form-control" id="recipient-senha" required value={senha} onChange={(e) => setSenha(e.target.value)}></input>
+                                <div className="form-group">
+                                    <label for="recipient-senha" className="col-form-label">Senha:</label>
+                                    <input type="text" step='any' className="form-control" id="recipient-senha" required value={senha} onChange={(e) => setSenha(e.target.value)}></input>
                                 </div>
-                                <div class="form-group">
-                                    <label for="message-text-cpf" class="col-form-label">CPF/CNPJ:</label>
-                                    <input type='text' class="form-control" id="message-text-cpf" required value={cpf_cnpj} onChange={(e) => setCpf_Cnpj(e.target.value)}></input>
+                                <div className="form-group">
+                                    <label for="message-text-cpf" className="col-form-label">CPF/CNPJ:</label>
+                                    <input type='text' className="form-control" id="message-text-cpf" required value={cpf_cnpj} onChange={(e) => setCpf_Cnpj(e.target.value)}></input>
                                 </div>
-                                <div class="form-group">
-                                    <label for="recipient-funcao" class="col-form-label">Função:</label>
-                                    <input type="text" step='any' class="form-control" id="recipient-funcao" required value={id_funcao} onChange={(e) => setFuncao(e.target.value)}></input>
+                                <div className="form-group">
+                                    <label for="recipient-funcao" className="col-form-label">Função:</label>
+                                    <input type="text" step='any' className="form-control" id="recipient-funcao" required value={id_funcao} onChange={(e) => setFuncao(e.target.value)}></input>
                                 </div>
                             </form>
                         </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                        <div className="modal-footer">
+                            <button type="button" className="btn btn-secondary" data-dismiss="modal">Cancelar</button>
                             <form onSubmit={handleAdd}>
-                                <button type="submit" class="btn btn-primary">Adicionar usuario</button>
+                                <button type="submit" className="btn btn-primary">Adicionar usuario</button>
                             </form>
                         </div>
                     </div>

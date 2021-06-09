@@ -6,7 +6,7 @@ const MainCarrinho = () => {
     <>
       <div className="title">
         <h2>Produtos adicionados ao carrinho </h2>
-        <button type="button" class="btn btn-outline-danger">
+        <button type="button" className="btn btn-outline-danger">
           Remover todos os produtos
         </button>
       </div>
@@ -21,12 +21,12 @@ const MainCarrinho = () => {
 
           <div className="produtoRow__containerProduto__texto">
             <h3>RAZER - Kraken Ultimate</h3>
-            <button type="button" class="btn btn-outline-danger">
+            <button type="button" className="btn btn-outline-danger">
               Remover produto
             </button>
           </div>
         </div>
-        <div class="infosDaCompra">
+        <div className="infosDaCompra">
           <div className="produtoRow__containerQuantidade">
             <div className="produtoRow__containerQuantidade__qntContainer">
               <h4>Quantidade:</h4>

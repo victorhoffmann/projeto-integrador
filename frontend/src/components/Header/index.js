@@ -89,12 +89,12 @@ const Header = () => {
 
             {userNome ? <a id='userNameHeader'>| {userNome} | &nbsp;  </a>
             : 
-            <a className="nav-links nav-item" href="./login">
+            <a className="nav-links nav-item" href="/login">
               <i className="fa fa-user" aria-hidden="true"></i>
             </a>
             }
             
-            <a className="nav-links nav-item" href="./carrinho">
+            <a className="nav-links nav-item" href="/carrinho">
               <i className="fa fa-shopping-cart" aria-hidden="true"></i>
             </a>
             

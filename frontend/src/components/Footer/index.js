@@ -19,18 +19,18 @@ const Footer = () => {
         <div id="textPayments">
           <div className="iconsPagamento">
             <p>Formas de pagamento</p>
-            <i class="fa fa-cc-paypal"></i> <i class="fa fa-cc-visa"></i>{" "}
-            <i class="fa fa-cc-mastercard"></i>
+            <i className="fa fa-cc-paypal"></i> <i className="fa fa-cc-visa"></i>{" "}
+            <i className="fa fa-cc-mastercard"></i>
           </div>
         </div>
 
         <div id="textInfos">
           <p>
-            <i class="fa fa-clock-o" aria-hidden="true"></i> Segunda à sábado
+            <i className="fa fa-clock-o" aria-hidden="true"></i> Segunda à sábado
             das 08:00 às 20:00
           </p>
           <p>
-            <i class="fa fa-envelope-o" aria-hidden="true"></i>{" "}
+            <i className="fa fa-envelope-o" aria-hidden="true"></i>{" "}
             faleconosco@teste.com.br
           </p>
           <div className="iconsSocialMedia">
@@ -39,14 +39,14 @@ const Footer = () => {
               target="_blank"
               title="Visite nosso perfil no Instagram"
             >
-              <i class="fa fa-instagram" aria-hidden="true"></i>
+              <i className="fa fa-instagram" aria-hidden="true"></i>
             </a>
             <a
               href="./"
               target="_blank"
               title="Visite nosso perfil no Facebook"
             >
-              <i class="fa fa-facebook" aria-hidden="true"></i>
+              <i className="fa fa-facebook" aria-hidden="true"></i>
             </a>
           </div>
         </div>

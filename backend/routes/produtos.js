@@ -4,6 +4,7 @@ const express = require('express'),
     authMiddleware = require('../middlewares/auth')
     isAdminMiddleware = require('../middlewares/isAdmin')
 
+router.get('/carrinho', controller.carrinho)
 router.get('/random/', controller.randomProdutos)
 router.get('/categorias/:categoria_id', controller.filtroProduto)
 router.get('/categorias/', controller.itemList)

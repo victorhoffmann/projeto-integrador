@@ -22,6 +22,20 @@ const controller = {
         })
   },
 
+    carrinho: async (req, res, next) => {
+      const { id } = req.body,
+        produtos = await Produto.findAll({
+        where: {
+         id: {
+            [Op.in] : id
+          } 
+        }
+      });
+      res.json({
+        produtos
+      })
+    },
+
     itemAdd: async (req, res, next) => {
       try {
         const { nome, categoria_id, preco, descricao, qnt_disponivel } = req.body;

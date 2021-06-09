@@ -1,8 +1,8 @@
-import ShelfHeadsets from "../../Cards/CardHeadsets";
-import ShelfMonitores from "../../Cards/CardMonitores";
-import ShelfTeclados from "../../Cards/CardTeclados";
-import ShelfMouses from "../../Cards/CardMouses";
-import ShelfMousePads from "../../Cards/CardMousePads";
+import ShelfHeadsets from "../../Shelfs/ShelfHeadsets";
+import ShelfMonitores from "../../Shelfs/ShelfMonitores";
+import ShelfTeclados from "../../Shelfs/ShelfTeclados";
+import ShelfMouses from "../../Shelfs/ShelfMouses";
+import ShelfMousePads from "../../Shelfs/ShelfMousePads";
 import BtnBackToTop from "../../Btns/BtnBackToTop";
 import "./style.css";
 
@@ -22,8 +22,6 @@ const Main = () => {
       </h2>
       <div id="headsets" className="cardsHome">
         <ShelfHeadsets />
-        <ShelfHeadsets />
-        <ShelfHeadsets />
       </div>
       <a href="./headsets" className="linkSearchAll">
         <button type="button" className="btn btn-outline-success">
@@ -35,8 +33,6 @@ const Main = () => {
         Monitores
       </h2>
       <div id="monitores" className="cardsHome">
-        <ShelfMonitores />
-        <ShelfMonitores />
         <ShelfMonitores />
       </div>
       <a href="./monitores" className="linkSearchAll">
@@ -50,8 +46,6 @@ const Main = () => {
       </h2>
       <div id="teclados" className="cardsHome">
         <ShelfTeclados />
-        <ShelfTeclados />
-        <ShelfTeclados />
       </div>
       <a href="./teclados" className="linkSearchAll">
         <button type="button" className="btn btn-outline-success">
@@ -64,8 +58,6 @@ const Main = () => {
       </h2>
       <div id="mouses" className="cardsHome">
         <ShelfMouses />
-        <ShelfMouses />
-        <ShelfMouses />
       </div>
       <a href="./mouses" className="linkSearchAll">
         <button type="button" className="btn btn-outline-success">
@@ -77,8 +69,6 @@ const Main = () => {
         MousePads{" "}
       </h2>
       <div id="mousepads" className="cardsHome">
-        <ShelfMousePads />
-        <ShelfMousePads />
         <ShelfMousePads />
       </div>
       <a href="./mousepads" className="linkSearchAll">

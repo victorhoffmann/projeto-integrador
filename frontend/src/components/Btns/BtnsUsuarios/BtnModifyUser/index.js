@@ -43,46 +43,46 @@ const BtnModifyUser = ({ usuario }) => {
 
     return (
         <>
-            <button id='btnModificarText' type="button" class="btn btn-success" data-toggle="modal" data-target={`#modalModificar-${usuario}`} data-whatever="@getbootstrap">
+            <button id='btnModificarText' type="button" className="btn btn-success" data-toggle="modal" data-target={`#modalModificar-${usuario}`} data-whatever="@getbootstrap">
                 Modificar
             </button>
-            <button id='btnModificarIcon' type="button" class="btn btn-success" data-toggle="modal" data-target={`#modalModificar-${usuario}`} data-whatever="@getbootstrap">
-                <i class="fa fa-retweet"></i>
+            <button id='btnModificarIcon' type="button" className="btn btn-success" data-toggle="modal" data-target={`#modalModificar-${usuario}`} data-whatever="@getbootstrap">
+                <i className="fa fa-retweet"></i>
             </button>
 
-            <div class="modal fade" id={`modalModificar-${usuario}`} tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel">Edite o usuario</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <div className="modal fade" id={`modalModificar-${usuario}`} tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div className="modal-dialog">
+                    <div className="modal-content">
+                        <div className="modal-header">
+                            <h5 className="modal-title" id="exampleModalLabel">Edite o usuario</h5>
+                            <button type="button" className="close" data-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
                             </button>
                         </div>
-                        <div class="modal-body">
+                        <div className="modal-body">
                         <form>
-                                <div class="form-group">
-                                    <label for={`recipient-nome-user-${usuario}`} class="col-form-label">Nome:</label>
-                                    <input type="text" class="form-control" id={`recipient-nome-user-${usuario}`} required value={nome_input} onChange={(e) => setNome(e.target.value)}></input>
+                                <div className="form-group">
+                                    <label for={`recipient-nome-user-${usuario}`} className="col-form-label">Nome:</label>
+                                    <input type="text" className="form-control" id={`recipient-nome-user-${usuario}`} required value={nome_input} onChange={(e) => setNome(e.target.value)}></input>
                                 </div>
-                                <div class="form-group">
-                                    <label for={`recipient-email-user-${usuario}`} class="col-form-label">Email:</label>
-                                    <input type="text" class="form-control" id={`recipient-email-user-${usuario}`} required value={email_input} onChange={(e) => setEmail(e.target.value)}></input>
+                                <div className="form-group">
+                                    <label for={`recipient-email-user-${usuario}`} className="col-form-label">Email:</label>
+                                    <input type="text" className="form-control" id={`recipient-email-user-${usuario}`} required value={email_input} onChange={(e) => setEmail(e.target.value)}></input>
                                 </div>
-                                <div class="form-group">
-                                    <label for={`recipient-cpf-user-${usuario}`} class="col-form-label">CPF/CNPJ:</label>
-                                    <input type='text' class="form-control" id={`recipient-cpf-user-${usuario}`} required value={cpf_cnpj_input} onChange={(e) => setCpf_Cnpj(e.target.value)}></input>
+                                <div className="form-group">
+                                    <label for={`recipient-cpf-user-${usuario}`} className="col-form-label">CPF/CNPJ:</label>
+                                    <input type='text' className="form-control" id={`recipient-cpf-user-${usuario}`} required value={cpf_cnpj_input} onChange={(e) => setCpf_Cnpj(e.target.value)}></input>
                                 </div>
-                                <div class="form-group">
-                                    <label for={`recipient-funcao-user-${usuario}`} class="col-form-label">Função:</label>
-                                    <input type="text" step='any' class="form-control" id={`recipient-funcao-user-${usuario}`} required value={id_funcao_input} onChange={(e) => setFuncao(e.target.value)}></input>
+                                <div className="form-group">
+                                    <label for={`recipient-funcao-user-${usuario}`} className="col-form-label">Função:</label>
+                                    <input type="text" step='any' className="form-control" id={`recipient-funcao-user-${usuario}`} required value={id_funcao_input} onChange={(e) => setFuncao(e.target.value)}></input>
                                 </div>
                             </form>
                         </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                        <div className="modal-footer">
+                            <button type="button" className="btn btn-secondary" data-dismiss="modal">Cancelar</button>
                             <form onSubmit={handleModify}>
-                                <button type="submit" class="btn btn-primary">Aplicar alterações</button>
+                                <button type="submit" className="btn btn-primary">Aplicar alterações</button>
                             </form>
                         </div>
                     </div>

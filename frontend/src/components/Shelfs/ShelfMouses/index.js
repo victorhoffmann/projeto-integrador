@@ -1,21 +1,41 @@
-import CardMouses from "../../Cards/CardMouses";
+import React, {useEffect, useState } from 'react'
+import axios from 'axios'
+import CategoriaProduto from '../../Categoria_ID/index'
+import RenderFotos from '../../Categoria_ID/RenderFotos'
 
-const ShelfMouses = ({ ...props }) => {
-  const { posts } = props;
-  const renderPosts = () => {
-    return posts.map((post, index) => {
-      const { title, description, price } = post;
-      return (
-        <CardMouses
-          title={title}
-          description={description}
-          price={price}
-          key={index}
-        />
-      );
-    });
-  };
-  return <section className="shelf">{renderPosts()}</section>;
+const ShelfHeadsets = () => {
+
+  const [dataProdutos, setDataProdutos] = useState({
+    produtos: []});
+
+  useEffect(() => {
+
+    const getDataProdutos = async () => {
+      try {
+        const response = await axios.get('/produtos/categorias/4');
+          setDataProdutos(response.data);
+        } catch (error) {
+          console.log(error);
+        }
+      };
+    getDataProdutos();
+  }, []);
+
+    return (
+      <>
+          {dataProdutos.produtos.slice(0,3).map((produto, index) => (
+              <article className="card">
+                  <h3 className="card__title">{produto.nome}</h3>
+                  <img className="card__img" src={RenderFotos(produto.categoria_id)} alt={CategoriaProduto(produto.categoria_id)} />
+                  <span className="card__price">R${produto.preco}</span>
+                  <button type="button" className="card__button btn btn-outline-success">
+                      Adicionar ao carrinho{" "}
+                      <i className="fa fa-shopping-cart" aria-hidden="true"></i>
+                  </button>
+              </article>
+          ))}
+      </>
+  )
 };
 
-export default ShelfMouses;
+export default ShelfHeadsets;
