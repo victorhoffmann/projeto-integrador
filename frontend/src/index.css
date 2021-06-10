@@ -48,6 +48,7 @@ body::-webkit-scrollbar-thumb {
   margin: 16px auto;
   padding: 16px;
   width: 100%;
+  justify-content: center;
 }
 
 .shelf__title {
@@ -195,6 +196,17 @@ th, td {
   margin-right: 1vw;
 }
 
+#btnExcluirText, #btnModificarText, #btnVisualizarText {
+  display: none;
+}
+
+#t01 thead tr th:nth-child(3),
+#t01 tbody tr td:nth-child(3),
+#t01 thead tr th:nth-child(4),
+#t01 tbody tr td:nth-child(4) {
+  display: none;
+}
+
 
 @media only screen and (min-width: 1900px) {
   .signUp {
@@ -207,10 +219,6 @@ th, td {
   }
 }
 
-#btnExcluirText, #btnModificarText, #btnVisualizarText {
-  display: none;
-}
-
 @media only screen and (min-width: 701px) {
   #btnExcluirIcon, #btnModificarIcon, #btnVisualizarIcon  {
     display: none;
@@ -218,5 +226,17 @@ th, td {
 
   #btnExcluirText, #btnModificarText, #btnVisualizarText  {
     display: inline;
+  }
+
+  #t01 thead tr th:nth-child(4),
+  #t01 tbody tr td:nth-child(4) {
+    display: table-cell;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  #t01 thead tr th:nth-child(3),
+  #t01 tbody tr td:nth-child(3) {
+    display: table-cell;
   }
 }

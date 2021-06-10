@@ -24,12 +24,6 @@ const controller = {
     })
   },
 
-  fazerPesquisa: async (req, res, next) => {
-    let { searchValue } = req.body;
-    console.log(searchValue)
-    res.redirect(`/pesquisa/${searchValue}`)
-  },
-
   filtroProduto: async (req, res, next) => {
     const { categoria_id } = req.params,
       produtos = await Produto.findAll({

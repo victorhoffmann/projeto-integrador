@@ -4,7 +4,6 @@ const express = require('express'),
     authMiddleware = require('../middlewares/auth')
     isAdminMiddleware = require('../middlewares/isAdmin')
 
-router.post('/pesquisar', controller.fazerPesquisa)
 router.post('/searchHome/:searchValue', controller.pesquisaHome)
 router.get('/searchHome/:searchValue', controller.pesquisaHome)
 router.get('/carrinho', controller.carrinho)

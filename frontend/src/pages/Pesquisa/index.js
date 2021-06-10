@@ -22,9 +22,17 @@ const Pesquisa = () => {
 
   return (
     <>
-      <h1 className="shelf__title">Filtrando por "{searchValue}"</h1>
+      <h1 className="shelf__title">
+      {dataPesquisa.produtos.length === 0
+      ? `Não encontramos nenhum produto com esse nome "${searchValue}" então aproveite para conhecer nossos produtos!` 
+      : `Filtrando por "${searchValue}` }
+      </h1>
       <section className="shelf">
-        <RenderProdutos produtos={dataPesquisa.produtos}/>
+        {dataPesquisa.produtos.length === 0
+        ? <a className='linkCarousel' href='/todosprodutos'><button className='btn btn-success'>Conhecer</button></a>
+        : <RenderProdutos produtos={dataPesquisa.produtos}/> 
+        }
+        
       </section>
     </>
   );
