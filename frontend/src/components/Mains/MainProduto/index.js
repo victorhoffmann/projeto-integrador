@@ -1,7 +1,19 @@
+import React, {useState } from 'react'
 import RenderFotos from '../../Categoria_ID/RenderFotos'
 import "./style.css"
 
 const MainProduto = ({ produto }) => {
+
+    const [qnt, setQnt] = useState(1)
+
+    const incNum = () => {
+        setQnt(qnt + 1)
+    }
+
+    const decrNum = () => {
+        qnt > 1 ? setQnt(qnt - 1) : setQnt(1)
+    }
+
     return (
 
         <>
@@ -36,40 +48,12 @@ const MainProduto = ({ produto }) => {
                         </div>
                         <div className="infosProduto__infos__qnt">
                             <b>Quantidade:</b>
-                            <button type="button" className="btn btn-secondary" > - </button>
-                            <input id="display" type="text" name="display" placeholder="0" readonly></input>
-                            <button type="button" className="btn btn-secondary"> + </button>
+                            <button type="button" className="btn btn-secondary" onClick={decrNum}> - </button>
+                            <input id="display" type="text" name="display" readOnly required value={qnt} onChange={(e) => setQnt(e.target.value)}></input>
+                            <button type="button" className="btn btn-secondary" onClick={incNum}> + </button>
                         </div>
-                        <button type="button" className="btn btn-secondary btn_addCart">  <i className="fa fa-shopping-cart" aria-hidden="true"></i> ADICIONAR AO CARRINHO</button>
-                        {/* <div className="infosProduto__infos__cep">
+                        <button className="btn btn-secondary btn_addCart">  <i className="fa fa-shopping-cart" aria-hidden="true"></i> ADICIONAR AO CARRINHO</button>
 
-                            <div className="infosProduto__infos__cep__display">
-                            CEP: <input type="text"></input>
-                            </div>
-                            <button type="button" className="btn btn-secondary btn_calcFrete">CALCULAR </button>
-
-                            <div className="infosProduto__infos__cep__resultado">
-                                <b>RESULTADO DO FRETE:</b>
-                                <div className="infosProduto__infos__cep__resultado__infos">
-                                <div className="infosProduto__infos__cep__resultado__infos__tipo">
-                                <b>Tipo:</b>
-                                    Sedex<br></br>
-                                    PAC
-                                </div>
-                                <div className="infosProduto__infos__cep__resultado__infos__prazo">
-                                <b>Prazo:</b>
-                                    5 dias uteis<br></br>
-                                    10 dias uteis
-                                </div>
-                                <div className="infosProduto__infos__cep__resultado__infos__valor">
-                                <b>Valor:</b>
-                                    R$15,00<br></br>
-                                    R$10,00
-                                </div>
-                                </div>
-                                
-                            </div>
-                        </div> */}
                     </div>
                     </div>
                     <div className="descricaoProduto">

@@ -15,10 +15,6 @@ nav {
   color: var(--color-secondary) !important;
 }
 
-#logo .navbar-brand {
-  margin-left: 50px;
-}
-
 #links {
   display: flex;
   align-items: center !important;
@@ -102,4 +98,10 @@ nav {
 
 #form-header-input {
   width: 30vw;
+}
+
+@media only screen and (min-width: 648px) {
+  #logo .navbar-brand {
+    margin-left: 50px;
+  }
 }

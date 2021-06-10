@@ -5,7 +5,7 @@ const RenderProdutos = ({ produtos }) => {
     return (
         <>
             { produtos.map((produto, index) => (
-                <article className="card">
+                <article className="card" key={index}>
                     <h3 className="card__title">{produto.nome}</h3>
                     <img className="card__img" src={RenderFotos(produto.categoria_id)} alt={CategoriaProduto(produto.categoria_id)} />
                     <span className="card__price">R$ {produto.preco}</span>

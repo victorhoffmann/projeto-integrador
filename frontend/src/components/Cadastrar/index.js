@@ -2,6 +2,7 @@ import React, {useState} from 'react'
 import axios from 'axios'
 import './style.css'
 import {useHistory} from 'react-router-dom'
+import { setToken, setUser } from '../../Helpers/session'
 
 const Cadastrar = () => {
     const [nome, setNome] = useState('');
@@ -20,8 +21,13 @@ const Cadastrar = () => {
             senha,
             cpf_cnpj,
             id_funcao: '2'
-          });
-          history.push('/login');
+          })
+          const response = await axios.post('/admin', {email, senha})
+            const token = response.data.token
+            setToken(token)
+            setUser(response.data.user)
+            history.push('/')
+            history.go(0)
         } catch (error) {
             if (error.response.data) alert(error.response.data.message);
           else alert("Ops, deu ruim");

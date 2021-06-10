@@ -1,39 +1,26 @@
 import { getUser, removeUser, removeToken } from "../../Helpers/session";
-import { useHistory } from 'react-router-dom'
+import SearchHome from '../SearchHome'
 import "./style.css";
 
 const Header = () => {
   const userNome = getUser
-  const history = useHistory()
 
   const handleLogout = () => {
     removeToken()
     removeUser()
-    history.push('/')
-    history.go(0)
   }
 
   return (
     <header>
       <nav className="navbar  navbar-expand-lg ">
         <div id="logo">
-          <a className="navbar-brand text-success logoname" href="./">
+          <a className="navbar-brand text-success logoname" href="/">
             Periféricos.Net
           </a>
         </div>
 
-        <form className="d-flex" id='form-header'>
-          <input
-            id='form-header-input'
-            className="form-control mr-2"
-            type="search"
-            placeholder="Produtos"
-            aria-label="Produtos"
-          />
-          <button className="btn btn-outline-success" type="submit">
-            Pesquisar
-          </button>
-        </form>
+        <SearchHome />
+
         <button
           className="navbar-dark navbar-toggler"
           type="button"

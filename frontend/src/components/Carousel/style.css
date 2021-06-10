@@ -32,10 +32,15 @@
     text-align: center;
     justify-content: flex-end;
     padding-bottom: 5vh;
+    align-items: center;
 }
 
 .carousel_mao-Inner .center h1 {
     color: #fff;
+}
+
+.linkCarousel {
+    width: fit-content;
 }
 
 .carousel_mao-Inner .right {

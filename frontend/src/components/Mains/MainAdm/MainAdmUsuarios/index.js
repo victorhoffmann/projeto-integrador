@@ -18,7 +18,7 @@ const MainAdmUsuarios = ( { usuarios }) => {
             </div>
             <div className="painelProdutos">
             <div className="pesquisaProdutos">
-                <input className="form-control" type="text" placeholder="Procure o usuario" readonly />
+                <input className="form-control" type="text" placeholder="Procure o usuario" readOnly />
                 <BtnAddUser />
             </div>
             <div className="tabelaItens">

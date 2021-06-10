@@ -22,7 +22,7 @@ const Carousel = ({ produtos }) => {
                     </div>
                     <div className="center">
                         <h1>{dados[0] === undefined ? 'Teste' : `${dados[currImg].nome}`}</h1>
-                        <a href={dados[0] === undefined ? './produto/' : `./produto/${dados[currImg].id}`}><button className='btn btn-success'>Comprar</button></a>
+                        <a className='linkCarousel' href={dados[0] === undefined ? './produto/' : `./produto/${dados[currImg].id}`}><button className='btn btn-success'>Comprar</button></a>
                     </div>
                     <div className="right"
                     onClick={() => { 

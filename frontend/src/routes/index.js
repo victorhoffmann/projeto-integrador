@@ -19,6 +19,7 @@ import PainelADM from '../pages/Admin/PainelADM'
 import Admin from '../pages/Admin'
 import ProdutosADM from '../pages/Admin/PainelADM/Produtos'
 import UsuariosADM from '../pages/Admin/PainelADM/Usuarios'
+import Pesquisa from '../pages/Pesquisa'
 
 import { getToken } from '../Helpers/session'
 
@@ -38,6 +39,7 @@ const Routes = () => {
           <Route path="/painel-adm" component={PainelADM} />
           <Route path="/admin" component={Admin} />
           <Route path="/faq" component={Faq} />
+          <Route path="/pesquisa/:searchValue" component={Pesquisa} />
           <Route path="/produto/:id" component={Produto} />
           <Route path="/todosprodutos" component={TodosProdutos} />
           <Route path="/headsets" component={Headsets} />

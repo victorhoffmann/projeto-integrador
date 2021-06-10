@@ -18,7 +18,7 @@ const MainAdmProdutos = ( { produtos }) => {
             </div>
             <div className="painelProdutos">
             <div className="pesquisaProdutos">
-                <input className="form-control" type="text" placeholder="Procure o produto" readonly />
+                <input className="form-control" type="text" placeholder="Procure o produto" readOnly />
                 <BtnAdd />
             </div>
             <div className="tabelaItens">

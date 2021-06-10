@@ -16,24 +16,26 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    margin: 4vh;
+    margin: 4vh 4vh 1vh;
     align-items: center;
 }
 
 .infosProduto__infos{
     display:flex;
     flex-direction:column;
-    margin:10px;
+    margin: 5vh 0 0;
+    align-items: center;
 }
 
 .infosProduto__infos__preco{
     display:flex;
     flex-direction:column;
-    margin:15px;
 }
 
 .infosProduto__infos__qnt{
-    margin:10px;
+    margin: 2vh 0 0;
+    display: flex;
+    align-items: center;
 }
 
 #display{
@@ -49,47 +51,8 @@
     margin-bottom: 15px;
 }
 
-.infosProduto__infos__cep__display{
-    display:inline;
-    
-}
-.btn_calcFrete{
-    margin-left: 10px;
-    margin-bottom: 5px;
-}
-
-.infosProduto__infos__cep__resultado{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align:center;
-    background-color: #c4c4c4;
-    border-radius: 20px;
-    margin: 10px 5px;
-    padding: 5px 0px 20px;
-    
-
-}
-
-
-.infosProduto__infos__cep__resultado__infos{
-    display:flex;
-    flex-direction: row;
-    justify-content: center;
-    padding:5px ;
-}
-
-.infosProduto__infos__cep__resultado__infos__tipo,
-.infosProduto__infos__cep__resultado__infos__prazo,
-.infosProduto__infos__cep__resultado__infos__valor{
-    display: flex;
-    flex-direction: column;
-    margin-right: 20px;
-    
-}
-
 .descricaoProduto{
-    margin: 4vh;
+    margin: 0 4vh;
 }
 
 @media only screen and (min-width: 778px) {
