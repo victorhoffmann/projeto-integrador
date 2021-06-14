@@ -129,10 +129,11 @@ body::-webkit-scrollbar-thumb {
   margin: 2vh 1vw ;
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
 }
 
-.pesquisaProdutos input {
-  margin-right: 10vw;
+.pesquisaProdutos #searchUser {
+  width: 70vw;
 }
 
 /* ADM */
