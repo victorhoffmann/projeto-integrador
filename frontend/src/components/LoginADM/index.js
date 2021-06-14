@@ -21,7 +21,7 @@ const LoginADM = () => {
       setToken(token)
       response.data.user.id_funcao === 1 ? history.push('/painel-adm') : alert('Você não é ADMIN')
     } catch (error) {
-      
+      alert('Usuário e/ou Senha incorretos!')
     }
   };
     return (

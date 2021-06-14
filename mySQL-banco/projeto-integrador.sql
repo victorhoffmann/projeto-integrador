@@ -160,3 +160,9 @@ Select * FROM produtos
 
 */
 
+
+SELECT `id`, `nome`, `categoria_id`, `preco`, `descricao`, `qnt_disponivel` FROM `produtos` AS `Produto` ORDER BY RAND() LIMIT 3;
+
+SELECT * FROM produtos WHERE id IN (4,7,14);
+
+SELECT `id`, `nome`, `categoria_id`, `preco`, `descricao`, `qnt_disponivel` FROM `produtos` AS `Produto` WHERE `Produto`.`nome` LIKE '%mouse%';

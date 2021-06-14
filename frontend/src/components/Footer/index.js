@@ -25,14 +25,6 @@ const Footer = () => {
         </div>
 
         <div id="textInfos">
-          <p>
-            <i className="fa fa-clock-o" aria-hidden="true"></i> Segunda à sábado
-            das 08:00 às 20:00
-          </p>
-          <p>
-            <i className="fa fa-envelope-o" aria-hidden="true"></i>{" "}
-            faleconosco@teste.com.br
-          </p>
           <div className="iconsSocialMedia">
             <a
               href="./"
@@ -47,6 +39,12 @@ const Footer = () => {
               title="Visite nosso perfil no Facebook"
             >
               <i className="fa fa-facebook" aria-hidden="true"></i>
+            </a>
+            <a
+              href="mailto:faleconosco@teste.com?subject=Quero%20entrar%20em%20contato!"
+              title="Mande email para nós"
+            >
+              <i className="fa fa-envelope" aria-hidden="true"></i>
             </a>
           </div>
         </div>

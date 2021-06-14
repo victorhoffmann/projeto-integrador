@@ -74,7 +74,7 @@ const Header = () => {
               </div>
             </div>
 
-            {userNome ? <a id='userNameHeader'>| {userNome} | &nbsp;  </a>
+            {userNome ? <a id='userNameHeader'> {userNome}  &nbsp;  </a>
             : 
             <a className="nav-links nav-item" href="/login">
               <i className="fa fa-user" aria-hidden="true"></i>

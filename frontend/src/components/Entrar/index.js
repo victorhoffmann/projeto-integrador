@@ -24,7 +24,7 @@ const Login = () => {
       history.push('/')
       history.go(0)
     } catch (error) {
-      
+      alert('Usuário e/ou Senha incorretos!')
     }
   };
 
